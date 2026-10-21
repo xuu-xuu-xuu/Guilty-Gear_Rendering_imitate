@@ -5,6 +5,8 @@
 tools/*.json text eol=lf
 docs/assets/*.json text eol=lf
 examples/capture/*.cs text eol=lf
+examples/editor/*.cs text eol=lf
+docs/assets/examples/*.txt text eol=lf
 docs/assets/evidence/**/*.txt text eol=lf
 requirements-docs.txt text eol=lf
 .gitignore text eol=lf

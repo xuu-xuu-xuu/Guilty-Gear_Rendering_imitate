@@ -45,6 +45,7 @@ validation:
 nav:
   - 首页: index.md
   - 准备工程:
+      - 开始调参与Debug操作: reference/practice.md
       - 最终效果与准备: chapters/00.md
       - 固定环境、相机和主光: chapters/01.md
       - 连接贴图、UV与顶点数据: chapters/02.md
