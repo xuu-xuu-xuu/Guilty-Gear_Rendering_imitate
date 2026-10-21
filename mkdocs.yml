@@ -1,0 +1,86 @@
+site_name: Unity 罪恶装备风格角色渲染复刻
+site_description: 从基础明暗到材质高光与线条——可核查中文教程
+site_url: https://xuu-xuu-xuu.github.io/Guilty-Gear_Rendering_imitate/
+repo_url: https://github.com/xuu-xuu-xuu/Guilty-Gear_Rendering_imitate
+repo_name: xuu-xuu-xuu/Guilty-Gear_Rendering_imitate
+edit_uri: ''
+strict: true
+theme:
+  name: material
+  language: zh
+  font: false
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: deep orange
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search:
+      lang: [zh, en]
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 2
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+extra_css:
+  - assets/stylesheets/extra.css
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
+nav:
+  - 首页: index.md
+  - 教程:
+      - 00 最终效果与范围: chapters/00.md
+      - 01 环境、相机与主光: chapters/01.md
+      - 02 贴图、通道与 UV: chapters/02.md
+      - 03 材质与参数覆盖: chapters/03.md
+      - 04 Shader 执行顺序: chapters/04.md
+      - 05 基础两段式明暗: chapters/05.md
+      - 06 脸部、皮肤与衣料分区: chapters/06.md
+      - 07 亮面与暖色阴面: chapters/07.md
+      - 08 投脸、自阴影与场景投影: chapters/08.md
+      - 09 四类材质高光: chapters/09.md
+      - 10 大腿局部高光: chapters/10.md
+      - 11 外轮廓与内部线条: chapters/11.md
+      - 12 眼睛层次与高光: chapters/12.md
+      - 13 边缘光: chapters/13.md
+      - 14 站立验收与排错: chapters/14.md
+  - 核查附录:
+      - 章节—证据对应表: reference/evidence-map.md
+      - 参数账本: reference/parameters.md
+      - 12份材质保存原貌: reference/material-snapshots.md
+      - 属性声明与行号: reference/property-declarations.md
+      - 覆盖关系与运行输入: reference/overrides.md
+      - 贴图通道与模型契约: reference/channels.md
+      - 贴图导入与绑定: reference/texture-imports.md
+      - Debug 输出: reference/debug.md
+      - 依赖接口与可复刻性: reference/dependencies.md
+      - 图片来源与比较条件: reference/images.md
+      - 历史证据与待补项: reference/evidence.md
+      - 构建、审阅与 Pages: reference/deployment.md
+      - 来源与许可: reference/credits.md
+  - 源码逐行索引:
+      - BridgetToon.shader: reference/code/BridgetToon.shader.md
+      - GGSTRegionalShading.cs: reference/code/GGSTRegionalShading.cs.md
+      - GGSTGeometryShadowMaps.cs: reference/code/GGSTGeometryShadowMaps.cs.md
+      - BridgetImitateProfile.cs: reference/code/BridgetImitateProfile.cs.md
+      - GGSTGeometryDepth.shader: reference/code/GGSTGeometryDepth.shader.md
+      - StageShadowReceiver.shader: reference/code/StageShadowReceiver.shader.md
+      - GgstDecal.shader: reference/code/GgstDecal.shader.md
+      - GgstGlow.shader: reference/code/GgstGlow.shader.md
+      - GgstShadowParked.shader: reference/code/GgstShadowParked.shader.md
