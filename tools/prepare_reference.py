@@ -102,6 +102,17 @@ def generate():
             dest.parent.mkdir(parents=True,exist_ok=True)
             shutil.copyfile(source,dest)
         shutil.copyfile(ROOT/'examples/capture/RenderingEvidenceCapture.cs',ROOT/'docs/assets/evidence/rendering-ab-20261021/capture-code.txt')
+    standing=ROOT/'evidence/standing-render-20261021/images.json'
+    if standing.exists():
+        extra=json.loads(standing.read_text(encoding='utf-8'))
+        body+='## 新增站立循环：真实Play帧及裁切\n\n本批578条记录按哈希去重为91张Unity原生PNG，另有13张同矩形原像素裁切。来源是完整工程隔离副本、Unity2022.3.62f3c1/D3D11/Linear、1600×900、HDR关闭、RT单采样。用途、Debug、姿态、重复帧与完整映射见[站立验收](standing-stability-20261021.md)和其下载清单；不与旧批次混作单变量实验。裁切来源为本批近景，固定[451,207,969,506]，518×299，无修色或重绘。\n\n'
+        body+=table(['SHA256 / 原图','类别','尺寸','用途/姿态记录数'],[[f"[{r['sha256']}](../{r['document_path'].removeprefix('docs/')})",r['kind'],'×'.join(map(str,r['size'])),len(r['uses'])] for r in extra])
+        copied.extend(extra)
+        for source in standing.parent.glob('*.json'):
+            dest=ROOT/'docs/assets/evidence/standing-render-20261021'/source.name
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(source,dest)
+        shutil.copyfile(ROOT/'examples/capture/StandingRenderStabilityCapture.cs',ROOT/'docs/assets/evidence/standing-render-20261021/capture-code.txt')
     write(REF/'images.md', body)
     write(ROOT/'docs/assets/image-provenance.json', json.dumps(copied,ensure_ascii=False,indent=2))
     tx = read_json('data/texture_import_settings.json')

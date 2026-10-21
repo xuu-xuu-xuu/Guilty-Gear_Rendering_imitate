@@ -15,3 +15,5 @@
 本轮另增14张真实Unity实验图（12张去重原生截图与2张无修饰裁切），来源为合法现有完整工程的隔离副本，登记在evidence/rendering-ab-20261021/images.json。新增Editor采集工具位于examples/capture，不冒充原资料包源码。角色形象和既有源码的上述许可边界同样适用；没有因此授予统一开源许可。
 
 技术栈使用说明参照[ MkDocs配置文档](https://www.mkdocs.org/user-guide/configuration/)、[Material设置文档](https://squidfunk.github.io/mkdocs-material/setup/)与[GitHub Pages自定义工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。它们用于站点配置，不作为当前Unity算法的证据。
+
+后续站立验收另增91张原生Unity截图及13张精确眼区裁切，来自相同完整工程隔离副本，来源/姿态/Debug/哈希登记在evidence/standing-render-20261021/images.json。仅公开渲染图和接口/哈希记录，不分发模型、贴图像素或动画。新增采集器位于examples/capture/StandingRenderStabilityCapture.cs，实际执行版本另存证据TXT；既有角色及资源权利边界继续适用，不因此授予整体开源许可证。

@@ -350,7 +350,7 @@ project_snapshot_comparison 的428文件一致，只证明磁盘采集与旧快�
 | 阴影截断/抖动/滞后 | Ready、范围、bias、调度 | 看当前帧计数、独立接收面和深度；证据不足则待补 |
 | 整图偏灰或过曝 | 环境、sRGB、ambient、额外后处理 | 1→16→17；17不是性能或曝光测量 |
 
-本轮已在完整工程隔离副本中编译并作23次静态Unity捕获；没有进入Play或重新验证站立循环。仅08/12章新实验所列条件有本轮实测；其余待补见[证据与缺口](../reference/evidence.md)，读者不能把文档构建通过转录为自己的渲染验收。''',
+静态A/B批次包含23次Unity捕获；后续站立批次真实进入Play，456条受控帧和122条正常主相机帧、13cell及8次回绕均独立登记。同姿态无额外闪变，不同姿态Step变化和5种缺失实时tick仍保留，详见[完整站立验收](../reference/standing-stability-20261021.md)。其余待补见[证据与缺口](../reference/evidence.md)，读者不能把文档构建通过转录为自己的渲染验收。''',
 '''排错顺序为环境→输入→覆盖→漫反射→高光→rim→线条→合成→站立时序。先恢复可核查基线，再改一个因素。网站严格构建、手机布局和资源白名单检查只保证教程可读与可部署。''',
 '_DebugMode _CleanShadeEnabled _FocusedShadeEnabled _FocusedSpecEnabled _ThighLobeEnabled _ReferenceRimEnabled', [('GGSTGeometryShadowMaps.cs',197,208),('BridgetToon.shader',687,693)])
 
@@ -364,7 +364,7 @@ def generate():
         if c['id'] not in CHAPTERS:
             continue
         a=CHAPTERS[c['id']]
-        body=f"# {c['id']} {c['title']}\n\n> 主体依据不可变源码与保存数据；原配图为2026-10-20历史产物。2026-10-21新增的隔离Unity静态实验单独标注，仅其所列条件已实测，其他独立练习/Play验证仍待补。\n\n"
+        body=f"# {c['id']} {c['title']}\n\n> 主体依据不可变源码与保存数据；原配图为2026-10-20历史产物。2026-10-21新增的隔离Unity静态实验单独标注，后续[站立Play验收](../reference/standing-stability-20261021.md)也单独列出；仅所列条件已实测，其他独立练习/跨环境验证仍待补。\n\n"
         body+='## 视觉问题与原理\n\n'+a['principle']+'\n\n'
         body+='## 真实效果与比较边界\n\n'
         imgs=c['images']
@@ -424,6 +424,8 @@ def generate():
             body+='## 新增：最终眼睛开关近景\n\n以下来自2026-10-21隔离副本新Unity Debug0渲染；只改站立头MPB的`_EyeRefineEnabled`，同镜头/姿态/分辨率。近景原图1600×900，以下按相同矩形[744,316,955,439]精确裁切为211×123，无缩放、修色或重绘；网页放大不修改像素。\n\n'
             body+='| OFF：0 | ON：1 |\n|---|---|\n| [![眼睛OFF局部](../assets/images/experiments/20261021/eye_off_crop.png)](../assets/images/experiments/20261021/eye_off_0.png) | [![眼睛ON局部](../assets/images/experiments/20261021/eye_on_crop.png)](../assets/images/experiments/20261021/eye_on_0.png) |\n\n'
             body+='变化3469像素，均在Debug33眼区内，区域外0变化；Debug13高光与Debug30内部线覆盖各自OFF/ON一致。结果只支持该静态条件，不证明站立循环。[完整原图、诊断、裁切与像素审计](../reference/experiments-20261021.md)。\n\n'
+        if c['id'] in {'08','09','10','11','12','14'}:
+            body+='## 新增：站立循环渲染验收\n\n[查看真实Unity逐姿态图、投影/眼睛/spec/外轮廓诊断及原始记录](../reference/standing-stability-20261021.md)。456条受控记录来自456个真实Play帧；正常播放122条、跨8次回绕。同姿态首次/下一帧与周期重复均0像素差，受控和正常播放13cell最终图相同。不同姿态有明显Step变化，不能称全程零差或绝对平滑；正常播放仍缺5种tick，HDR/MSAA及跨设备未验证。\n\n'
         body+='## 依赖及相互影响\n\n'+a['interaction']+'\n\n'
         body+='[返回章节导航](../index.md) · [章节—证据表](../reference/evidence-map.md) · [依赖接口](../reference/dependencies.md)\n'
         write(ROOT/'docs/chapters'/f"{c['id']}.md",body)

@@ -64,7 +64,8 @@ def main():
     expected={x['document_path'] for x in provenance}
     actual={p.relative_to(ROOT).as_posix() for p in (ROOT/'docs/assets/images').rglob('*') if p.is_file()}
     assert actual==expected, (actual-expected,expected-actual)
-    assert len(actual)==35
+    standing=json.loads((ROOT/'evidence/standing-render-20261021/images.json').read_text(encoding='utf-8'))
+    assert len(actual)==35+len(standing)==139
     for im in provenance:
         assert hashlib.sha256((ROOT/im['document_path']).read_bytes()).hexdigest()==im['sha256']
     md_paths=[ROOT/'README.md',ROOT/'THIRD_PARTY_NOTICES.md']+list((ROOT/'docs').rglob('*.md'))
@@ -99,6 +100,8 @@ def main():
     print(f'PASS: {count}+1 original files; {len(snippets)} verbatim excerpts; 165 declarations/defaults; 793 parameter rows vs saved JSON; 44 Debug outputs; runtime write lines; {len(actual)} exact whitelist images; {links} relative Markdown links; 15 chapters reproducible.')
     from verify_experiments import verify
     verify()
+    from verify_standing import verify as verify_standing
+    verify_standing()
 
 def suffix_safe(name):
     return Path(name).suffix in {'.md','.cs'}
