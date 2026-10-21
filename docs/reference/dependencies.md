@@ -1,35 +1,34 @@
-# 渲染接口与可复刻性
+# 连接现有渲染输入
 
-这些源码快照依赖原工程已有对象和未打包类型，**不是独立可运行包**。没有模型、纹理像素、场景/Prefab、UEOriginalActionPlayer或UEOriginalPersistentPresentation。本教程不通过重写动画、网格、骨骼或Bind Pose补齐依赖。
+Shader可以阅读和逐层练习，但三个C#渲染组件还依赖现有呈现类型。代码未包含完整场景、模型和UEOriginalActionPlayer/UEOriginalPersistentPresentation，不能把文件直接拖进空工程就开始调参。先让现有角色系统提供以下输入；适配层只负责渲染引用和参数，不改动画或网格。
 
-## 所需接口
+## 需要连接什么
 
-| 消费方 | 类型/输入 | 当前用途 | 新工程应该如何准备 |
-|---|---|---|---|
-| 主体Shader | Renderer及正确submesh材质 | Forward/Outline/ShadowCaster | 使用已有角色，不批量替换贴花/发光槽 |
-| RegionalShading | body、standingHead等SkinnedMeshRenderer | 分别写head=0/1与enable | 显式引用现有Renderer，保留已有MPB字段 |
-| RegionalShading | 现有头Transform/只读矩阵 | 原点、横轴、宽度、有效位 | 只读现有头坐标，不重建Bind Pose |
-| Profile | character、additional Renderer、root Transform | 原点、启用时高度与QualitySettings | 显式引用；了解生命周期恢复限制 |
-| GeometryShadowMaps | UEOriginalActionPlayer及nativeRendering | 获取当前实际Renderer/可见状态 | 缺原桥接需单独渲染适配层，尚未验证 |
-| GeometryShadowMaps | 现有骨盆/头坐标 | 深度图中心与回退 | 显式只读Transform，不改动画 |
-| GeometryShadowMaps | 同场景Camera/Directional Light | 投影方向、调度与恢复主相机状态 | 显式引用、确认活动状态，不跨场景误选 |
-| GeometryShadowMaps | Texture2D hairMask | 分类图R筛头发caster | 自己准备正确UV/线性R遮罩 |
-| GeometryShadowMaps | Shader depthShader | GEOMETRY_DEPTH离屏RFloat | Built-in、设备支持、名称正确 |
-| 主体及接收面Shader | 深度RT、矩阵、origin/range/forward/texel/enable | 投脸与Stage独立投影 | 成组发布，失败就禁用，不能只填一个常数 |
-| 主体Shader | Base/Sss/ILM/Detail/OLM/区域/分类纹理、顶点合同 | 颜色/信号/域/线条 | 依[02章](../chapters/02.md)与[导入表](texture-imports.md)逐项连接 |
+| 接入位置 | 类型或字段 | 应提供的现有对象 |
+|---|---|---|
+| 主体材质 | Renderer / submesh | 保留头体与辅助材质槽的角色Renderer |
+| GGSTRegionalShading | body / standingHead等 | 身体与站立头SkinnedMeshRenderer，逐个写head标志 |
+| GGSTRegionalShading | 只读头Transform / 矩阵 | 头原点、横轴、宽度；缺失时不能伪造有效位 |
+| BridgetImitateProfile | character / additional / root | 显式连接Renderer，计算原点和启用时高度 |
+| GGSTGeometryShadowMaps | p / nativeRendering | 当前实际Renderer和可见状态的提供方 |
+| GGSTGeometryShadowMaps | 只读头/骨盆坐标 | 为深度图提供正确中心，不改变Transform |
+| GGSTGeometryShadowMaps | mainCamera / lightSource | 同场景活动主相机与Directional Light |
+| GGSTGeometryShadowMaps | hairMask | 与角色UV匹配、线性采样的头发类别R通道 |
+| GGSTGeometryShadowMaps | depthShader | 支持RFloat设备上的GGSTGeometryDepth |
+| 主体/接收面Shader | 全局深度RT、VP、origin/range、forward、texel、enable | 成组发布；输入无效则禁用该自定义路径 |
 
-## 真实依赖与回退
+## 组件在哪里读取引用
 
-[GGSTRegionalShading.cs:44–54](code/GGSTRegionalShading.cs.md#l44)通过GetComponent取得UEOriginalPersistentPresentation，遍历groups和现有头节点名字解析frame。缺组件不会凭空构造头坐标；frameValid为0时旧脸部及投脸门控受影响。该方法还查其他呈现分组，本教程只讲站立分支。
+- [Regional:44–54](code/GGSTRegionalShading.cs.md#l44)通过GetComponent取得已有呈现组件，并从groups的头节点解析frame。你自己的适配层需要提供等价的只读坐标；缺坐标时frameValid保持0。
+- [GeometryShadowMaps:82–112](code/GGSTGeometryShadowMaps.cs.md#l82)解析Player、骨盆、同场景Camera/Light，depthShader可回退Shader.Find。Ready还检查nativeRendering、mask、shader和RFloat支持。
+- [159–168](code/GGSTGeometryShadowMaps.cs.md#l159)优先读取头MPB的有效原点，否则回退骨盆+0.6米或Player+1.5米。若投影中心不对，先检查输入，不把回退值当准确头坐标。
+- [255–269](code/GGSTGeometryShadowMaps.cs.md#l255)只画GGST/BridgetToonStudy的submesh，并传入材质的镜像与_MainTex_ST。
+- [Profile:25–26](code/BridgetImitateProfile.cs.md#l25)在character空时按bgt_body.001查找，rootBone空时使用Renderer.transform；自己的场景应显式连接，避免误选。
 
-[GGSTGeometryShadowMaps.cs:82–112](code/GGSTGeometryShadowMaps.cs.md#l82)解析Player、presentation、骨盆、同场景主相机/方向光，depthShader回退Shader.Find。Ready检查p.nativeRendering、场景一致性、mask、shader与RFloat支持。Visible要求Renderer.enabled、activeInHierarchy、非forceRenderingOff、有sharedMesh且同场景；不是仅看enabled。
+Visible不只看Renderer.enabled，还要求activeInHierarchy、非forceRenderingOff、有sharedMesh且属于正确场景。深度路径没有draw时，先排查这些条件。
 
-[159–168](code/GGSTGeometryShadowMaps.cs.md#l159)优先读取头Renderer MPB的有效脸原点；失败时退到已有骨盆+0.6米或Player+1.5米。回退值是代码行为，不能当准确头坐标。[255–269](code/GGSTGeometryShadowMaps.cs.md#l255)只绘制Shader名为GGST/BridgetToonStudy的submesh，并复制当前材质镜像开关和_MainTex_ST。
+## 接好以后怎么确认
 
-[BridgetImitateProfile.cs:25–26](code/BridgetImitateProfile.cs.md#l25)若character未填，会按名字bgt_body.001查找；rootBone缺失则用Renderer.transform。新工程应显式引用避免误选。additional的MPB还原限制见[覆盖附录](overrides.md)。
+先用Debug22/25确认区域和类别，再看16/13/12的着色分量，最后回0看外轮廓。逐Renderer与全局参数的区分见[参数层级](overrides.md)，投影步骤见[接入投影](../chapters/08.md)。
 
-## 移植时可做与待做
-
-可以在自己的Built-in场景阅读/练习Shader路径、制作自己的遮罩、显式连接已有Renderer/Transform/Light/Camera。通用适配器只应提供渲染输入和离屏绘制，不重写动画或网格。
-
-新增examples/capture采集器已在完整工程隔离副本编译并渲染；它调用现有呈现组件，只采集保存的站立姿态，不是通用适配器。静态MPB采样/恢复见[新证据](experiments-20261021.md)。通用适配、跨组件完整生命周期与全新空工程对照仍待补，不能承诺“复制三个脚本即可运行”。环境JSON的包清单不代表练习要安装所有MCP/Timeline等包。
+缺少上述原有类型时，需要先完成自己的渲染接口适配；仓库中的采集工具也依赖完整工程，不能作为通用适配器复制使用。环境包清单不表示必须安装MCP、Timeline等与着色无关的工具。

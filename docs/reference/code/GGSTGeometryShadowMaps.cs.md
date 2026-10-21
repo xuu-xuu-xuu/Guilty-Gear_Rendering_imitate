@@ -1,10 +1,8 @@
-# GGSTGeometryShadowMaps.cs 逐行索引
+# GGSTGeometryShadowMaps.cs
 
-原文件：`sources/GGSTGeometryShadowMaps.cs`；原工程路径：`Assets/GGST_Imitate/GeometryShadows/GGSTGeometryShadowMaps.cs`。
+按行查找正文中的函数与Pass。以下保留源码原文，属性拼写与分支顺序以此为准。代码依赖所用渲染管线及[输入连接](../dependencies.md)，不能把文件索引当作独立工程。
 
-SHA256：`25231a5685516f155eba40a5275813b529270c587622f5b9181edf7f33ee2254`。以下由原文生成，未修正拼写或分支。每行锚点用于正文核查；这是源码摘录索引，不是可直接运行工程。
-
-| 行 | 原文 |
+| 行 | 代码 |
 |---|---|
 | <a id="l1"></a>1 | <code>using System;</code> |
 | <a id="l2"></a>2 | <code>using System.Collections.Generic;</code> |

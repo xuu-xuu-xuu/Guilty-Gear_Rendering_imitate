@@ -77,6 +77,27 @@
     "text": "                half3 referenceRimColor=lerp(albedo,_ReferenceRimTint.rgb,_ReferenceRimTintMix);\n                float referenceRimLight=lerp(_ReferenceRimShadowFloor,1.0,saturate(band));\n                half3 referenceRim=referenceRimColor*referenceRimEdge*_ReferenceRimStrength*rimMaterialScale*referenceRimLight*_LightColor0.rgb;\n                rim=lerp(rim,referenceRim,saturate(_ReferenceRimEnabled)*specCoverage);\n// END GGST RIM REFINE calculations\n                half3 color=diffuse+ambient+rim+spec;"
   },
   {
+    "chapter": "08",
+    "file": "GGSTGeometryDepth.shader",
+    "start": 38,
+    "end": 46,
+    "text": "            float4 frag(f i):SV_Target\n            {\n                if(_GGSTShadowCasterHairOnly>0.5)\n                    clip(tex2D(_GGSTShadowCasterHairMask,i.uv).r-0.5);\n                // Original base alpha is encoded data (gold hair mostly 66/67),\n                // and ILM alpha is ink. Neither is used as transparency here.\n                float d=dot(i.world-_GGSTShadowCasterOriginRange.xyz,\n                            _GGSTShadowCasterForward.xyz)/max(_GGSTShadowCasterOriginRange.w,0.0001);\n                return float4(saturate(d),0,0,1);"
+  },
+  {
+    "chapter": "08",
+    "file": "BridgetToon.shader",
+    "start": 247,
+    "end": 261,
+    "text": "            float ReadHairVisibility(float3 world)\n            {\n                float4 clipSpace=mul(_HairShadowVP,float4(world,1));\n                float2 uv=clipSpace.xy/max(clipSpace.w,0.00001)*0.5+0.5;\n                float depth=dot(world-_HairShadowOriginRange.xyz,_HairShadowForward.xyz)/max(_HairShadowOriginRange.w,0.00001);\n                float inside=step(0,uv.x)*step(uv.x,1)*step(0,uv.y)*step(uv.y,1)*step(0,depth)*step(depth,1);\n                float bias=_HairFaceShadowBias/max(_HairShadowOriginRange.w,0.00001);\n                float visibility=0;\n                [unroll] for(int x=-1;x<=1;x++)\n                [unroll] for(int y=-1;y<=1;y++)\n                {\n                    float stored=tex2D(_HairShadowDepth,uv+float2(x,y)*_HairShadowTexel.xy*_HairFaceShadowFilter).r;\n                    visibility+=step(depth-bias,stored);\n                }\n                return lerp(1.0,visibility/9.0,inside*saturate(_HairShadowEnabled));"
+  },
+  {
+    "chapter": "08",
+    "file": "StageShadowReceiver.shader",
+    "start": 80,
+    "end": 88,
+    "text": "                fixed atten = SHADOW_ATTENUATION(i);\n// BEGIN GGST SHADOW REFINEMENT stage independent projection\n                if(_StageShadowEnabled>0.5)atten=GeometryStageVisibility(i.worldPos);\n// END GGST SHADOW REFINEMENT stage independent projection\n                fixed u = saturate(i.pos.x / _ScreenParams.x);\n                fixed falloff = lerp(1.0 - _GradientStrength, 1.0, u);\n                fixed3 c = _Color.rgb * atten * falloff;\n                UNITY_APPLY_FOG(i.fogCoord, c);\n                return fixed4(c, 1);"
+  },
+  {
     "chapter": "05",
     "file": "BridgetToon.shader",
     "start": 386,
@@ -119,25 +140,32 @@
     "text": "                half3 cleanClothDark=lerp(albedo,sss*_ShadowTint.rgb,_ShadowIntensity);\n                half3 cleanFace=lerp(faceDiffuseDark,albedo,cleanFaceBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanFaceBand),saturate(_PaletteEnabled));\n                half3 cleanSkin=lerp(skinDark,albedo,cleanSkinBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanSkinBand),saturate(_PaletteEnabled));\n                half3 cleanSleeve=lerp(sleeveDark,albedo,cleanSleeveBand)*lerp(float3(1,1,1),lerp(_PaletteSleeveDark.rgb,_PaletteSleeveLight.rgb,cleanSleeveBand),saturate(_PaletteEnabled));\n                half3 cleanTunic=lerp(cleanClothDark,albedo,cleanTunicBand)*lerp(float3(1,1,1),lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,cleanTunicBand),saturate(_PaletteEnabled));\n                half3 cleanCloth=lerp(cleanClothDark,albedo,cleanClothBand);\n                half3 cleanDiffuse=(cleanFace*faceRegionMask+cleanSkin*bodySkinRegion+cleanSleeve*sleeveRegion+cleanTunic*tunicRegion+cleanCloth*cleanOtherCloth)/max(cleanTotal,0.0001)*_LightColor0.rgb*_LightIntensity;\n                diffuse=lerp(diffuse,cleanDiffuse,saturate(_CleanShadeEnabled)*cleanCoverage);"
   },
   {
-    "chapter": "08",
-    "file": "GGSTGeometryDepth.shader",
-    "start": 38,
-    "end": 46,
-    "text": "            float4 frag(f i):SV_Target\n            {\n                if(_GGSTShadowCasterHairOnly>0.5)\n                    clip(tex2D(_GGSTShadowCasterHairMask,i.uv).r-0.5);\n                // Original base alpha is encoded data (gold hair mostly 66/67),\n                // and ILM alpha is ink. Neither is used as transparency here.\n                float d=dot(i.world-_GGSTShadowCasterOriginRange.xyz,\n                            _GGSTShadowCasterForward.xyz)/max(_GGSTShadowCasterOriginRange.w,0.0001);\n                return float4(saturate(d),0,0,1);"
-  },
-  {
-    "chapter": "08",
+    "chapter": "12",
     "file": "BridgetToon.shader",
-    "start": 247,
-    "end": 261,
-    "text": "            float ReadHairVisibility(float3 world)\n            {\n                float4 clipSpace=mul(_HairShadowVP,float4(world,1));\n                float2 uv=clipSpace.xy/max(clipSpace.w,0.00001)*0.5+0.5;\n                float depth=dot(world-_HairShadowOriginRange.xyz,_HairShadowForward.xyz)/max(_HairShadowOriginRange.w,0.00001);\n                float inside=step(0,uv.x)*step(uv.x,1)*step(0,uv.y)*step(uv.y,1)*step(0,depth)*step(depth,1);\n                float bias=_HairFaceShadowBias/max(_HairShadowOriginRange.w,0.00001);\n                float visibility=0;\n                [unroll] for(int x=-1;x<=1;x++)\n                [unroll] for(int y=-1;y<=1;y++)\n                {\n                    float stored=tex2D(_HairShadowDepth,uv+float2(x,y)*_HairShadowTexel.xy*_HairFaceShadowFilter).r;\n                    visibility+=step(depth-bias,stored);\n                }\n                return lerp(1.0,visibility/9.0,inside*saturate(_HairShadowEnabled));"
+    "start": 337,
+    "end": 353,
+    "text": "                float2 eyePixel=float2(i.uv.x*2048.0,(1.0-i.uv.y)*2048.0);\n                float eyeHead=saturate(_EyeRefineEnabled)*saturate(_RegionalHead);\n                float2 eyeSmallQ=(eyePixel-float2(960.0,64.0))/float2(34.0,34.0);\n                float2 eyeLargeQ=(eyePixel-float2(1152.0,130.0))/float2(104.0,100.0);\n                float eyeSmallDisk=EyeDisk(eyeSmallQ);\n                float eyeLargeDisk=EyeDisk(eyeLargeQ);\n                float eyeSmallPupil=smoothstep(1.10,1.24,length((eyePixel-float2(960.0,64.0))/float2(13.0,13.0)));\n                float eyeLargePupil=smoothstep(1.10,1.24,length((eyePixel-float2(1152.0,129.0))/float2(29.0,35.0)));\n                // Bounded original teal chroma protects black pupils/ink and\n                // authored white glints, including compressed texture edges.\n                float eyeChroma=smoothstep(0.015,0.055,min(base.g,base.b)-base.r);\n                float eyeIrisMask=saturate(eyeSmallDisk+eyeLargeDisk)*eyeSmallPupil*eyeLargePupil*eyeChroma*eyeHead;\n                float2 eyeQ=lerp(eyeSmallQ,eyeLargeQ,step(1020.0,eyePixel.x));\n                float eyeUp=-eyeQ.y; // PNG y increases downwards.\n                float eyeUpper=smoothstep(-0.20,0.55,eyeUp);\n                float eyeLower=(1.0-smoothstep(-0.35,0.40,eyeUp))*(1.0-smoothstep(0.75,1.0,length(eyeQ)));\n                float eyeEdge=smoothstep(0.56,0.94,length(eyeQ));"
   },
   {
-    "chapter": "08",
-    "file": "StageShadowReceiver.shader",
-    "start": 80,
-    "end": 88,
-    "text": "                fixed atten = SHADOW_ATTENUATION(i);\n// BEGIN GGST SHADOW REFINEMENT stage independent projection\n                if(_StageShadowEnabled>0.5)atten=GeometryStageVisibility(i.worldPos);\n// END GGST SHADOW REFINEMENT stage independent projection\n                fixed u = saturate(i.pos.x / _ScreenParams.x);\n                fixed falloff = lerp(1.0 - _GradientStrength, 1.0, u);\n                fixed3 c = _Color.rgb * atten * falloff;\n                UNITY_APPLY_FOG(i.fogCoord, c);\n                return fixed4(c, 1);"
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 361,
+    "end": 362,
+    "text": "                float eyeAuthoredGlint=saturate(EyeDisk((eyePixel-float2(938.7075,48.0896))/float2(12.0,12.0))+EyeDisk((eyePixel-float2(983.5789,85.5))/float2(8.5,8.5)));\n                float eyeCatchMask=eyeAuthoredGlint*smoothstep(0.85,0.97,min(base.r,min(base.g,base.b)))*eyeHead;"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 521,
+    "end": 529,
+    "text": "// BEGIN GGST EYE REFINEMENT diffuse layers\n                half3 eyeBeforeDiffuse=diffuse;\n                float eyeDepth=saturate(_EyeIrisUpperDepth*eyeUpper+_EyeIrisEdgeDepth*eyeEdge);\n                diffuse*=1.0-eyeIrisMask*eyeDepth;\n                // Reuse the original iris hue and the same lit/shadow band.\n                // No emission or time-driven sparkle is introduced.\n                diffuse+=albedo*half3(0.70,1.0,0.92)*_LightColor0.rgb*_LightIntensity*band*eyeIrisMask*eyeLower*_EyeIrisLowerLift;\n                diffuse*=lerp(half3(1,1,1),half3(0.70,0.85,1.0),eyeScleraMask*_EyeScleraShade);\n                half3 eyeDiffuseDelta=diffuse-eyeBeforeDiffuse;"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 654,
+    "end": 657,
+    "text": "// BEGIN GGST EYE REFINEMENT authored catchlight clarity\n                half3 eyeBeforeCatch=color;\n                half3 eyeCatchTarget=max(color,base*_LightColor0.rgb*_LightIntensity);\n                color=lerp(color,eyeCatchTarget,saturate(_EyeCatchlightLift)*eyeCatchMask);"
   },
   {
     "chapter": "09",
@@ -175,6 +203,13 @@
     "text": "                float4 focusedClasses=specClass*float4(1,1,1.0-faceRegionMask,1);\n                float focusedSpecCoverage=saturate(dot(focusedClasses,float4(1,1,1,1)));\n                half3 focusedOldSpec=(shineHair*focusedClasses.r+shineCloth*focusedClasses.g+shineSkin*focusedClasses.b+shineMetal*focusedClasses.a)*_LightColor0.rgb*band;\n                half3 focusedNewSpec=(shineHair*_FocusedHairGain*focusedClasses.r+shineCloth*_FocusedClothGain*focusedClasses.g+focusedSkinShine*focusedClasses.b+shineMetal*_FocusedMetalGain*focusedClasses.a)*_LightColor0.rgb*focusedSpecBand;\n                spec+=(focusedNewSpec-focusedOldSpec)*saturate(_FocusedSpecEnabled);"
   },
   {
+    "chapter": "13",
+    "file": "BridgetToon.shader",
+    "start": 616,
+    "end": 623,
+    "text": "                float rimAA=max(fwidth(nv)*0.65,0.008);\n                float referenceRimEdge=1.0-smoothstep(_ReferenceRimWidth-rimAA,_ReferenceRimWidth+rimAA,nv);\n                float rimMaterialScale=dot(specClass,_ReferenceRimMaterial)/max(specCoverage,0.0001);\n                rimMaterialScale*=lerp(1.0,_ReferenceRimFaceScale,faceRegionMask);\n                half3 referenceRimColor=lerp(albedo,_ReferenceRimTint.rgb,_ReferenceRimTintMix);\n                float referenceRimLight=lerp(_ReferenceRimShadowFloor,1.0,saturate(band));\n                half3 referenceRim=referenceRimColor*referenceRimEdge*_ReferenceRimStrength*rimMaterialScale*referenceRimLight*_LightColor0.rgb;\n                rim=lerp(rim,referenceRim,saturate(_ReferenceRimEnabled)*specCoverage);"
+  },
+  {
     "chapter": "11",
     "file": "BridgetToon.shader",
     "start": 635,
@@ -194,41 +229,6 @@
     "start": 774,
     "end": 789,
     "text": "            half4 fragOutline(f i):SV_Target\n            {\n                clip(_OutlineWidth-0.001); clip(0.5-_DebugMode);\n                half3 map=tex2D(_OutlineMap,i.uv).rgb;\n// BEGIN GGST LINE REFINEMENT contour ink\n                if(_LineRefineEnabled>0.5)\n                {\n                    float4 contourClass=saturate(tex2D(_FourMaterialSpecMask,i.uv));\n                    float contourTotal=dot(contourClass,float4(1,1,1,1));\n                    half3 materialInk=(_LineHairInk.rgb*contourClass.r+_LineClothInk.rgb*contourClass.g+\n                        _LineSkinInk.rgb*contourClass.b+_LineMetalInk.rgb*contourClass.a)/max(contourTotal,0.0001);\n                    // OLM is authored sRGB color, not an alpha width mask.\n                    // Retain its black/gray region distinction in the new tint.\n                    materialInk*=lerp(0.78,1.0,saturate(map.r/0.03310477));\n                    half3 originalInk=lerp(_OutlineColor.rgb,map,_OutlineMapStrength);\n                    return half4(lerp(originalInk,materialInk,saturate(contourTotal)*saturate(_LineContourTintMix)),1);"
-  },
-  {
-    "chapter": "12",
-    "file": "BridgetToon.shader",
-    "start": 337,
-    "end": 353,
-    "text": "                float2 eyePixel=float2(i.uv.x*2048.0,(1.0-i.uv.y)*2048.0);\n                float eyeHead=saturate(_EyeRefineEnabled)*saturate(_RegionalHead);\n                float2 eyeSmallQ=(eyePixel-float2(960.0,64.0))/float2(34.0,34.0);\n                float2 eyeLargeQ=(eyePixel-float2(1152.0,130.0))/float2(104.0,100.0);\n                float eyeSmallDisk=EyeDisk(eyeSmallQ);\n                float eyeLargeDisk=EyeDisk(eyeLargeQ);\n                float eyeSmallPupil=smoothstep(1.10,1.24,length((eyePixel-float2(960.0,64.0))/float2(13.0,13.0)));\n                float eyeLargePupil=smoothstep(1.10,1.24,length((eyePixel-float2(1152.0,129.0))/float2(29.0,35.0)));\n                // Bounded original teal chroma protects black pupils/ink and\n                // authored white glints, including compressed texture edges.\n                float eyeChroma=smoothstep(0.015,0.055,min(base.g,base.b)-base.r);\n                float eyeIrisMask=saturate(eyeSmallDisk+eyeLargeDisk)*eyeSmallPupil*eyeLargePupil*eyeChroma*eyeHead;\n                float2 eyeQ=lerp(eyeSmallQ,eyeLargeQ,step(1020.0,eyePixel.x));\n                float eyeUp=-eyeQ.y; // PNG y increases downwards.\n                float eyeUpper=smoothstep(-0.20,0.55,eyeUp);\n                float eyeLower=(1.0-smoothstep(-0.35,0.40,eyeUp))*(1.0-smoothstep(0.75,1.0,length(eyeQ)));\n                float eyeEdge=smoothstep(0.56,0.94,length(eyeQ));"
-  },
-  {
-    "chapter": "12",
-    "file": "BridgetToon.shader",
-    "start": 361,
-    "end": 362,
-    "text": "                float eyeAuthoredGlint=saturate(EyeDisk((eyePixel-float2(938.7075,48.0896))/float2(12.0,12.0))+EyeDisk((eyePixel-float2(983.5789,85.5))/float2(8.5,8.5)));\n                float eyeCatchMask=eyeAuthoredGlint*smoothstep(0.85,0.97,min(base.r,min(base.g,base.b)))*eyeHead;"
-  },
-  {
-    "chapter": "12",
-    "file": "BridgetToon.shader",
-    "start": 521,
-    "end": 529,
-    "text": "// BEGIN GGST EYE REFINEMENT diffuse layers\n                half3 eyeBeforeDiffuse=diffuse;\n                float eyeDepth=saturate(_EyeIrisUpperDepth*eyeUpper+_EyeIrisEdgeDepth*eyeEdge);\n                diffuse*=1.0-eyeIrisMask*eyeDepth;\n                // Reuse the original iris hue and the same lit/shadow band.\n                // No emission or time-driven sparkle is introduced.\n                diffuse+=albedo*half3(0.70,1.0,0.92)*_LightColor0.rgb*_LightIntensity*band*eyeIrisMask*eyeLower*_EyeIrisLowerLift;\n                diffuse*=lerp(half3(1,1,1),half3(0.70,0.85,1.0),eyeScleraMask*_EyeScleraShade);\n                half3 eyeDiffuseDelta=diffuse-eyeBeforeDiffuse;"
-  },
-  {
-    "chapter": "12",
-    "file": "BridgetToon.shader",
-    "start": 654,
-    "end": 657,
-    "text": "// BEGIN GGST EYE REFINEMENT authored catchlight clarity\n                half3 eyeBeforeCatch=color;\n                half3 eyeCatchTarget=max(color,base*_LightColor0.rgb*_LightIntensity);\n                color=lerp(color,eyeCatchTarget,saturate(_EyeCatchlightLift)*eyeCatchMask);"
-  },
-  {
-    "chapter": "13",
-    "file": "BridgetToon.shader",
-    "start": 616,
-    "end": 623,
-    "text": "                float rimAA=max(fwidth(nv)*0.65,0.008);\n                float referenceRimEdge=1.0-smoothstep(_ReferenceRimWidth-rimAA,_ReferenceRimWidth+rimAA,nv);\n                float rimMaterialScale=dot(specClass,_ReferenceRimMaterial)/max(specCoverage,0.0001);\n                rimMaterialScale*=lerp(1.0,_ReferenceRimFaceScale,faceRegionMask);\n                half3 referenceRimColor=lerp(albedo,_ReferenceRimTint.rgb,_ReferenceRimTintMix);\n                float referenceRimLight=lerp(_ReferenceRimShadowFloor,1.0,saturate(band));\n                half3 referenceRim=referenceRimColor*referenceRimEdge*_ReferenceRimStrength*rimMaterialScale*referenceRimLight*_LightColor0.rgb;\n                rim=lerp(rim,referenceRim,saturate(_ReferenceRimEnabled)*specCoverage);"
   },
   {
     "chapter": "14",

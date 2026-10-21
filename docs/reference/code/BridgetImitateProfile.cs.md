@@ -1,10 +1,8 @@
-# BridgetImitateProfile.cs 逐行索引
+# BridgetImitateProfile.cs
 
-原文件：`sources/BridgetImitateProfile.cs`；原工程路径：`Assets/GGST_Imitate/BridgetImitateProfile.cs`。
+按行查找正文中的函数与Pass。以下保留源码原文，属性拼写与分支顺序以此为准。代码依赖所用渲染管线及[输入连接](../dependencies.md)，不能把文件索引当作独立工程。
 
-SHA256：`4638fa68ef2ae7d4eba5174b361512e17fd92215bab42adb9f28fbc20de48666`。以下由原文生成，未修正拼写或分支。每行锚点用于正文核查；这是源码摘录索引，不是可直接运行工程。
-
-| 行 | 原文 |
+| 行 | 代码 |
 |---|---|
 | <a id="l1"></a>1 | <code>using UnityEngine;</code> |
 | <a id="l2"></a>2 | <code></code> |
