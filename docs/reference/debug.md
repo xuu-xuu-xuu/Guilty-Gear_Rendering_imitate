@@ -1,12 +1,14 @@
 # 选择Debug分量排查画面
 
-先选能隔离问题的分量，检查完恢复0。面板范围是0–24，frag支持1–44；高编号通过材质或MPB的SetFloat赋值。下面是API调用示意，不是完整组件：
+先选能隔离问题的分量，检查完恢复0。面板范围是0–24，frag支持1–44；高编号通过材质或MPB的SetFloat赋值。需要可操作入口时，先按[Debug窗口安装与使用](practice.md)选择实际练习材质，Apply一个编号，保持该值回Game观察，结束后再单独Return to Debug 0。
+
+下面只是已有代码中的API调用示意，变量material需先指向实际材质；不是完整组件，尚未在Unity验证：
 
 ```csharp
 material.SetFloat("_DebugMode", 44f);
-// 查看后恢复最终画面
-material.SetFloat("_DebugMode", 0f);
 ```
+
+不要在这次调用后立刻紧接SetFloat(0)，否则看不到44的画面。看完后在另一次操作中设置0；若MPB覆盖了同名字段，需要先处理对应写入者。
 
 | 要看什么 | 编号 | 注意 |
 |---|---|---|

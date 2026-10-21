@@ -10,6 +10,8 @@
 
 源码不包含完整工程和角色资源。接入自己的模型前，先准备[贴图/UV/顶点输入](docs/reference/channels.md)和[Renderer/Transform/Light/Camera接口](docs/reference/dependencies.md)。眼睛、胸前衣料和大腿使用图集专用坐标，换UV要重新标定；普通网格切线不能直接当作平滑描边法线。
 
-从[准备环境](docs/chapters/01.md)开始，按首页路线逐步实现。需要查值时查看[材质参数](docs/reference/parameters.md)，画面不符合预期时先用[Debug分量](docs/reference/debug.md)隔离问题，再按[站立排错步骤](docs/chapters/14.md)定位。
+先按[开始调参](docs/reference/practice.md)复制并分配练习材质、准备Debug入口，再从[准备环境](docs/chapters/01.md)按首页路线实现。每章说明操作位置、临时试值、预期与恢复方法。需要查值时查看[材质参数](docs/reference/parameters.md)，画面不符合预期时先用[Debug分量](docs/reference/debug.md)隔离问题，再按[站立排错步骤](docs/chapters/14.md)定位。
+
+未附独立同条件截图的参数试验依据源码说明预期，尚未在Unity逐项验证；新增Debug窗口也尚未在Unity编译或运行验证。缺少原有呈现类型或专用UV时，先按依赖和输入页限定可练范围，不能将Shader快照当作完整工程。
 
 源码、角色截图和第三方依赖各有使用边界，见[来源说明](THIRD_PARTY_NOTICES.md)。

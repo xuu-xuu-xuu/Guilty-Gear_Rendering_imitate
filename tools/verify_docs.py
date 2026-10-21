@@ -93,7 +93,7 @@ def main():
         assert not process.search(prose),f'Process prose in reader page: {path}'
     for number in write_chapters.ORDER:
         body=(ROOT/'docs/chapters'/f'{number}.md').read_text(encoding='utf-8')
-        for heading in ['准备输入','操作步骤','原理与代码位置','画面判断与排错']:
+        for heading in ['准备输入','在哪里操作','操作步骤','原理与代码位置','画面判断与排错']:
             assert f'## {heading}' in body,(number,heading)
     # The tracked additions are restricted to documentation/config/build tools.
     tracked=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT).decode().split('\0')
@@ -104,12 +104,16 @@ def main():
             continue
         if name.startswith('examples/capture/') and suffix_safe(name):
             continue
+        if name=='examples/editor/RenderingTutorialDebugWindow.cs':
+            continue
         suffix=Path(name).suffix.lower()
         if suffix=='.png':
             assert name in expected, f'Image outside whitelist: {name}'
         else:
             assert suffix in {'.md','.py','.json','.yml','.txt','.css','.gitignore'},f'Unexpected asset/type: {name}'
-    print(f'PASS: {count}+1 original files; {len(snippets)} verbatim excerpts; 165 declarations/defaults; 793 parameter rows vs saved JSON; 44 Debug outputs; runtime write lines; {len(actual)} exact whitelist images; {links} relative Markdown links; 15 chapters reproducible.')
+    teaching=ROOT/'examples/editor/RenderingTutorialDebugWindow.cs'
+    assert teaching.read_bytes()==(ROOT/'docs/assets/examples/RenderingTutorialDebugWindow.cs.txt').read_bytes(), 'Teaching download differs from example'
+    print(f'PASS: {count}+1 original files; {len(snippets)} verbatim excerpts; 165 declarations/defaults; 793 parameter rows vs saved JSON; 44 Debug outputs; runtime write lines; {len(actual)} exact whitelist images; {links} relative Markdown links; 15 chapters reproducible; teaching download byte-identical (no Unity compile claim).')
     from verify_experiments import verify
     verify()
     from verify_standing import verify as verify_standing

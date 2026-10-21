@@ -13,10 +13,14 @@
 
 ## MPB怎么接
 
+普通材质Inspector看不到MPB。先按[操作入口与来源读取](practice.md)定位实际Renderer、材质槽和写入组件，再执行下面步骤；不要对不存在的MPB字段读取0后误判生效值。
+
 1. 为每个目标Renderer保留已有材质槽。
 2. 写自己的字段前调用GetPropertyBlock，写完调用SetPropertyBlock，不要用空MPB清掉其他组件的数据。
 3. Regional的strength=1时，_RegionalEnabled被写为1；body的head=0，standingHead的head=1。材质保存的0不能用来判断运行分区关闭。
 4. 从已有头Transform获得原点、横轴和宽度；有效时才写_FaceFrameValid=1。MPB没有覆盖某字段时使用材质值，GetFloat对缺失字段返回0不等于实际着色输入为0。
+
+若同一Renderer还存在材质槽级MPB，先采用该槽的块，Renderer级块不与它逐字段混合；该块内未覆盖字段才回退材质值。原Regional和Profile写的是Renderer级块，所以新增材质槽MPB可能让它们的输入看似消失。优先改已有写入者的同一作用域，不临时创建更高优先级的空块来试值。
 
 [GGSTRegionalShading.cs:23–66](code/GGSTRegionalShading.cs.md#l23)给出了读坐标和写字段的位置。横轴宽度为max(axis.magnitude×0.083084,0.001)。[Profile:25–42](code/BridgetImitateProfile.cs.md#l25)在启用时计算bounds高度和相对root的底部偏移，之后更新原点；height不是每帧变化的动画高度。
 

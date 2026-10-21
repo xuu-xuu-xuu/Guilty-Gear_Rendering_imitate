@@ -66,10 +66,12 @@ def generate():
     meta={r['id']:r for r in json.loads((ROOT/'tools/chapter_map.json').read_text(encoding='utf-8'))}
     mp=rows('data/material_parameters.csv');excerpts=[]
     by={(r['material'],r['property']):r for r in mp}
+    declarations={r['property']:r for r in rows('data/shader_properties.csv') if r['shader'].endswith('/BridgetToon.shader')}
     for number in ORDER:
         c=meta[number];a=CHAPTERS[number]
         body=f"# {c['title']}\n\n{a['problem']}\n\n"+figures(number)
         body+='## 准备输入\n\n'+a['inputs']+'\n\n'
+        body+='## 在哪里操作\n\n'+a['workspace']+'\n\n'
         body+='## 操作步骤\n\n'+a['steps']+'\n\n'
         body+='## 原理与代码位置\n\n'+a['principle']+'\n\n'
         for name,start,end in c['refs']:
@@ -89,8 +91,11 @@ def generate():
                 entries=[by[(material,prop)] for material in MATERIALS]
                 values=[compact(x['savedValue']) if x['savedPresent']=='True' else '未保存' for x in entries]
                 current=values[0] if len(set(values))==1 else '；'.join(f'{label}={v}' for label,v in zip(SHORT,values))
-                data.append([prop,entries[0]['type'],compact(entries[0]['shaderDefault']),current,purpose])
-            body+=table(['属性','类型','Shader默认','材质设置','作用'],data)
+                declaration=declarations[prop]
+                source=(PACK/'sources/BridgetToon.shader').read_text(encoding='utf-8-sig').splitlines()[int(declaration['line'])-1]
+                label=declaration['label']+('（隐藏；连接层写入）' if '[HideInInspector]' in source else '')
+                data.append([prop,label,entries[0]['type'],compact(entries[0]['shaderDefault']),current,purpose])
+            body+=table(['属性','Inspector名称','类型','Shader默认','材质设置','作用'],data)
         body+='## 画面判断与排错\n\n'+a['troubleshoot']+'\n\n'
         index=ORDER.index(number);links=[]
         if index:links.append(f"[上一步：{meta[ORDER[index-1]]['title']}]({ORDER[index-1]}.md)")

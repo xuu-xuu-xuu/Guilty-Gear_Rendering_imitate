@@ -55,13 +55,15 @@ def generate():
     debug=rows('data/debug_outputs.csv')
     body='''# 选择Debug分量排查画面
 
-先选能隔离问题的分量，检查完恢复0。面板范围是0–24，frag支持1–44；高编号通过材质或MPB的SetFloat赋值。下面是API调用示意，不是完整组件：
+先选能隔离问题的分量，检查完恢复0。面板范围是0–24，frag支持1–44；高编号通过材质或MPB的SetFloat赋值。需要可操作入口时，先按[Debug窗口安装与使用](practice.md)选择实际练习材质，Apply一个编号，保持该值回Game观察，结束后再单独Return to Debug 0。
+
+下面只是已有代码中的API调用示意，变量material需先指向实际材质；不是完整组件，尚未在Unity验证：
 
 ```csharp
 material.SetFloat("_DebugMode", 44f);
-// 查看后恢复最终画面
-material.SetFloat("_DebugMode", 0f);
 ```
+
+不要在这次调用后立刻紧接SetFloat(0)，否则看不到44的画面。看完后在另一次操作中设置0；若MPB覆盖了同名字段，需要先处理对应写入者。
 
 | 要看什么 | 编号 | 注意 |
 |---|---|---|
@@ -81,6 +83,10 @@ material.SetFloat("_DebugMode", 0f);
 '''
     body+=table(['编号','源码返回值','位置'],[[r['mode'],r['expression'],f"[BridgetToon.shader:{r['line']}](code/BridgetToon.shader.md#l{r['line']})"] for r in debug])
     write(REF/'debug.md',body)
+    teaching=ROOT/'examples/editor/RenderingTutorialDebugWindow.cs'
+    target=ROOT/'docs/assets/examples/RenderingTutorialDebugWindow.cs.txt'
+    target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(teaching,target)
     tx=read_json('data/texture_import_settings.json')
     tx={k:v for k,v in tx.items() if not Path(k).name.startswith('BGTW_')}
     body='''# 贴图连接与导入设置

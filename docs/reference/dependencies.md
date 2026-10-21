@@ -1,6 +1,16 @@
 # 连接现有渲染输入
 
-Shader可以阅读和逐层练习，但三个C#渲染组件还依赖现有呈现类型。代码未包含完整场景、模型和UEOriginalActionPlayer/UEOriginalPersistentPresentation，不能把文件直接拖进空工程就开始调参。先让现有角色系统提供以下输入；适配层只负责渲染引用和参数，不改动画或网格。
+Shader可以阅读和逐层练习，但三个C#组件中的Regional与GeometryShadowMaps依赖未随包提供的呈现类型；Profile只依赖UnityEngine和显式对象引用。代码未包含完整场景、模型和UEOriginalActionPlayer/UEOriginalPersistentPresentation，不能把全部文件直接拖进空工程就开始调参。先让现有角色系统提供以下输入；适配层只负责渲染引用和参数，不改动画或网格。
+
+## 独立工程先做什么
+
+1. 使用已有角色能正常显示的Built-in练习工程，先确认Console没有编译错误，再导入所需Shader。主体选择`GGST/BridgetToonStudy`，接收面选择`GGST/StageShadowReceiver`；仍需自己的模型和贴图。
+2. 不要在缺少UEOriginalActionPlayer/UEOriginalPersistentPresentation时直接导入依赖它们的Regional与GeometryShadowMaps脚本，否则会阻止项目脚本编译。不要通过新建同名空类消掉报错；空引用不能生成坐标或深度输入。
+3. `BridgetImitateProfile`本身只使用UnityEngine，可以单独阅读和接入。显式连接Character和Additional，实际root取character.rootBone，空时用character.transform；组件没有独立Root字段。
+4. 没有现成连接层时，先做纹理与基础明暗。自己的渲染连接层可按下表提供静态/动态输入，但本教程没有已在新工程验证的通用桥接实现；深度图、动态脸坐标不在“只导入Shader”这条路线内。
+5. 在原有完整呈现类型确实存在的练习副本中，Regional挂在已有Presentation所在对象上；GeometryShadowMaps挂在已有Player对象上，显式填写Camera、Light、Mask、Shader，不依赖场景中的第一个同名对象。对应[操作入口](practice.md)给出材质、Debug与只读状态查询方法。
+
+从这里继续前，先区分“Shader已经显示自己的模型”与“原项目所有渲染输入都已接通”。缺少深度生成或动态坐标时，保留限制说明，不把普通Unity影子或材质默认向量当成接通证据。
 
 ## 需要连接什么
 

@@ -16,6 +16,8 @@
 
 Markdown正文、生成工具和`examples/capture/`中的采集器用于阅读、操作说明及证据复核，未擅自指定统一的开源许可。采集器依赖完整工程原有呈现组件，不是通用角色渲染适配器。
 
+`examples/editor/`中的Debug窗口是新增教学示例，区别于原始资料源码。它尚未在Unity编译或运行验证，只提供材质Debug设置与只读参数/状态查询，不包含模型、纹理或呈现桥接。
+
 ## 构建依赖
 
 MkDocs、Material for MkDocs、Python依赖及GitHub Actions分别适用其自身许可；这些许可不扩展到角色素材和渲染截图。具体使用版本见`requirements-docs.txt`与工作流配置。
