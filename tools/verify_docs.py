@@ -64,7 +64,7 @@ def main():
     expected={x['document_path'] for x in provenance}
     actual={p.relative_to(ROOT).as_posix() for p in (ROOT/'docs/assets/images').rglob('*') if p.is_file()}
     assert actual==expected, (actual-expected,expected-actual)
-    assert len(actual)==21
+    assert len(actual)==35
     for im in provenance:
         assert hashlib.sha256((ROOT/im['document_path']).read_bytes()).hexdigest()==im['sha256']
     md_paths=[ROOT/'README.md',ROOT/'THIRD_PARTY_NOTICES.md']+list((ROOT/'docs').rglob('*.md'))
@@ -89,12 +89,19 @@ def main():
             continue
         if name in {'.gitignore','.gitattributes'}:
             continue
+        if name.startswith('examples/capture/') and suffix_safe(name):
+            continue
         suffix=Path(name).suffix.lower()
         if suffix=='.png':
             assert name in expected, f'Image outside whitelist: {name}'
         else:
             assert suffix in {'.md','.py','.json','.yml','.txt','.css','.gitignore'},f'Unexpected asset/type: {name}'
     print(f'PASS: {count}+1 original files; {len(snippets)} verbatim excerpts; 165 declarations/defaults; 793 parameter rows vs saved JSON; 44 Debug outputs; runtime write lines; {len(actual)} exact whitelist images; {links} relative Markdown links; 15 chapters reproducible.')
+    from verify_experiments import verify
+    verify()
+
+def suffix_safe(name):
+    return Path(name).suffix in {'.md','.cs'}
 
 if __name__=='__main__':
     main()

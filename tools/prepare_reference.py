@@ -41,11 +41,11 @@ def verify_pack():
 def generate():
     count = verify_pack()
     matrix = json.loads((ROOT/'tools/chapter_map.json').read_text(encoding='utf-8'))
-    body = '# 章节、源码与证据对应表\n\n此表先于正文建立。行号指资料包快照的物理行；参数表是磁盘保存值，运行规则是源码推导，图片与播放结论来自 2026-10-20 历史产物。后续检查仅验证文档与快照对应，不是 Unity 复测。\n\n'
+    body = '# 章节、源码与证据对应表\n\n此表先于初版正文建立。行号指原资料快照；参数表是磁盘保存值，运行规则是源码推导。原图与播放报告来自2026-10-20；[新增实验](experiments-20261021.md)为2026-10-21隔离副本的真实Unity静态渲染，不能扩展为Play或全新工程复刻验证。\n\n'
     body += table(['章节', '源码位置', '参数来源', '效果图', '验证证据与限制'], [
         [f"{c['id']} {c['title']}", '; '.join(f"{r[0]}:{r[1]}–{r[2]}" for r in c['refs']), c['parameters'], ', '.join(c['images']) or '待补专用诊断图', c['evidence']] for c in matrix])
     body += f'完整性基线：MANIFEST 覆盖 {count} 个文件；MANIFEST 自身是第 58 个文件，不能自证哈希，由 Git 基线及原 ZIP 逐字节比较补足。\n\n'
-    body += '## 核实后的说明差异\n\n- notes/06_gpt_handoff.txt 要求先交示范章确认；本次用户明确要求直接完成全套，按本次请求执行。\n- notes/01_inventory.txt 的“12 个材质”对应 materials_saved.json；material_parameters.csv 只有 10 个有已声明属性的材质、793 行，不能把没有属性的辅助材质虚构成完整参数行。\n- notes 的执行顺序把外轮廓放在最后，适合作为阅读概览；源码实际是独立 OUTLINE Pass，SHADOWCASTER 由 Unity 阴影调度，不能当作 frag 内的末尾语句。\n- notes 称环境为 4× MSAA：这是活动 Profile 写入值和 Ultra 保存档，并非每个质量档都相同。\n- notes 的“分区开启”是源码规则与 strength=1 的组合推断；本次没有采样运行中 MPB。\n- 保存场景部分 Prefab fileID 未解析；历史 Renderer 列表可交叉参照，不能据此宣称已还原当前实例。\n- BGTW_ilm 的 sRGB=1 保留为事实，不能推广为推荐设置。\n- shade_after 与 thigh_before 哈希相同；这是同一历史画面复用，不能当成两次独立验证。\n'
+    body += '## 核实后的说明差异\n\n- notes/06_gpt_handoff.txt 要求先交示范章确认；本次用户明确要求直接完成全套，按本次请求执行。\n- notes/01_inventory.txt 的“12 个材质”对应 materials_saved.json；material_parameters.csv 只有 10 个有已声明属性的材质、793 行，不能把没有属性的辅助材质虚构成完整参数行。\n- notes 的执行顺序把外轮廓放在最后，适合作为阅读概览；源码实际是独立 OUTLINE Pass，SHADOWCASTER 由 Unity 阴影调度，不能当作 frag 内的末尾语句。\n- notes 称环境为 4× MSAA：这是活动 Profile 写入值和 Ultra 保存档，并非每个质量档都相同。\n- notes 的“分区开启”是源码规则与 strength=1 的组合推断；原资料采集未采样运行中MPB；本轮隔离副本静态采样另见新增实验。\n- 保存场景部分 Prefab fileID 未解析；历史 Renderer 列表可交叉参照，不能据此宣称已还原当前实例。\n- BGTW_ilm 的 sRGB=1 保留为事实，不能推广为推荐设置。\n- shade_after 与 thigh_before 哈希相同；这是同一历史画面复用，不能当成两次独立验证。\n'
     write(REF/'evidence-map.md', body)
     for source in rows('data/source_index.csv'):
         name = Path(source['package']).name
@@ -72,7 +72,7 @@ def generate():
     write(REF/'debug.md', '# Debug 输出索引\n\n面板 Range(0,24)，frag 实现 1–44；0 返回最终颜色。独立练习副本中可通过 Material.SetFloat("_DebugMode", 44f) 设置，使用后恢复 0。该调用仅示意 API，不是完整脚本，也未在 Unity 验证。Debug 会裁掉 OUTLINE Pass。\n\n10 是旧 band，16 是经过重建后的 diffuse；19/20 的诊断项未接入最终颜色。26–29 不包含最后 Focused/Thigh 修正，要看 13。32 是早期 hairFaceOcclusion，不能证明最终 CleanShade 漫反射仍含投脸。35/36 也是替换前的旧脸部贡献。43 为替换域，44 为域内形状与朝向门控，两者均没有乘 _ThighLobeEnabled，不能仅凭其非黑判断最终开关。\n\n'+table(list(debug[0]),[[r[k] for k in debug[0]] for r in debug]))
     images = read_json('data/images_manifest.json')
     copied = []
-    body = '# 图片来源与比较条件\n\n全部 21 张图片仅从 images_manifest.json 白名单逐字节复制，无裁切、修饰或生成。点击图片可查看原尺寸。`project/` 为原工程历史验收，`stages/` 为独立演示副本历史渲染，均不是本次新截图。\n\n'
+    body = '# 图片来源与比较条件\n\n原有21张图片仅从不可变资料包的images_manifest.json复制，均为历史产物。新增14张图片（12张去重后的Unity原生PNG、2张无修饰裁切）单独登记在evidence/rendering-ab-20261021/images.json，详见[新实验](experiments-20261021.md)。两份清单分开维护，原资料包不变；本文不将新图冒充原白名单旧图。\n\n'
     body += '9 张阶段图固定镜头与站立 cell 00，累计效果；刻意去掉角色投影，投影矩阵 m00/m11 ×0.94，4K 描边像素宽度 ×2。原工程保存宽度仍为 0.8/0，不能抄成 1.6/0。阶段图彼此可解释累计变化，不能证明每个参数独立影响，更不能与 project 图作单变量 A/B。\n\n'
     for im in images:
         dest = ROOT/'docs/assets'/im['path']
@@ -91,6 +91,17 @@ def generate():
         else:
             body+='诊断或效果展示；清单未给出同条件单变量对照，不擅自配对。\n'
         body+=f"- SHA256：`{im['sha256']}`。\n\n"
+    supplemental=ROOT/'evidence/rendering-ab-20261021/images.json'
+    if supplemental.exists():
+        body+='## 2026-10-21新增实验登记\n\n下表每一行是一个实际捕获或裁切记录；重复帧和相同结果按哈希复用同一个PNG，原生23次捕获只存12张不同PNG，加2张裁切。来源为当前完整工程的隔离副本，Edit已保存站立姿态，不是原工程历史图或4K演示图。HDR关闭、RT单采样，与旧图的抗锯齿条件不同，不跨批次做A/B。\n\n'
+        extra=json.loads(supplemental.read_text(encoding='utf-8'))
+        body+=table(['记录','文档图片','Debug','唯一变量','数值','裁切'],[[r['record'],r['document_path'],r['debug'],r['variable'],r['value'],r.get('cropBoxXYXY','无')] for r in extra])
+        copied.extend(extra)
+        for source in supplemental.parent.glob('*.json'):
+            dest=ROOT/'docs/assets/evidence/rendering-ab-20261021'/source.name
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(source,dest)
+        shutil.copyfile(ROOT/'examples/capture/RenderingEvidenceCapture.cs',ROOT/'docs/assets/evidence/rendering-ab-20261021/capture-code.txt')
     write(REF/'images.md', body)
     write(ROOT/'docs/assets/image-provenance.json', json.dumps(copied,ensure_ascii=False,indent=2))
     tx = read_json('data/texture_import_settings.json')

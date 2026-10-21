@@ -12,4 +12,6 @@
 
 没有附入或下载模型、原始纹理、自制遮罩像素、动画、骨骼、Bind Pose、控制器、AssetBundle、PAK、音乐、视频或参考视频帧。图片副本逐字节核对，来源映射在docs/assets/image-provenance.json。
 
+本轮另增14张真实Unity实验图（12张去重原生截图与2张无修饰裁切），来源为合法现有完整工程的隔离副本，登记在evidence/rendering-ab-20261021/images.json。新增Editor采集工具位于examples/capture，不冒充原资料包源码。角色形象和既有源码的上述许可边界同样适用；没有因此授予统一开源许可。
+
 技术栈使用说明参照[ MkDocs配置文档](https://www.mkdocs.org/user-guide/configuration/)、[Material设置文档](https://squidfunk.github.io/mkdocs-material/setup/)与[GitHub Pages自定义工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。它们用于站点配置，不作为当前Unity算法的证据。

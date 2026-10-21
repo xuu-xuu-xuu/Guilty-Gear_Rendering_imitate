@@ -4,7 +4,7 @@
 
 ![原工程历史最终效果](docs/assets/images/project/final.png)
 
-原工程历史验收，2026-10-20，非Debug，含投影；来源 `thigh_highlight_20261020/verified_play_2.png`。此图是效果展示，没有同条件开关配对；与无投影独立4K副本构图/线宽不同，不能直接做单变量A/B。本次未打开Unity或重新播放。
+原工程历史验收，2026-10-20，非Debug，含投影；来源 `thigh_highlight_20261020/verified_play_2.png`。此图没有同条件开关配对，与4K副本不能直接作单变量A/B。新采集的[投影与眼睛实测](docs/reference/experiments-20261021.md)单独登记，未重做Play或站立循环。
 
 ## 阅读入口与范围
 
@@ -22,6 +22,8 @@
 01–04建立环境/输入/覆盖与执行顺序 → 05–07明暗和配色 → 08–10阴影及质感 → 11–13线条、眼睛与rim → 14静态分量与站立循环检查。章节顺序与Shader计算顺序分别说明。
 
 完整参数账本、44种Debug输出、9份源码逐行索引、21张图片来源均在[核查附录](docs/index.md)。原始 [rendering-tutorial-source-pack/](rendering-tutorial-source-pack/) 保持字节不变，不自动授予整体MIT等许可证；见[来源和第三方内容说明](THIRD_PARTY_NOTICES.md)。
+
+2026-10-21新增：隔离完整工程中的23次真实Unity静态捕获，按哈希去重为12张原生PNG，另有2张无修饰眼睛裁切。墙/地接收单属性A/B、最终眼睛开关近景与重复帧/局部性已有实测；[新增采集器](examples/capture/README.md)和独立证据目录随PR提交，原始资料不变。通用适配、新模型/UV与Play稳定性仍待补。
 
 ## 本地预览与检查
 

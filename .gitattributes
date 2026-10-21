@@ -4,6 +4,8 @@
 *.css text eol=lf
 tools/*.json text eol=lf
 docs/assets/*.json text eol=lf
+examples/capture/*.cs text eol=lf
+docs/assets/evidence/**/*.txt text eol=lf
 requirements-docs.txt text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf

@@ -1,0 +1,239 @@
+{
+  "sceneFingerprintUnchanged": true,
+  "projectionModeRestored": true,
+  "projectionMaxDifference": 0.0,
+  "targetRestored": true,
+  "aaRestored": true,
+  "hdrRestored": true,
+  "casterFlagsRestored": true,
+  "restoredInputs": [
+    {
+      "renderer": "bgt_full_bundle_09/bgt_body.001",
+      "enabled": true,
+      "forceRenderingOff": false,
+      "active": true,
+      "regionalEnabled": 1.0,
+      "regionalHead": 0.0,
+      "faceFrameValid": 1.0,
+      "eyeOverride": false,
+      "eyeValue": 0.0,
+      "debugOverride": false,
+      "debug": 0.0,
+      "materials": [
+        {
+          "name": "Base_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BaseSecondary_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BodyBaseFlip_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 0.0,
+          "clean": 1.0,
+          "hairStrength": 0.75
+        },
+        {
+          "name": "BodyDecal_Imitate",
+          "shader": "GGST/DecalX2Multiply",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadDecal_Imitate",
+          "shader": "GGST/DecalX2Multiply",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadGlow_Imitate",
+          "shader": "GGST/GlowBase",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "ShadowGeometryParked_Imitate",
+          "shader": "GGST/NativeShadowGeometryParked",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "CoatExterior_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 0.0,
+          "clean": 1.0,
+          "hairStrength": 0.75
+        }
+      ]
+    },
+    {
+      "renderer": "bgt_full_bundle_09/Original_Stand_HeadLow_UserRender",
+      "enabled": true,
+      "forceRenderingOff": false,
+      "active": true,
+      "regionalEnabled": 1.0,
+      "regionalHead": 1.0,
+      "faceFrameValid": 1.0,
+      "eyeOverride": false,
+      "eyeValue": 0.0,
+      "debugOverride": false,
+      "debug": 0.0,
+      "materials": [
+        {
+          "name": "Base_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BaseSecondary_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "ShadowGeometryParked_Imitate",
+          "shader": "GGST/NativeShadowGeometryParked",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "ShadowGeometryParked_Imitate",
+          "shader": "GGST/NativeShadowGeometryParked",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        }
+      ]
+    },
+    {
+      "renderer": "bgt_full_bundle_09/bgt_body/G_body_root/G_pelvis/G_waist/G_stomach/G_chest/G_neck/G_Head_Attach/GGST_FaceRig/bgt_head_high.001",
+      "enabled": false,
+      "forceRenderingOff": false,
+      "active": true,
+      "regionalEnabled": 1.0,
+      "regionalHead": 1.0,
+      "faceFrameValid": 1.0,
+      "eyeOverride": false,
+      "eyeValue": 0.0,
+      "debugOverride": false,
+      "debug": 0.0,
+      "materials": [
+        {
+          "name": "Base_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BaseSecondary_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BodyBaseFlip_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 0.0,
+          "clean": 1.0,
+          "hairStrength": 0.75
+        },
+        {
+          "name": "BodyDecal_Imitate",
+          "shader": "GGST/DecalX2Multiply",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadDecal_Imitate",
+          "shader": "GGST/DecalX2Multiply",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadGlow_Imitate",
+          "shader": "GGST/GlowBase",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        }
+      ]
+    },
+    {
+      "renderer": "bgt_full_bundle_09/bgt_body/G_body_root/G_pelvis/G_waist/G_stomach/G_chest/G_neck/G_Head_Attach/GGST_HairSourceRig/bgt_head_high.001",
+      "enabled": false,
+      "forceRenderingOff": false,
+      "active": true,
+      "regionalEnabled": 1.0,
+      "regionalHead": 1.0,
+      "faceFrameValid": 1.0,
+      "eyeOverride": false,
+      "eyeValue": 0.0,
+      "debugOverride": false,
+      "debug": 0.0,
+      "materials": [
+        {
+          "name": "Base_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "BaseSecondary_Imitate",
+          "shader": "GGST/BridgetToonStudy",
+          "eye": 1.0,
+          "clean": 1.0,
+          "hairStrength": 0.0
+        },
+        {
+          "name": "ShadowGeometryParked_Imitate",
+          "shader": "GGST/NativeShadowGeometryParked",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "ShadowGeometryParked_Imitate",
+          "shader": "GGST/NativeShadowGeometryParked",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadDecal_Imitate",
+          "shader": "GGST/DecalX2Multiply",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        },
+        {
+          "name": "HeadGlow_Imitate",
+          "shader": "GGST/GlowBase",
+          "eye": -1.0,
+          "clean": -1.0,
+          "hairStrength": -1.0
+        }
+      ]
+    }
+  ]
+}
