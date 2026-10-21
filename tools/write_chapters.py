@@ -23,7 +23,7 @@ chapter('00', '''画面首先要读得出角色，再读得出材质。当前实
 4. 按 14 章进行静态分层及站立循环检查；将未完成项保留为待补，而不是用历史通过替代。''',
 '''先将原工程历史最终画面与无投影的 4K 副本当作两种展示条件阅读。两图构图、投影和线宽不同，不能据差异计算某个参数的效果。后续独立练习需要自己建立同镜头、同姿势、同资源的比较集。
 
-常见错误是以“模型看起来像”替代参数和输入核对，或以网站构建通过宣称渲染复刻通过。本次只检查文档，不启动 Unity。待补：全新工程中的编译、资源连接与渲染验收。''',
+常见错误是以“模型看起来像”替代参数和输入核对，或以网站构建通过宣称渲染复刻通过。2026-10-21已补充完整工程隔离副本的静态Unity渲染实验；全新空工程的编译、资源连接及渲染验收仍待补。''',
 '''学习顺序是问题驱动；真实执行顺序见 04。所有章节均受 02 的数据契约和 03 的运行覆盖约束。主要开关在四主体材质均保存为 1，但 Shader 默认大多为 0，不能把“新建同名材质”视为现有最终配置。''',
 '_CleanShadeEnabled _FocusedShadeEnabled _FocusedSpecEnabled _PaletteEnabled _FourMaterialSpecEnabled _ThighLobeEnabled _ReferenceRimEnabled', [('BridgetToon.shader',189,203)])
 
@@ -113,7 +113,7 @@ Properties 的 _DebugMode 仍为 Range(0,24)，frag 将 _DebugMode+0.5 转 int �
 5. 恢复全部练习开关；不要用阶段图反推每个临时材质值，包内没有完整逐阶段临时配置。''',
 '''正确的排查应能指出最后一层覆盖。最终分类区 rim 看 _ReferenceRim*；最终腿部高光看 Focused 与 Thigh，而非只看 _SpecularPower。19/20 的 taste/regional 诊断明确未接入最终颜色。
 
-阶段08是完整累计示意，不证明执行顺序；顺序证据来自代码。待补：同条件逐开关分量对照和 Unity Frame Debugger 捕获；本次没有执行 GPU 或编译 Shader。''',
+阶段08是完整累计示意，不证明执行顺序；顺序证据来自代码。新增隔离实验已执行当前Shader编译与真实GPU渲染，覆盖08/12章部分静态条件；逐开关全部分量对照和Unity Frame Debugger捕获仍待补。''',
 '''CleanShade=1 只在 cleanCoverage 内替换，不删除全画面后备；FocusedShade 在此基础上用差值改局部；FocusedSpec 的受光带重算可绕过旧投影 band；ReferenceRim 仍用旧 band 的 shadow floor。内部线最终压在高光/rim 之上，眼睛原白点恢复在墨线之后。''',
 '_CleanShadeEnabled _FocusedShadeEnabled _FocusedSpecEnabled _ThighLobeEnabled _ReferenceRimEnabled _DebugMode', [('BridgetToon.shader',495,501),('BridgetToon.shader',605,609),('BridgetToon.shader',620,625)])
 
@@ -213,7 +213,7 @@ GGSTGeometryShadowMaps 在 onPreCull 构建命令，挂到 BeforeForwardOpaque �
 3. 将头发与 Stage 两路开关分开记录。在固定姿势/相机下只切 drawStageCasters，查看接收面影子；回到角色漫反射看是否独立。
 4. 若研究投脸，先在练习副本隔离 CleanShade 覆盖，再比较 _HairFaceShadowStrength；同时记录 frameValid 与脸遮罩，不能用已被替换的早期输出解释最终图。
 5. 按米理解 bias，先调覆盖范围、近远范围和接收位置，再小幅调偏移/过滤。恢复原练习基线后进行站立循环检查。''',
-'''本章仅配原工程 final 含投影效果图，不把无投影阶段图伪装为 OFF 图。待补：最终材质下、同相机同姿势的 Stage 开关 A/B、hair 深度/visibility、内置自阴影与 CleanShade 覆盖的独立对照。
+'''原工程final含投影图仍只作历史效果展示；下方新增实验已补齐墙/地接收单属性A/B、Stage caster回退路径对照和最终配置投脸零差异。仍待补：其他姿态下的hair visibility/内置自阴影及CleanShade组合，不拿无投影阶段图伪装OFF。
 
 影子错位先核矩阵/纹理坐标和 target 恢复；贴面黑斑查 bias；悬空查 bias 过大；投影截断查范围；跳动查记录时序与 texel 对齐。历史截图不含足够深度图诊断，不能确认每种设备都稳定。''',
 '''_ReceiveShadowStrength 属于旧角色 band，_HairFaceShadowStrength 属于早期脸 diffuse，Stage receiver 独立控制背景。FocusedSpec 会重算不含旧 projected 的受光项，而 ReferenceRim 保留旧 band 的阴面权重。修改一条阴影路径后应分别观察16/13/12及接收面。''',
@@ -299,7 +299,7 @@ chapter('12', '''眼睛只需小幅上暗下亮、边缘层次和原白点清晰
 5. 换模型时先用自己的遮罩或重新定位数据构建练习方案，明确它是新适配，尚未经本工程验证。''',
 '''eye_regions 是历史Debug33，face是历史最终脸部近景；两者是诊断/效果图，不能写成效果开关A/B。阶段06→07同条件累计但变化细微，可点击原尺寸查看，不据微小差异夸大结论。
 
-待补：最终版本同姿势局部开/关近景。本教程没有裁图或修饰；若后续裁切应标明原图及矩形位置。若瞳孔发亮，先查色度/瞳孔保护和sRGB；若整个脸改变，先查head和UV域。''',
+已补齐最终版本同姿势开关近景及精确裁切，见下方新实验；裁切不缩放/修饰，并标明原图和[744,316,955,439]矩形。其他姿态、UV与设备仍待补。若瞳孔发亮，先查色度/瞳孔保护和sRGB；若整个脸改变，先查head和UV域。''',
 '''眼睛漫反射细化在CleanShade/Focused之后，原白点恢复在线条之后；眼睛不应被材质分类错误覆盖。其提亮仍用旧band，因此Debug10与16边界差异也可能影响观察。''',
 '_Eye _RegionalHead', [('BridgetToon.shader',337,353),('BridgetToon.shader',361,362),('BridgetToon.shader',521,529),('BridgetToon.shader',654,657)])
 
@@ -350,7 +350,7 @@ project_snapshot_comparison 的428文件一致，只证明磁盘采集与旧快�
 | 阴影截断/抖动/滞后 | Ready、范围、bias、调度 | 看当前帧计数、独立接收面和深度；证据不足则待补 |
 | 整图偏灰或过曝 | 环境、sRGB、ambient、额外后处理 | 1→16→17；17不是性能或曝光测量 |
 
-本次没有进入Unity、没有运行Shader编译或站立播放。待补列表见[证据与缺口](../reference/evidence.md)，读者不能把文档构建通过转录为自己的渲染验收。''',
+本轮已在完整工程隔离副本中编译并作23次静态Unity捕获；没有进入Play或重新验证站立循环。仅08/12章新实验所列条件有本轮实测；其余待补见[证据与缺口](../reference/evidence.md)，读者不能把文档构建通过转录为自己的渲染验收。''',
 '''排错顺序为环境→输入→覆盖→漫反射→高光→rim→线条→合成→站立时序。先恢复可核查基线，再改一个因素。网站严格构建、手机布局和资源白名单检查只保证教程可读与可部署。''',
 '_DebugMode _CleanShadeEnabled _FocusedShadeEnabled _FocusedSpecEnabled _ThighLobeEnabled _ReferenceRimEnabled', [('GGSTGeometryShadowMaps.cs',197,208),('BridgetToon.shader',687,693)])
 
@@ -364,7 +364,7 @@ def generate():
         if c['id'] not in CHAPTERS:
             continue
         a=CHAPTERS[c['id']]
-        body=f"# {c['id']} {c['title']}\n\n> 本章依据磁盘源码与保存数据解释当前实现。所有配图均为 2026-10-20 历史产物；操作与预期供独立练习，尚未在本次 Unity 运行验证。\n\n"
+        body=f"# {c['id']} {c['title']}\n\n> 主体依据不可变源码与保存数据；原配图为2026-10-20历史产物。2026-10-21新增的隔离Unity静态实验单独标注，仅其所列条件已实测，其他独立练习/Play验证仍待补。\n\n"
         body+='## 视觉问题与原理\n\n'+a['principle']+'\n\n'
         body+='## 真实效果与比较边界\n\n'
         imgs=c['images']
@@ -415,6 +415,15 @@ def generate():
         body+=table(['属性','类型','默认','B 保存','S 保存','F 保存','C 保存'],selected)
         body+='## 独立练习的操作步骤\n\n'+a['steps']+'\n\n'
         body+='## 如何验收与排错\n\n'+a['verify']+'\n\n'
+        if c['id']=='08':
+            body+='## 新增：真实Unity单变量对照\n\n墙与地面分别只改一个Renderer MPB的`_GeometryShadowFloor`，保持相机、姿态、材质、caster及深度图不变；不是同时关闭全部阴影。以下均为2026-10-21隔离副本新渲染，非Debug，同条件A/B。\n\n'
+            body+='| 墙面接收OFF：1 | 墙面接收ON：0.1 |\n|---|---|\n| ![墙面OFF](../assets/images/experiments/20261021/wall_receiver_off.png) | ![墙面ON](../assets/images/experiments/20261021/floor_receiver_on.png) |\n\n'
+            body+='| 地面接收OFF：1 | 地面接收ON：0.08 |\n|---|---|\n| ![地面OFF](../assets/images/experiments/20261021/floor_receiver_off.png) | ![地面ON](../assets/images/experiments/20261021/floor_receiver_on.png) |\n\n'
+            body+='ON图是相同基线，按哈希共用文件；不是误配图。墙/地分别变化113785/9097像素，重复帧0差异。关闭drawStageCasters会回退内置阴影，不能称“无投影”；最终投脸caster实验0像素差异也原样保留。[查看完整条件、源码和原始证据](../reference/experiments-20261021.md)。\n\n'
+        if c['id']=='12':
+            body+='## 新增：最终眼睛开关近景\n\n以下来自2026-10-21隔离副本新Unity Debug0渲染；只改站立头MPB的`_EyeRefineEnabled`，同镜头/姿态/分辨率。近景原图1600×900，以下按相同矩形[744,316,955,439]精确裁切为211×123，无缩放、修色或重绘；网页放大不修改像素。\n\n'
+            body+='| OFF：0 | ON：1 |\n|---|---|\n| [![眼睛OFF局部](../assets/images/experiments/20261021/eye_off_crop.png)](../assets/images/experiments/20261021/eye_off_0.png) | [![眼睛ON局部](../assets/images/experiments/20261021/eye_on_crop.png)](../assets/images/experiments/20261021/eye_on_0.png) |\n\n'
+            body+='变化3469像素，均在Debug33眼区内，区域外0变化；Debug13高光与Debug30内部线覆盖各自OFF/ON一致。结果只支持该静态条件，不证明站立循环。[完整原图、诊断、裁切与像素审计](../reference/experiments-20261021.md)。\n\n'
         body+='## 依赖及相互影响\n\n'+a['interaction']+'\n\n'
         body+='[返回章节导航](../index.md) · [章节—证据表](../reference/evidence-map.md) · [依赖接口](../reference/dependencies.md)\n'
         write(ROOT/'docs/chapters'/f"{c['id']}.md",body)

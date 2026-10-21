@@ -1,0 +1,223 @@
+{
+  "schema": "rendering-evidence-pixels-v1",
+  "passed": true,
+  "scope": "fixed saved standing pose; same-call isolated Unity renders, not animation playback or performance tests",
+  "pairs": {
+    "wall": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 113785,
+      "changedBBoxXYXY": [
+        408,
+        167,
+        837,
+        824
+      ],
+      "maxChannelDifference": 106,
+      "meanAbsoluteRGB": 7.357551388888889,
+      "a": "wall_receiver_off",
+      "b": "wall_receiver_on",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "wallRepeat": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "wall_receiver_on",
+      "b": "wall_receiver_on_repeat",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "floor": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 9097,
+      "changedBBoxXYXY": [
+        469,
+        824,
+        910,
+        891
+      ],
+      "maxChannelDifference": 123,
+      "meanAbsoluteRGB": 0.6923590277777777,
+      "a": "floor_receiver_off",
+      "b": "floor_receiver_on",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "floorRepeat": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "floor_receiver_on",
+      "b": "floor_receiver_on_repeat",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "stageCasterFallback": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 130546,
+      "changedBBoxXYXY": [
+        408,
+        164,
+        924,
+        892
+      ],
+      "maxChannelDifference": 112,
+      "meanAbsoluteRGB": 5.270136111111111,
+      "a": "stage_casters_off",
+      "b": "stage_casters_on",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": false
+    },
+    "eye0": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 3469,
+      "changedBBoxXYXY": [
+        760,
+        332,
+        939,
+        423
+      ],
+      "maxChannelDifference": 24,
+      "meanAbsoluteRGB": 0.006777314814814815,
+      "a": "eye_off_0",
+      "b": "eye_on_0",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eye13": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "eye_off_13",
+      "b": "eye_on_13",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eye30": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "eye_off_30",
+      "b": "eye_on_30",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eye33": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 3866,
+      "changedBBoxXYXY": [
+        760,
+        332,
+        939,
+        423
+      ],
+      "maxChannelDifference": 255,
+      "meanAbsoluteRGB": 0.2226546296296296,
+      "a": "eye_off_33",
+      "b": "eye_on_33",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eye34": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 3554,
+      "changedBBoxXYXY": [
+        760,
+        332,
+        939,
+        423
+      ],
+      "maxChannelDifference": 106,
+      "meanAbsoluteRGB": 0.06726319444444444,
+      "a": "eye_off_34",
+      "b": "eye_on_34",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eyeRepeat": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "eye_on_0",
+      "b": "eye_on_0_repeat",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": true
+    },
+    "eyeLocality": {
+      "changedOutsideDebug33Coverage": 0,
+      "debug33CoveragePixels": 3866
+    },
+    "hair0": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "hair_casters_off_0",
+      "b": "hair_casters_on_0",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": false
+    },
+    "hair32": {
+      "dimensions": [
+        1600,
+        900
+      ],
+      "changedPixels": 0,
+      "changedBBoxXYXY": null,
+      "maxChannelDifference": 0,
+      "meanAbsoluteRGB": 0.0,
+      "a": "hair_casters_off_32",
+      "b": "hair_casters_on_32",
+      "sameProjectionViewPoseAndDebug": true,
+      "depthMapsIdentical": false
+    }
+  }
+}

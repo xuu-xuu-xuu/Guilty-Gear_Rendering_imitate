@@ -1,6 +1,6 @@
 # 图片来源与比较条件
 
-全部 21 张图片仅从 images_manifest.json 白名单逐字节复制，无裁切、修饰或生成。点击图片可查看原尺寸。`project/` 为原工程历史验收，`stages/` 为独立演示副本历史渲染，均不是本次新截图。
+原有21张图片仅从不可变资料包的images_manifest.json复制，均为历史产物。新增14张图片（12张去重后的Unity原生PNG、2张无修饰裁切）单独登记在evidence/rendering-ab-20261021/images.json，详见[新实验](experiments-20261021.md)。两份清单分开维护，原资料包不变；本文不将新图冒充原白名单旧图。
 
 9 张阶段图固定镜头与站立 cell 00，累计效果；刻意去掉角色投影，投影矩阵 m00/m11 ×0.94，4K 描边像素宽度 ×2。原工程保存宽度仍为 0.8/0，不能抄成 1.6/0。阶段图彼此可解释累计变化，不能证明每个参数独立影响，更不能与 project 图作单变量 A/B。
 
@@ -234,3 +234,35 @@
 - Debug：否。
 - 比较条件：同镜头、同姿势累计阶段；已知差异为效果组累计及副本构图/投影/线宽。
 - SHA256：`53188076162ec25dbb144778103aa79ea804c5cfafb622d71b1ea218b50c1b48`。
+
+## 2026-10-21新增实验登记
+
+下表每一行是一个实际捕获或裁切记录；重复帧和相同结果按哈希复用同一个PNG，原生23次捕获只存12张不同PNG，加2张裁切。来源为当前完整工程的隔离副本，Edit已保存站立姿态，不是原工程历史图或4K演示图。HDR关闭、RT单采样，与旧图的抗锯齿条件不同，不跨批次做A/B。
+
+| 记录 | 文档图片 | Debug | 唯一变量 | 数值 | 裁切 |
+|---|---|---|---|---|---|
+| floor_receiver_off | docs/assets/images/experiments/20261021/floor_receiver_off.png | 0 | _GeometryShadowFloor@GGST_Floor_ShadowReceiver | 1 | 无 |
+| floor_receiver_on | docs/assets/images/experiments/20261021/floor_receiver_on.png | 0 | _GeometryShadowFloor@GGST_Floor_ShadowReceiver | 0.08 | 无 |
+| floor_receiver_on_repeat | docs/assets/images/experiments/20261021/floor_receiver_on.png | 0 | _GeometryShadowFloor@GGST_Floor_ShadowReceiver | 0.08 | 无 |
+| wall_receiver_off | docs/assets/images/experiments/20261021/wall_receiver_off.png | 0 | _GeometryShadowFloor@GGST_Wall_ShadowReceiver | 1 | 无 |
+| wall_receiver_on | docs/assets/images/experiments/20261021/floor_receiver_on.png | 0 | _GeometryShadowFloor@GGST_Wall_ShadowReceiver | 0.1 | 无 |
+| wall_receiver_on_repeat | docs/assets/images/experiments/20261021/floor_receiver_on.png | 0 | _GeometryShadowFloor@GGST_Wall_ShadowReceiver | 0.1 | 无 |
+| stage_casters_off | docs/assets/images/experiments/20261021/stage_casters_off.png | 0 | drawStageCasters | False | 无 |
+| stage_casters_on | docs/assets/images/experiments/20261021/floor_receiver_on.png | 0 | drawStageCasters | True | 无 |
+| eye_off_0 | docs/assets/images/experiments/20261021/eye_off_0.png | 0 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 0 | 无 |
+| eye_off_13 | docs/assets/images/experiments/20261021/eye_off_13.png | 13 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 0 | 无 |
+| eye_off_30 | docs/assets/images/experiments/20261021/eye_off_30.png | 30 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 0 | 无 |
+| eye_off_33 | docs/assets/images/experiments/20261021/eye_off_33.png | 33 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 0 | 无 |
+| eye_off_34 | docs/assets/images/experiments/20261021/eye_off_33.png | 34 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 0 | 无 |
+| eye_on_0 | docs/assets/images/experiments/20261021/eye_on_0.png | 0 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| eye_on_13 | docs/assets/images/experiments/20261021/eye_off_13.png | 13 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| eye_on_30 | docs/assets/images/experiments/20261021/eye_off_30.png | 30 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| eye_on_33 | docs/assets/images/experiments/20261021/eye_on_33.png | 33 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| eye_on_34 | docs/assets/images/experiments/20261021/eye_on_34.png | 34 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| eye_on_0_repeat | docs/assets/images/experiments/20261021/eye_on_0.png | 0 | _EyeRefineEnabled@Original_Stand_HeadLow_UserRender | 1 | 无 |
+| hair_casters_off_0 | docs/assets/images/experiments/20261021/hair_casters_off_0.png | 0 | drawHairCasters | False | 无 |
+| hair_casters_off_32 | docs/assets/images/experiments/20261021/eye_off_33.png | 32 | drawHairCasters | False | 无 |
+| hair_casters_on_0 | docs/assets/images/experiments/20261021/hair_casters_off_0.png | 0 | drawHairCasters | True | 无 |
+| hair_casters_on_32 | docs/assets/images/experiments/20261021/eye_off_33.png | 32 | drawHairCasters | True | 无 |
+| eye_off_crop | docs/assets/images/experiments/20261021/eye_off_crop.png | 0 | _EyeRefineEnabled@standingHead | 0 | [744, 316, 955, 439] |
+| eye_on_crop | docs/assets/images/experiments/20261021/eye_on_crop.png | 0 | _EyeRefineEnabled@standingHead | 1 | [744, 316, 955, 439] |
