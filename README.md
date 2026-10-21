@@ -10,7 +10,7 @@
 
 - **[教程首页与00–14章导航](docs/index.md)**：GitHub内直接阅读，同一Markdown用于网站。
 - [先看章节—证据表](docs/reference/evidence-map.md)，再看[参数/覆盖](docs/reference/overrides.md)、[输入契约](docs/reference/channels.md)。
-- [Pages配置与部署说明](docs/reference/deployment.md)：已启用GitHub Actions来源；教程尚未上线（2026-10-21核实HTTP404）。[已配置的Pages地址](https://xuu-xuu-xuu.github.io/Guilty-Gear_Rendering_imitate/)等待PR合并后首次部署，实际可用状态以部署成功并访问核实为准。
+- **[在线教程](https://xuu-xuu-xuu.github.io/Guilty-Gear_Rendering_imitate/)**：PR #1已于2026-10-21合并，GitHub Pages首次部署成功。[Pages配置与部署说明](docs/reference/deployment.md)记录检查范围与后续发布方法。
 - 适用记录：Unity **2022.3.62f3c1、Built-in、Linear**。默认读者已有模型、贴图与正常站立动画。
 
 范围仅限渲染：两段式明暗、分区和配色、阴影路径、材质及大腿高光、线条、眼睛、边缘光和站立渲染稳定性。没有解包、骨骼修复、动画移植、Bind Pose或控制器重建内容。

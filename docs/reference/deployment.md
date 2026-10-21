@@ -1,6 +1,6 @@
 # 构建、审阅与 GitHub Pages
 
-本交付通过分支和Pull Request供审阅，不自动合并。2026-10-21已用GitHub API将本仓库Pages设为 `build_type=workflow`，API核实成功；实际项目地址当前返回HTTP404，**教程尚未上线**，等待PR审阅合并后的首次部署。
+2026-10-21，用户审阅后授权合并[PR #1](https://github.com/xuu-xuu-xuu/Guilty-Gear_Rendering_imitate/pull/1)，已合并到main；[首次Pages工作流](https://github.com/xuu-xuu-xuu/Guilty-Gear_Rendering_imitate/actions/runs/39539662171)的build/deploy均成功，**教程已上线**。Pages使用 `build_type=workflow`，网站地址见下文。
 
 ## 两条工作流
 
@@ -16,7 +16,7 @@ PR构建产物是静态文件，不是公开预览URL；下载后在目录运行
 3. 如github-pages环境有保护规则，按仓库已有流程批准该次部署。若Actions被仓库策略禁用，先由有权限者启用相应工作流。
 4. 以deploy-pages输出的page_url为实际发布地址，访问首页、章节和图片核实成功；在此之前不把配置地址当作已经上线。
 
-配置的预期地址为 [GitHub Pages项目地址](https://xuu-xuu-xuu.github.io/Guilty-Gear_Rendering_imitate/)，这是仓库命名决定的**目标地址**，当前审阅版不声称可访问。site_url仅用于正确生成项目路径和元数据。
+实际网站为 [Unity罪恶装备风格角色渲染复刻](https://xuu-xuu-xuu.github.io/Guilty-Gear_Rendering_imitate/)。site_url用于正确生成项目路径和元数据；已访问线上首页，初次PR审阅时的HTTP404状态已结束。
 
 操作依据[GitHub官方自定义工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。主题配置参照[Material设置](https://squidfunk.github.io/mkdocs-material/setup/)，严格校验参照[MkDocs配置](https://www.mkdocs.org/user-guide/configuration/)。
 
@@ -52,8 +52,8 @@ python -m mkdocs serve
 | 构建产物 | 5968个本地链接/资源/锚点检查通过，235条搜索索引；普通页相对资源，404页使用正确项目前缀 |
 | 桌面/手机 | Chrome155，1440×1000与390×844，分别检查首页、10章、参数附录、源码索引；无文档横向溢出、坏图或JS/HTTP错误；表格单独横向滚动；大腿中文搜索与手机抽屉导航通过 |
 | 人工看图 | 实看桌面章节/参数表、手机首页/参数表截图，确认文字、并排/堆叠图片与表格可读；截图仅作本地QA，不混入渲染图片白名单 |
-| Pages状态 | GitHub API返回Pages配置成功，build_type=workflow；实际地址HTTP404，等待合并后首次发布 |
+| Pages状态 | PR审阅阶段先配置Actions来源，当时HTTP404；经用户授权合并后首次发布成功，已访问实际线上首页 |
 
-Material启动时另印有关于未来MkDocs2.0的上游提示；本项目固定使用1.6.1，严格构建本身未产生文档警告。上述浏览器检查只在本地构建产物进行，尚非线上部署检查。
+Material启动时另印有关于未来MkDocs2.0的上游提示；本项目固定使用1.6.1，严格构建本身未产生文档警告。上表桌面/手机条目是首次PR交付的本地检查记录；上线后的验收另以实际站点和部署工作流为准，不把本地结果冒充线上检查。
 
 Unity编译、Play、GPU性能与站立循环复测均未执行；对应待补见[证据附录](evidence.md)。远端PR工作流结论以PR Checks实际记录为准，不能用本地结果冒充。

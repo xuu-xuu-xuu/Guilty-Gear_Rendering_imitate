@@ -30,7 +30,7 @@
 
 00–14章正文完整；投影最终配置的同条件A/B、眼睛最终局部开关近景、网格TANGENT审计、新工程适配与Unity编译/运行验证仍待补。详见[证据和待补项](reference/evidence.md)。本文不承诺原游戏内部算法还原，不讨论非渲染修复。
 
-站点按GitHub Pages项目子路径配置；当前为供PR审阅的可部署文档。**PR构建通过不表示站点已上线**。合并与部署步骤、实际检查记录见[构建与Pages](reference/deployment.md)。
+站点已于2026-10-21通过GitHub Pages发布，PR #1已合并。本站使用项目子路径，正文与仓库Markdown共用。发布记录、检查范围与后续部署方法见[构建与Pages](reference/deployment.md)。
 
 ## 附录入口
 
