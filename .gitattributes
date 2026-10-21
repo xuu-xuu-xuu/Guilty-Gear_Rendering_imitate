@@ -1,0 +1,11 @@
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.css text eol=lf
+tools/*.json text eol=lf
+docs/assets/*.json text eol=lf
+requirements-docs.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+# Preserve the evidence snapshot byte for byte on every checkout.
+rendering-tutorial-source-pack/** -text

@@ -1,0 +1,247 @@
+[
+  {
+    "chapter": "00",
+    "file": "BridgetToon.shader",
+    "start": 189,
+    "end": 203,
+    "text": "    SubShader\n    {\n        Tags {\"RenderType\"=\"Opaque\" \"Queue\"=\"Geometry\"}\n        LOD 200\n        Pass\n        {\n            Name \"FORWARD\"\n            Tags {\"LightMode\"=\"ForwardBase\"}\n            Cull [_CullMode] ZWrite On\n            Offset [_DepthOffsetFactor], [_DepthOffsetUnits]\n            CGPROGRAM\n            #pragma target 3.0\n            #pragma vertex vert\n            #pragma fragment frag\n            #pragma multi_compile_fwdbase nolightmap nodirlightmap nodynlightmap novertexlight"
+  },
+  {
+    "chapter": "01",
+    "file": "BridgetImitateProfile.cs",
+    "start": 20,
+    "end": 30,
+    "text": "    void OnEnable()\n    {\n        if(applied)return;\n        previousAA=QualitySettings.antiAliasing;previousDistance=QualitySettings.shadowDistance;\n        previousShadows=QualitySettings.shadows;previousResolution=QualitySettings.shadowResolution;\n        if(!character){foreach(var r in FindObjectsOfType<SkinnedMeshRenderer>())if(r.name==\"bgt_body.001\"){character=r;break;}}\n        if(character){previousBlock=new MaterialPropertyBlock();currentBlock=new MaterialPropertyBlock();character.GetPropertyBlock(previousBlock);var root=character.rootBone?character.rootBone:character.transform;originOffset=character.bounds.min.y-root.position.y;referenceHeight=character.bounds.size.y;}\n        applied=true;Apply();LateUpdate();\n    }\n    void OnValidate(){if(applied)Apply();}\n    void Apply(){QualitySettings.antiAliasing=msaaSamples;QualitySettings.shadowDistance=shadowDistance;QualitySettings.shadows=ShadowQuality.All;QualitySettings.shadowResolution=ShadowResolution.High;}"
+  },
+  {
+    "chapter": "01",
+    "file": "BridgetToon.shader",
+    "start": 532,
+    "end": 535,
+    "text": "                // Give ambient its own small, explicit contribution instead of washing out every lit region.\n                half3 ambient=UNITY_LIGHTMODEL_AMBIENT.rgb*albedo*_AmbientStrength;\n                float rimEdge=smoothstep(1.0-_RimWidth,1.0-_RimWidth+0.035,1.0-nv);\n                half3 rim=rimEdge*_RimIntensity*albedo*band*_LightColor0.rgb;"
+  },
+  {
+    "chapter": "02",
+    "file": "BridgetToon.shader",
+    "start": 298,
+    "end": 303,
+    "text": "            struct appdata\n            {\n                float4 vertex:POSITION; float3 normal:NORMAL;\n                float2 uv:TEXCOORD0; float2 uv1:TEXCOORD1; float2 uvMirror:TEXCOORD2;\n                float4 color:COLOR;\n            };"
+  },
+  {
+    "chapter": "02",
+    "file": "BridgetToon.shader",
+    "start": 310,
+    "end": 319,
+    "text": "            v2f vert(appdata v)\n            {\n                v2f o;\n                o.pos=UnityObjectToClipPos(v.vertex);\n                o.worldPos=mul(unity_ObjectToWorld,v.vertex).xyz;\n                o.normal=UnityObjectToWorldNormal(v.normal);\n                o.uv.xy=TRANSFORM_TEX(lerp(v.uv,v.uvMirror,step(0.5,_UseMirroredUV)),_MainTex);\n                o.uv.zw=v.uv1; o.color=v.color;\n                TRANSFER_SHADOW(o);\n                return o;"
+  },
+  {
+    "chapter": "02",
+    "file": "BridgetToon.shader",
+    "start": 327,
+    "end": 331,
+    "text": "                half3 base=tex2D(_MainTex,i.uv.xy).rgb;\n                half3 sss=tex2D(_ShadowMap,i.uv.xy).rgb;\n                float4 ilm=tex2D(_LightMap,i.uv.xy);\n                half3 detail=tex2D(_DetailMap,i.uv.zw).rgb;\n                half3 albedo=base*lerp(half3(1,1,1),detail,_DetailIntensity);"
+  },
+  {
+    "chapter": "03",
+    "file": "GGSTRegionalShading.cs",
+    "start": 56,
+    "end": 66,
+    "text": "    void Set(Renderer renderer,float head)\n    {\n        if(!renderer)return;\n        if(block==null)block=new MaterialPropertyBlock();\n        renderer.GetPropertyBlock(block);\n        if(!previous.ContainsKey(renderer))previous.Add(renderer,new Uniforms{flags=new Vector2(block.GetFloat(EnabledID),block.GetFloat(HeadID)),frame=block.GetFloat(\"_FaceFrameValid\"),origin=block.GetVector(\"_FaceOriginWS\"),right=block.GetVector(\"_FaceRightWS\")});\n        block.SetFloat(EnabledID,Mathf.Clamp01(strength));\n        block.SetFloat(HeadID,head);\n        block.SetFloat(\"_FaceFrameValid\",frameValid);\n        block.SetVector(\"_FaceOriginWS\",faceOrigin);block.SetVector(\"_FaceRightWS\",faceRight);\n        renderer.SetPropertyBlock(block);"
+  },
+  {
+    "chapter": "03",
+    "file": "BridgetImitateProfile.cs",
+    "start": 31,
+    "end": 43,
+    "text": "    void LateUpdate()\n    {\n        if(!applied||!character||currentBlock==null)return;\n        var root=character.rootBone?character.rootBone:character.transform;var origin=root.position+Vector3.up*originOffset;\n        var originValue=new Vector4(origin.x,origin.y,origin.z,0);float height=Mathf.Max(referenceHeight,0.01f);\n        character.GetPropertyBlock(currentBlock);currentBlock.SetVector(\"_CharacterOriginWS\",originValue);currentBlock.SetFloat(\"_CharacterHeight\",height);character.SetPropertyBlock(currentBlock);\n        if(additional!=null)\n        {\n            foreach(var r in additional)\n            {\n                if(!r||r==character)continue;\n                r.GetPropertyBlock(currentBlock);currentBlock.SetVector(\"_CharacterOriginWS\",originValue);currentBlock.SetFloat(\"_CharacterHeight\",height);r.SetPropertyBlock(currentBlock);\n            }"
+  },
+  {
+    "chapter": "04",
+    "file": "BridgetToon.shader",
+    "start": 495,
+    "end": 501,
+    "text": "                half3 cleanFace=lerp(faceDiffuseDark,albedo,cleanFaceBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanFaceBand),saturate(_PaletteEnabled));\n                half3 cleanSkin=lerp(skinDark,albedo,cleanSkinBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanSkinBand),saturate(_PaletteEnabled));\n                half3 cleanSleeve=lerp(sleeveDark,albedo,cleanSleeveBand)*lerp(float3(1,1,1),lerp(_PaletteSleeveDark.rgb,_PaletteSleeveLight.rgb,cleanSleeveBand),saturate(_PaletteEnabled));\n                half3 cleanTunic=lerp(cleanClothDark,albedo,cleanTunicBand)*lerp(float3(1,1,1),lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,cleanTunicBand),saturate(_PaletteEnabled));\n                half3 cleanCloth=lerp(cleanClothDark,albedo,cleanClothBand);\n                half3 cleanDiffuse=(cleanFace*faceRegionMask+cleanSkin*bodySkinRegion+cleanSleeve*sleeveRegion+cleanTunic*tunicRegion+cleanCloth*cleanOtherCloth)/max(cleanTotal,0.0001)*_LightColor0.rgb*_LightIntensity;\n                diffuse=lerp(diffuse,cleanDiffuse,saturate(_CleanShadeEnabled)*cleanCoverage);"
+  },
+  {
+    "chapter": "04",
+    "file": "BridgetToon.shader",
+    "start": 605,
+    "end": 609,
+    "text": "                float4 focusedClasses=specClass*float4(1,1,1.0-faceRegionMask,1);\n                float focusedSpecCoverage=saturate(dot(focusedClasses,float4(1,1,1,1)));\n                half3 focusedOldSpec=(shineHair*focusedClasses.r+shineCloth*focusedClasses.g+shineSkin*focusedClasses.b+shineMetal*focusedClasses.a)*_LightColor0.rgb*band;\n                half3 focusedNewSpec=(shineHair*_FocusedHairGain*focusedClasses.r+shineCloth*_FocusedClothGain*focusedClasses.g+focusedSkinShine*focusedClasses.b+shineMetal*_FocusedMetalGain*focusedClasses.a)*_LightColor0.rgb*focusedSpecBand;\n                spec+=(focusedNewSpec-focusedOldSpec)*saturate(_FocusedSpecEnabled);"
+  },
+  {
+    "chapter": "04",
+    "file": "BridgetToon.shader",
+    "start": 620,
+    "end": 625,
+    "text": "                half3 referenceRimColor=lerp(albedo,_ReferenceRimTint.rgb,_ReferenceRimTintMix);\n                float referenceRimLight=lerp(_ReferenceRimShadowFloor,1.0,saturate(band));\n                half3 referenceRim=referenceRimColor*referenceRimEdge*_ReferenceRimStrength*rimMaterialScale*referenceRimLight*_LightColor0.rgb;\n                rim=lerp(rim,referenceRim,saturate(_ReferenceRimEnabled)*specCoverage);\n// END GGST RIM REFINE calculations\n                half3 color=diffuse+ambient+rim+spec;"
+  },
+  {
+    "chapter": "05",
+    "file": "BridgetToon.shader",
+    "start": 386,
+    "end": 401,
+    "text": "                float3 lowerLight=normalize(_LowerLightDirection.xyz+float3(0,0.00001,0));\n                lowerLight=normalize(lerp(lowerLight,l,saturate(_LowerLightDynamic)));\n                l=normalize(lerp(l,lowerLight,saturate(_LowerLightBlend*lowerRegion)));\n                nl=dot(n,l)*0.5+0.5;\n                // These are configurable reconstruction hypotheses, not the original GPU equations.\n                float ao=lerp(1.0,saturate(i.color.r),_AOStrength);\n                float signal=(nl+_RampOffset+(ilm.g-_RampMaskCenter)*_RampMaskStrength+skin*_SkinShadowOffset)*ao;\n                float soft=max(_ShadowSoftness,0.00001);\n                float band=smoothstep(_LightTreshold-soft,_LightTreshold+soft,signal);\n                float rawShadow=SHADOW_ATTENUATION(i);\n                float projected=lerp(1.0,rawShadow,_ReceiveShadowStrength);\n                band*=projected;\n                half3 dark=lerp(albedo,sss*_ShadowTint.rgb,_ShadowIntensity);\n                // Reconstructed regional second shade; not the stripped native shader expression.\n                float secondShade=lowerRegion*(1.0-band)*(1.0-smoothstep(_SecondShadowThreshold-0.06,_SecondShadowThreshold+0.06,dot(n,l)));\n                dark*=lerp(half3(1,1,1),_SecondShadowTint.rgb,secondShade*_SecondShadowStrength);"
+  },
+  {
+    "chapter": "06",
+    "file": "BridgetToon.shader",
+    "start": 405,
+    "end": 410,
+    "text": "                float2 region=saturate(tex2D(_RegionalMask,i.uv.xy).rg)*saturate(_RegionalEnabled);\n                float head=saturate(_RegionalHead);\n                float faceRegionMask=region.r*head;\n                float bodySkinRegion=region.r*(1.0-head);\n                float sleeveRegion=region.g*(1.0-head);\n                float regionTotal=saturate(faceRegionMask+bodySkinRegion+sleeveRegion);"
+  },
+  {
+    "chapter": "06",
+    "file": "BridgetToon.shader",
+    "start": 483,
+    "end": 501,
+    "text": "                float cleanFaceBand=smoothstep(_CleanFaceUnderStart,_CleanFaceUnderEnd,n.y);\n                float cleanSkinBand=skinBand;\n                float cleanClothSignal=(nl+_RampOffset+(ilm.g-_RampMaskCenter)*_RampMaskStrength*_CleanClothMaskWeight)*lerp(1.0,ao,_CleanClothAOWeight);\n                float cleanClothBand=smoothstep(_LightTreshold-_CleanClothSoftness,_LightTreshold+_CleanClothSoftness,cleanClothSignal);\n                float cleanSleeveBand=smoothstep(_SleeveShadeThreshold-_CleanClothSoftness,_SleeveShadeThreshold+_CleanClothSoftness,cleanClothSignal);\n                float cleanTunicBand=cleanClothBand;\n                float cleanClothClass=saturate(tex2D(_FourMaterialSpecMask,i.uv.xy).g)*saturate(_FourMaterialSpecEnabled)*(1.0-head);\n                float cleanOtherCloth=cleanClothClass*(1.0-saturate(paletteSkin+sleeveRegion+tunicRegion));\n                float cleanTotal=paletteSkin+sleeveRegion+tunicRegion+cleanOtherCloth;\n                float cleanCoverage=saturate(cleanTotal);\n                float3 cleanGate=float3(faceRegionMask,bodySkinRegion,saturate(sleeveRegion+tunicRegion+cleanOtherCloth));\n                half3 cleanClothDark=lerp(albedo,sss*_ShadowTint.rgb,_ShadowIntensity);\n                half3 cleanFace=lerp(faceDiffuseDark,albedo,cleanFaceBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanFaceBand),saturate(_PaletteEnabled));\n                half3 cleanSkin=lerp(skinDark,albedo,cleanSkinBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanSkinBand),saturate(_PaletteEnabled));\n                half3 cleanSleeve=lerp(sleeveDark,albedo,cleanSleeveBand)*lerp(float3(1,1,1),lerp(_PaletteSleeveDark.rgb,_PaletteSleeveLight.rgb,cleanSleeveBand),saturate(_PaletteEnabled));\n                half3 cleanTunic=lerp(cleanClothDark,albedo,cleanTunicBand)*lerp(float3(1,1,1),lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,cleanTunicBand),saturate(_PaletteEnabled));\n                half3 cleanCloth=lerp(cleanClothDark,albedo,cleanClothBand);\n                half3 cleanDiffuse=(cleanFace*faceRegionMask+cleanSkin*bodySkinRegion+cleanSleeve*sleeveRegion+cleanTunic*tunicRegion+cleanCloth*cleanOtherCloth)/max(cleanTotal,0.0001)*_LightColor0.rgb*_LightIntensity;\n                diffuse=lerp(diffuse,cleanDiffuse,saturate(_CleanShadeEnabled)*cleanCoverage);"
+  },
+  {
+    "chapter": "06",
+    "file": "BridgetToon.shader",
+    "start": 507,
+    "end": 518,
+    "text": "                float focusedLegDomain=step(200.0,palettePixel.x)*step(palettePixel.x,510.0)*step(880.0,palettePixel.y)*step(palettePixel.y,1195.0);\n                float focusedLegRegion=bodySkinRegion*focusedLegDomain;\n                float focusedCalf=smoothstep(1035.0,1070.0,palettePixel.y);\n                float focusedKnee=smoothstep(1015.0,1035.0,palettePixel.y)*(1.0-smoothstep(1055.0,1075.0,palettePixel.y));\n                float focusedLegThreshold=lerp(_FocusedThighThreshold,_FocusedCalfThreshold,focusedCalf);\n                focusedLegThreshold=lerp(focusedLegThreshold,_FocusedKneeThreshold,focusedKnee);\n                float focusedLegBand=smoothstep(focusedLegThreshold-regionSoft,focusedLegThreshold+regionSoft,regionalSignal);\n                float focusedSkinBand=lerp(cleanSkinBand,focusedLegBand,focusedLegDomain*saturate(_FocusedShadeEnabled));\n                float focusedTunicBand=lerp(cleanTunicBand,smoothstep(_FocusedTunicThreshold-_CleanClothSoftness,_FocusedTunicThreshold+_CleanClothSoftness,cleanClothSignal),saturate(_FocusedShadeEnabled));\n                half3 focusedSkin=lerp(skinDark,albedo,focusedSkinBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,focusedSkinBand),saturate(_PaletteEnabled));\n                half3 focusedTunic=lerp(cleanClothDark,albedo,focusedTunicBand)*lerp(float3(1,1,1),lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,focusedTunicBand),saturate(_PaletteEnabled));\n                diffuse+=((focusedSkin-cleanSkin)*focusedLegRegion+(focusedTunic-cleanTunic)*tunicRegion)/max(cleanTotal,0.0001)*_LightColor0.rgb*_LightIntensity*saturate(_CleanShadeEnabled)*cleanCoverage;"
+  },
+  {
+    "chapter": "07",
+    "file": "BridgetToon.shader",
+    "start": 469,
+    "end": 476,
+    "text": "                float paletteSkinBand=lerp(saturate(skinBand*projected),saturate(lerp(faceBand,faceDiffuseBand,saturate(_FaceDiffuseRefine))*projected),head);\n                float3 paletteSkinMultiplier=lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,paletteSkinBand);\n                float3 paletteSleeveMultiplier=lerp(_PaletteSleeveDark.rgb,_PaletteSleeveLight.rgb,saturate(sleeveBand*projected));\n                float3 paletteTunicMultiplier=lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,saturate(band));\n                float3 paletteMultiplier=1.0+(paletteSkinMultiplier-1.0)*paletteSkin+(paletteSleeveMultiplier-1.0)*sleeveRegion+(paletteTunicMultiplier-1.0)*tunicRegion;\n                float3 paletteGate=float3(paletteSkin,sleeveRegion,tunicRegion);\n                // Do not recolor albedo, band, ambient, specular, rim or ink.\n                diffuse*=lerp(float3(1,1,1),paletteMultiplier,saturate(_PaletteEnabled));"
+  },
+  {
+    "chapter": "07",
+    "file": "BridgetToon.shader",
+    "start": 494,
+    "end": 501,
+    "text": "                half3 cleanClothDark=lerp(albedo,sss*_ShadowTint.rgb,_ShadowIntensity);\n                half3 cleanFace=lerp(faceDiffuseDark,albedo,cleanFaceBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanFaceBand),saturate(_PaletteEnabled));\n                half3 cleanSkin=lerp(skinDark,albedo,cleanSkinBand)*lerp(float3(1,1,1),lerp(_PaletteSkinDark.rgb,_PaletteSkinLight.rgb,cleanSkinBand),saturate(_PaletteEnabled));\n                half3 cleanSleeve=lerp(sleeveDark,albedo,cleanSleeveBand)*lerp(float3(1,1,1),lerp(_PaletteSleeveDark.rgb,_PaletteSleeveLight.rgb,cleanSleeveBand),saturate(_PaletteEnabled));\n                half3 cleanTunic=lerp(cleanClothDark,albedo,cleanTunicBand)*lerp(float3(1,1,1),lerp(_PaletteTunicDark.rgb,_PaletteTunicLight.rgb,cleanTunicBand),saturate(_PaletteEnabled));\n                half3 cleanCloth=lerp(cleanClothDark,albedo,cleanClothBand);\n                half3 cleanDiffuse=(cleanFace*faceRegionMask+cleanSkin*bodySkinRegion+cleanSleeve*sleeveRegion+cleanTunic*tunicRegion+cleanCloth*cleanOtherCloth)/max(cleanTotal,0.0001)*_LightColor0.rgb*_LightIntensity;\n                diffuse=lerp(diffuse,cleanDiffuse,saturate(_CleanShadeEnabled)*cleanCoverage);"
+  },
+  {
+    "chapter": "08",
+    "file": "GGSTGeometryDepth.shader",
+    "start": 38,
+    "end": 46,
+    "text": "            float4 frag(f i):SV_Target\n            {\n                if(_GGSTShadowCasterHairOnly>0.5)\n                    clip(tex2D(_GGSTShadowCasterHairMask,i.uv).r-0.5);\n                // Original base alpha is encoded data (gold hair mostly 66/67),\n                // and ILM alpha is ink. Neither is used as transparency here.\n                float d=dot(i.world-_GGSTShadowCasterOriginRange.xyz,\n                            _GGSTShadowCasterForward.xyz)/max(_GGSTShadowCasterOriginRange.w,0.0001);\n                return float4(saturate(d),0,0,1);"
+  },
+  {
+    "chapter": "08",
+    "file": "BridgetToon.shader",
+    "start": 247,
+    "end": 261,
+    "text": "            float ReadHairVisibility(float3 world)\n            {\n                float4 clipSpace=mul(_HairShadowVP,float4(world,1));\n                float2 uv=clipSpace.xy/max(clipSpace.w,0.00001)*0.5+0.5;\n                float depth=dot(world-_HairShadowOriginRange.xyz,_HairShadowForward.xyz)/max(_HairShadowOriginRange.w,0.00001);\n                float inside=step(0,uv.x)*step(uv.x,1)*step(0,uv.y)*step(uv.y,1)*step(0,depth)*step(depth,1);\n                float bias=_HairFaceShadowBias/max(_HairShadowOriginRange.w,0.00001);\n                float visibility=0;\n                [unroll] for(int x=-1;x<=1;x++)\n                [unroll] for(int y=-1;y<=1;y++)\n                {\n                    float stored=tex2D(_HairShadowDepth,uv+float2(x,y)*_HairShadowTexel.xy*_HairFaceShadowFilter).r;\n                    visibility+=step(depth-bias,stored);\n                }\n                return lerp(1.0,visibility/9.0,inside*saturate(_HairShadowEnabled));"
+  },
+  {
+    "chapter": "08",
+    "file": "StageShadowReceiver.shader",
+    "start": 80,
+    "end": 88,
+    "text": "                fixed atten = SHADOW_ATTENUATION(i);\n// BEGIN GGST SHADOW REFINEMENT stage independent projection\n                if(_StageShadowEnabled>0.5)atten=GeometryStageVisibility(i.worldPos);\n// END GGST SHADOW REFINEMENT stage independent projection\n                fixed u = saturate(i.pos.x / _ScreenParams.x);\n                fixed falloff = lerp(1.0 - _GradientStrength, 1.0, u);\n                fixed3 c = _Color.rgb * atten * falloff;\n                UNITY_APPLY_FOG(i.fogCoord, c);\n                return fixed4(c, 1);"
+  },
+  {
+    "chapter": "09",
+    "file": "BridgetToon.shader",
+    "start": 548,
+    "end": 567,
+    "text": "                float4 specClass=saturate(tex2D(_FourMaterialSpecMask,i.uv.xy))*saturate(_FourMaterialSpecEnabled);\n                float specCoverage=saturate(specClass.r+specClass.g+specClass.b+specClass.a);\n                float shineAA=max(fwidth(nh)*0.65,0.006);\n                float paintedShine=saturate(ilm.b);\n                float hairShoulder=smoothstep(1.0-_HairShineWidth-shineAA,1.0-_HairShineWidth+shineAA,nh);\n                float hairCore=smoothstep(1.0-_HairShineWidth*0.28-shineAA,1.0-_HairShineWidth*0.28+shineAA,nh);\n                // ILM.B is sparse authored highlight detail, not whole-surface\n                // reflectance. A weak base and localized painted core stay separate.\n                float hairShape=0.22*hairShoulder+0.78*paintedShine*(0.4*hairShoulder+0.6*hairCore);\n                half3 shineHair=lerp(albedo,_HairShineTint.rgb,0.32)*_HairShineStrength*hairShape;\n                float clothShape=pow(nh,max(_ClothShinePower,2.0))*(0.30+0.70*paintedShine);\n                half3 shineCloth=albedo*_ClothShineTint.rgb*_ClothShineStrength*clothShape;\n                float skinShape=pow(nh,max(_SkinShinePower,4.0))*(0.25+0.75*paintedShine);\n                half3 shineSkin=lerp(albedo,_SkinShineTint.rgb,0.12)*_SkinShineStrength*skinShape;\n                float metalShoulder=smoothstep(1.0-_MetalShineWidth-shineAA,1.0-_MetalShineWidth+shineAA,nh);\n                float metalCore=smoothstep(1.0-_MetalShineWidth*0.23-shineAA,1.0-_MetalShineWidth*0.23+shineAA,nh);\n                float metalShape=(0.23*metalShoulder+0.77*metalCore)*(0.55+0.45*paintedShine);\n                half3 shineMetal=lerp(albedo,half3(1,1,1),0.38)*_MetalShineTint.rgb*_MetalShineStrength*metalShape;\n                half3 classifiedSpec=(shineHair*specClass.r+shineCloth*specClass.g+shineSkin*specClass.b+shineMetal*specClass.a)*_LightColor0.rgb*band;\n                spec=spec*(1.0-specCoverage)+classifiedSpec;"
+  },
+  {
+    "chapter": "09",
+    "file": "BridgetToon.shader",
+    "start": 572,
+    "end": 579,
+    "text": "                float focusedUnoccluded=smoothstep(_LightTreshold-soft,_LightTreshold+soft,signal);\n                float focusedRegional=(cleanFaceBand*faceRegionMask+focusedSkinBand*bodySkinRegion+cleanSleeveBand*sleeveRegion+focusedTunicBand*tunicRegion+cleanClothBand*cleanOtherCloth)/max(cleanTotal,0.0001);\n                float focusedSpecBand=lerp(focusedUnoccluded,focusedRegional,saturate(_CleanShadeEnabled)*cleanCoverage);\n                float focusedSkinAA=max(fwidth(nh)*0.65,0.008);\n                float focusedSkinShoulder=smoothstep(1.0-_FocusedSkinWidth-focusedSkinAA,1.0-_FocusedSkinWidth+focusedSkinAA,nh);\n                float focusedSkinCore=smoothstep(1.0-_FocusedSkinWidth*0.45-focusedSkinAA,1.0-_FocusedSkinWidth*0.45+focusedSkinAA,nh);\n                half3 focusedSkinShine=lerp(albedo,_SkinShineTint.rgb,0.12)*_FocusedSkinStrength*(0.8*focusedSkinShoulder+0.2*focusedSkinCore)*(0.7+0.3*paintedShine);\n                focusedSkinShine=lerp(shineSkin,focusedSkinShine,focusedLegDomain*(1.0-head));"
+  },
+  {
+    "chapter": "09",
+    "file": "BridgetToon.shader",
+    "start": 605,
+    "end": 609,
+    "text": "                float4 focusedClasses=specClass*float4(1,1,1.0-faceRegionMask,1);\n                float focusedSpecCoverage=saturate(dot(focusedClasses,float4(1,1,1,1)));\n                half3 focusedOldSpec=(shineHair*focusedClasses.r+shineCloth*focusedClasses.g+shineSkin*focusedClasses.b+shineMetal*focusedClasses.a)*_LightColor0.rgb*band;\n                half3 focusedNewSpec=(shineHair*_FocusedHairGain*focusedClasses.r+shineCloth*_FocusedClothGain*focusedClasses.g+focusedSkinShine*focusedClasses.b+shineMetal*_FocusedMetalGain*focusedClasses.a)*_LightColor0.rgb*focusedSpecBand;\n                spec+=(focusedNewSpec-focusedOldSpec)*saturate(_FocusedSpecEnabled);"
+  },
+  {
+    "chapter": "10",
+    "file": "BridgetToon.shader",
+    "start": 583,
+    "end": 603,
+    "text": "                float thighT=saturate((palettePixel.y-918.0)/82.0);\n                // Follow the measured anterior meridian of the original UV island;\n                // its ring spacing bends at y=981, so a straight UV line is not\n                // a straight line on the existing thigh surface.\n                float thighCenter=357.89;\n                thighCenter+=(-0.44)*saturate((palettePixel.y-916.85)/11.84);\n                thighCenter+=(-1.35)*saturate((palettePixel.y-928.69)/12.07);\n                thighCenter+=(-1.70)*saturate((palettePixel.y-940.76)/13.24);\n                thighCenter+=(-1.90)*saturate((palettePixel.y-954.0)/13.74);\n                thighCenter+=(4.90)*saturate((palettePixel.y-967.74)/13.89);\n                thighCenter+=(-1.30)*saturate((palettePixel.y-981.63)/9.42);\n                thighCenter+=(-1.24)*saturate((palettePixel.y-991.05)/9.62);\n                float thighHalfWidth=7.2*(1.0-pow(thighT,1.15));\n                float thighEdge=thighHalfWidth-abs(palettePixel.x-thighCenter);\n                float thighAA=max(fwidth(thighEdge)*0.65,0.35);\n                float thighLobe=smoothstep(-thighAA,thighAA,thighEdge);\n                thighLobe*=smoothstep(916.0,920.0,palettePixel.y)*(1.0-smoothstep(998.0,1001.0,palettePixel.y));\n                float thighReplace=focusedLegDomain*(1.0-head)*(1.0-smoothstep(1015.0,1030.0,palettePixel.y));\n                float thighFacing=smoothstep(0.2,0.55,nv)*smoothstep(0.50,0.68,nl);\n                half3 thighShine=_ThighLobeTint.rgb*_ThighLobeStrength*thighLobe*thighFacing;\n                focusedSkinShine=lerp(focusedSkinShine,thighShine,thighReplace*saturate(_ThighLobeEnabled));"
+  },
+  {
+    "chapter": "10",
+    "file": "BridgetToon.shader",
+    "start": 605,
+    "end": 609,
+    "text": "                float4 focusedClasses=specClass*float4(1,1,1.0-faceRegionMask,1);\n                float focusedSpecCoverage=saturate(dot(focusedClasses,float4(1,1,1,1)));\n                half3 focusedOldSpec=(shineHair*focusedClasses.r+shineCloth*focusedClasses.g+shineSkin*focusedClasses.b+shineMetal*focusedClasses.a)*_LightColor0.rgb*band;\n                half3 focusedNewSpec=(shineHair*_FocusedHairGain*focusedClasses.r+shineCloth*_FocusedClothGain*focusedClasses.g+focusedSkinShine*focusedClasses.b+shineMetal*_FocusedMetalGain*focusedClasses.a)*_LightColor0.rgb*focusedSpecBand;\n                spec+=(focusedNewSpec-focusedOldSpec)*saturate(_FocusedSpecEnabled);"
+  },
+  {
+    "chapter": "11",
+    "file": "BridgetToon.shader",
+    "start": 635,
+    "end": 652,
+    "text": "                float rawInk=1.0-saturate(ilm.a);\n                // Only Alpha receives screen-footprint filtering. Original ILM\n                // RGB lighting and sparse highlight data remain untouched.\n                float2 inkDx=ddx(i.uv.xy)*0.28,inkDy=ddy(i.uv.xy)*0.28;\n                float filteredInk=0.5*rawInk+0.125*(4.0-\n                    tex2D(_LightMap,i.uv.xy+inkDx+inkDy).a-\n                    tex2D(_LightMap,i.uv.xy+inkDx-inkDy).a-\n                    tex2D(_LightMap,i.uv.xy-inkDx+inkDy).a-\n                    tex2D(_LightMap,i.uv.xy-inkDx-inkDy).a);\n                // Continuous coverage preserves minified thin painted lines.\n                // Unclassified eyes, lips and detail keep the exact old blend.\n                float refinedInk=lerp(rawInk,saturate(filteredInk),saturate(_LineInnerFilter));\n                float inkStrength=dot(inkClass,_LineInnerStrengths)/max(inkClassTotal,0.0001);\n                inkStrength*=_InnerLineStrength/0.65;\n                half3 materialInk=(_LineHairInk.rgb*inkClass.r+_LineClothInk.rgb*inkClass.g+\n                    _LineSkinInk.rgb*inkClass.b+_LineMetalInk.rgb*inkClass.a)/max(inkClassTotal,0.0001);\n                half3 styledInk=lerp(_InnerLineColor.rgb,materialInk,saturate(_LineInnerTintMix));\n                color=lerp(color,lerp(lineBaseColor,styledInk,saturate(refinedInk*inkStrength)),inkCoverage);"
+  },
+  {
+    "chapter": "11",
+    "file": "BridgetToon.shader",
+    "start": 755,
+    "end": 771,
+    "text": "                float layer=tex2Dlod(_LightMap,float4(o.uv,0,0)).r*255.0;\n                float skin=step(10.0,layer)*(1.0-step(_LayerMaskStep,layer));\n                float3 outlineNormal=normalize(lerp(v.normal,v.smoothNormal.xyz,step(0.5,_UseSmoothOutline)));\n                float3 wn=UnityObjectToWorldNormal(outlineNormal);\n                float3 vn=mul((float3x3)UNITY_MATRIX_V,wn);\n                float2 direction=float2(UNITY_MATRIX_P[0][0]*vn.x,UNITY_MATRIX_P[1][1]*vn.y)*_ScreenParams.xy;\n                direction/=max(length(direction),0.0001);\n                float width=_OutlineWidth*lerp(1.0,_OutlineSkinScale,skin);\n// BEGIN GGST LINE REFINEMENT contour width\n                // Reuse the audited class atlas rather than confusing white\n                // cloth with low-ILM-R skin. Existing zero-width layers stay off.\n                float4 contourClass=saturate(tex2Dlod(_FourMaterialSpecMask,float4(o.uv,0,0)));\n                float contourTotal=dot(contourClass,float4(1,1,1,1));\n                float styledWidth=_OutlineWidth*dot(contourClass,_LineContourWidths/0.8)/max(contourTotal,0.0001);\n                width=lerp(width,styledWidth,saturate(contourTotal)*step(0.5,_LineRefineEnabled));\n// END GGST LINE REFINEMENT contour width\n                o.pos.xy+=direction*(2.0*width/_ScreenParams.xy)*o.pos.w;"
+  },
+  {
+    "chapter": "11",
+    "file": "BridgetToon.shader",
+    "start": 774,
+    "end": 789,
+    "text": "            half4 fragOutline(f i):SV_Target\n            {\n                clip(_OutlineWidth-0.001); clip(0.5-_DebugMode);\n                half3 map=tex2D(_OutlineMap,i.uv).rgb;\n// BEGIN GGST LINE REFINEMENT contour ink\n                if(_LineRefineEnabled>0.5)\n                {\n                    float4 contourClass=saturate(tex2D(_FourMaterialSpecMask,i.uv));\n                    float contourTotal=dot(contourClass,float4(1,1,1,1));\n                    half3 materialInk=(_LineHairInk.rgb*contourClass.r+_LineClothInk.rgb*contourClass.g+\n                        _LineSkinInk.rgb*contourClass.b+_LineMetalInk.rgb*contourClass.a)/max(contourTotal,0.0001);\n                    // OLM is authored sRGB color, not an alpha width mask.\n                    // Retain its black/gray region distinction in the new tint.\n                    materialInk*=lerp(0.78,1.0,saturate(map.r/0.03310477));\n                    half3 originalInk=lerp(_OutlineColor.rgb,map,_OutlineMapStrength);\n                    return half4(lerp(originalInk,materialInk,saturate(contourTotal)*saturate(_LineContourTintMix)),1);"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 337,
+    "end": 353,
+    "text": "                float2 eyePixel=float2(i.uv.x*2048.0,(1.0-i.uv.y)*2048.0);\n                float eyeHead=saturate(_EyeRefineEnabled)*saturate(_RegionalHead);\n                float2 eyeSmallQ=(eyePixel-float2(960.0,64.0))/float2(34.0,34.0);\n                float2 eyeLargeQ=(eyePixel-float2(1152.0,130.0))/float2(104.0,100.0);\n                float eyeSmallDisk=EyeDisk(eyeSmallQ);\n                float eyeLargeDisk=EyeDisk(eyeLargeQ);\n                float eyeSmallPupil=smoothstep(1.10,1.24,length((eyePixel-float2(960.0,64.0))/float2(13.0,13.0)));\n                float eyeLargePupil=smoothstep(1.10,1.24,length((eyePixel-float2(1152.0,129.0))/float2(29.0,35.0)));\n                // Bounded original teal chroma protects black pupils/ink and\n                // authored white glints, including compressed texture edges.\n                float eyeChroma=smoothstep(0.015,0.055,min(base.g,base.b)-base.r);\n                float eyeIrisMask=saturate(eyeSmallDisk+eyeLargeDisk)*eyeSmallPupil*eyeLargePupil*eyeChroma*eyeHead;\n                float2 eyeQ=lerp(eyeSmallQ,eyeLargeQ,step(1020.0,eyePixel.x));\n                float eyeUp=-eyeQ.y; // PNG y increases downwards.\n                float eyeUpper=smoothstep(-0.20,0.55,eyeUp);\n                float eyeLower=(1.0-smoothstep(-0.35,0.40,eyeUp))*(1.0-smoothstep(0.75,1.0,length(eyeQ)));\n                float eyeEdge=smoothstep(0.56,0.94,length(eyeQ));"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 361,
+    "end": 362,
+    "text": "                float eyeAuthoredGlint=saturate(EyeDisk((eyePixel-float2(938.7075,48.0896))/float2(12.0,12.0))+EyeDisk((eyePixel-float2(983.5789,85.5))/float2(8.5,8.5)));\n                float eyeCatchMask=eyeAuthoredGlint*smoothstep(0.85,0.97,min(base.r,min(base.g,base.b)))*eyeHead;"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 521,
+    "end": 529,
+    "text": "// BEGIN GGST EYE REFINEMENT diffuse layers\n                half3 eyeBeforeDiffuse=diffuse;\n                float eyeDepth=saturate(_EyeIrisUpperDepth*eyeUpper+_EyeIrisEdgeDepth*eyeEdge);\n                diffuse*=1.0-eyeIrisMask*eyeDepth;\n                // Reuse the original iris hue and the same lit/shadow band.\n                // No emission or time-driven sparkle is introduced.\n                diffuse+=albedo*half3(0.70,1.0,0.92)*_LightColor0.rgb*_LightIntensity*band*eyeIrisMask*eyeLower*_EyeIrisLowerLift;\n                diffuse*=lerp(half3(1,1,1),half3(0.70,0.85,1.0),eyeScleraMask*_EyeScleraShade);\n                half3 eyeDiffuseDelta=diffuse-eyeBeforeDiffuse;"
+  },
+  {
+    "chapter": "12",
+    "file": "BridgetToon.shader",
+    "start": 654,
+    "end": 657,
+    "text": "// BEGIN GGST EYE REFINEMENT authored catchlight clarity\n                half3 eyeBeforeCatch=color;\n                half3 eyeCatchTarget=max(color,base*_LightColor0.rgb*_LightIntensity);\n                color=lerp(color,eyeCatchTarget,saturate(_EyeCatchlightLift)*eyeCatchMask);"
+  },
+  {
+    "chapter": "13",
+    "file": "BridgetToon.shader",
+    "start": 616,
+    "end": 623,
+    "text": "                float rimAA=max(fwidth(nv)*0.65,0.008);\n                float referenceRimEdge=1.0-smoothstep(_ReferenceRimWidth-rimAA,_ReferenceRimWidth+rimAA,nv);\n                float rimMaterialScale=dot(specClass,_ReferenceRimMaterial)/max(specCoverage,0.0001);\n                rimMaterialScale*=lerp(1.0,_ReferenceRimFaceScale,faceRegionMask);\n                half3 referenceRimColor=lerp(albedo,_ReferenceRimTint.rgb,_ReferenceRimTintMix);\n                float referenceRimLight=lerp(_ReferenceRimShadowFloor,1.0,saturate(band));\n                half3 referenceRim=referenceRimColor*referenceRimEdge*_ReferenceRimStrength*rimMaterialScale*referenceRimLight*_LightColor0.rgb;\n                rim=lerp(rim,referenceRim,saturate(_ReferenceRimEnabled)*specCoverage);"
+  },
+  {
+    "chapter": "14",
+    "file": "GGSTGeometryShadowMaps.cs",
+    "start": 197,
+    "end": 208,
+    "text": "    // Build in onPreCull, execute after native cull/skinning and before opaque\n    // shading. An immediate ExecuteCommandBuffer during pre-cull may see the\n    // previous native skinned vertex buffer, so it is deliberately avoided.\n    void RenderMaps(Camera camera)\n    {\n        if(!isActiveAndEnabled)return;\n        ResolveReferences();\n        if(camera!=mainCamera)return;\n        if(commands!=null)commands.Clear();\n        submitted=false;HairDrawCount=0;StageDrawCount=0;\n        if(suspendMaps||!Ready())\n        {DisableGlobals();if(suspendMaps)LastStatus=\"Suspended (offscreen draws only)\";return;}"
+  },
+  {
+    "chapter": "14",
+    "file": "BridgetToon.shader",
+    "start": 687,
+    "end": 693,
+    "text": "                if(mode==10)return half4(band.xxx,1);\n                if(mode==11)return half4(rawShadow.xxx,1);\n                if(mode==12)return half4(rim,1);\n                if(mode==13)return half4(spec,1);\n                if(mode==14)return half4(skin*half3(1,0.35,0.2)+hair*half3(0.2,0.4,1)+leather*half3(0.8,0.2,1)+metal*half3(0.2,1,0.8),1);\n                if(mode==15)return half4(tex2D(_OutlineMap,i.uv.xy).rgb,1);\n                if(mode==16)return half4(diffuse,1);"
+  }
+]
