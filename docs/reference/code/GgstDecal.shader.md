@@ -1,10 +1,8 @@
-# GgstDecal.shader 逐行索引
+# GgstDecal.shader
 
-原文件：`sources/GgstDecal.shader`；原工程路径：`Assets/GGST_RenderFix/GgstDecal.shader`。
+按行查找正文中的函数与Pass。以下保留源码原文，属性拼写与分支顺序以此为准。代码依赖所用渲染管线及[输入连接](../dependencies.md)，不能把文件索引当作独立工程。
 
-SHA256：`b84bf98b56496fb0ae27495d38f5790589d84b6b3e50581d3ea4fa36f1aa13e8`。以下由原文生成，未修正拼写或分支。每行锚点用于正文核查；这是源码摘录索引，不是可直接运行工程。
-
-| 行 | 原文 |
+| 行 | 代码 |
 |---|---|
 | <a id="l1"></a>1 | <code>Shader "GGST/DecalX2Multiply" {</code> |
 | <a id="l2"></a>2 | <code>    Properties { _MainTex ("原版贴花（线性数据）",2D)="gray"{} _Strength("贴花强度",Range(0,1))=1 }</code> |

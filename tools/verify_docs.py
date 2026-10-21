@@ -83,6 +83,18 @@ def main():
             assert target.is_relative_to(ROOT),(path,raw)
             assert target.exists(),(path,raw)
             links+=1
+    # Reader prose must stay focused on implementation, not delivery history.
+    public=[ROOT/'README.md']+list((ROOT/'docs').rglob('*.md'))
+    process=re.compile(r'历史|本轮|本次|验收|待补|已完成验证|交付记录|聊天记录|协作过程|根据大纲|PR\s*#\d|20\d\d-\d\d-\d\d')
+    for path in public:
+        if (ROOT/'docs/reference/code') in path.parents:
+            continue  # Immutable source comments are not editorial prose.
+        prose=re.sub(r'```.*?```','',path.read_text(encoding='utf-8'),flags=re.S)
+        assert not process.search(prose),f'Process prose in reader page: {path}'
+    for number in write_chapters.ORDER:
+        body=(ROOT/'docs/chapters'/f'{number}.md').read_text(encoding='utf-8')
+        for heading in ['准备输入','操作步骤','原理与代码位置','画面判断与排错']:
+            assert f'## {heading}' in body,(number,heading)
     # The tracked additions are restricted to documentation/config/build tools.
     tracked=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT).decode().split('\0')
     for name in filter(None,tracked):

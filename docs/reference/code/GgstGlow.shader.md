@@ -1,10 +1,8 @@
-# GgstGlow.shader 逐行索引
+# GgstGlow.shader
 
-原文件：`sources/GgstGlow.shader`；原工程路径：`Assets/GGST_RenderFix/GgstGlow.shader`。
+按行查找正文中的函数与Pass。以下保留源码原文，属性拼写与分支顺序以此为准。代码依赖所用渲染管线及[输入连接](../dependencies.md)，不能把文件索引当作独立工程。
 
-SHA256：`f4e5be118b18b43668f6f4eb3fb6e3f84226b12a54c1a63acad1c6ac6f4a6aa5`。以下由原文生成，未修正拼写或分支。每行锚点用于正文核查；这是源码摘录索引，不是可直接运行工程。
-
-| 行 | 原文 |
+| 行 | 代码 |
 |---|---|
 | <a id="l1"></a>1 | <code>Shader "GGST/GlowBase" {</code> |
 | <a id="l2"></a>2 | <code>    Properties { _MainTex("原版发光基础色",2D)="white"{} _GlowMultiplier("发光倍率",Float)=2 }</code> |

@@ -1,17 +1,482 @@
 [
-  {"id":"00","title":"最终效果、复刻目标与适用范围","refs":[["BridgetToon.shader",189,203]],"parameters":"environment.json; materials_saved.json","images":["project/final.png","stages/08.png"],"evidence":"readonly_audit; project_snapshot_comparison；范围说明，非新运行"},
-  {"id":"01","title":"Unity 环境、渲染管线、色彩空间、相机与主光","refs":[["BridgetImitateProfile.cs",20,51],["BridgetToon.shader",310,331]],"parameters":"environment.json; saved_scene_rendering.json","images":["project/final.png"],"evidence":"磁盘场景；缺当前独立环境复测、环境单变量图"},
-  {"id":"02","title":"贴图用途、通道含义、UV 与导入设置","refs":[["BridgetToon.shader",298,331],["BridgetToon.shader",365,405],["BridgetToon.shader",749,771]],"parameters":"texture_bindings.csv; texture_import_settings.json","images":["stages/00.png"],"evidence":"源码采样与导入记录；无纹理像素和网格通道实测"},
-  {"id":"03","title":"材质划分、Renderer 对应关系与参数覆盖","refs":[["GGSTRegionalShading.cs",23,66],["BridgetImitateProfile.cs",20,51]],"parameters":"material_parameters.csv; runtime_overrides.csv; runtime_write_sites.csv; saved_scene_rendering.json","images":["project/region_debug.png"],"evidence":"Debug38 非 Renderer22；专用22图待补；historical_scene_rendering仅交叉参考"},
-  {"id":"04","title":"Shader 总体结构和真实执行顺序","refs":[["BridgetToon.shader",321,725],["BridgetToon.shader",729,810]],"parameters":"shader_properties.csv; debug_outputs.csv","images":["stages/08.png"],"evidence":"源码控制流；图片只展示输出，不证明各分支独立"},
-  {"id":"05","title":"基础两段式明暗","refs":[["BridgetToon.shader",365,401],["BridgetToon.shader",405,437]],"parameters":"material_parameters.csv: _LightTreshold/_Ramp*/_Shadow*/_AO*","images":["stages/00.png","stages/01.png"],"evidence":"累计阶段；Debug10/16独立对照待补"},
-  {"id":"06","title":"脸部、皮肤与衣料的分区明暗","refs":[["BridgetToon.shader",405,458],["BridgetToon.shader",479,518]],"parameters":"material_parameters.csv: _Clean*/_Focused*; runtime_overrides.csv","images":["stages/01.png","stages/02.png","project/face.png","project/region_debug.png","project/shade_before.png","project/shade_after.png"],"evidence":"Debug38覆盖；shade历史同时改高光，非纯阴影A/B"},
-  {"id":"07","title":"亮面与暖色阴面的配色","refs":[["BridgetToon.shader",461,501],["BridgetToon.shader",516,518]],"parameters":"material_parameters.csv: _Palette* (Vector)","images":["stages/02.png","stages/03.png"],"evidence":"累计阶段；最终Color不等于Vector乘数"},
-  {"id":"08","title":"头发投脸、自阴影与地面背景投影的控制","refs":[["GGSTGeometryShadowMaps.cs",115,147],["GGSTGeometryShadowMaps.cs",175,280],["GGSTGeometryDepth.shader",27,46],["BridgetToon.shader",247,261],["BridgetToon.shader",438,501],["StageShadowReceiver.shader",44,88]],"parameters":"saved_scene_rendering.json; material_parameters.csv; runtime_write_sites.csv","images":["project/final.png"],"evidence":"原final历史展示；新增隔离Unity墙/地接收A/B、Stage回退及投脸零差异；其他姿态/组合仍待补"},
-  {"id":"09","title":"头发、布料、皮肤和金属的高光区分","refs":[["BridgetToon.shader",537,579],["BridgetToon.shader",605,609]],"parameters":"material_parameters.csv: _FourMaterial*/_*Shine*/_Focused*","images":["stages/03.png","stages/04.png","project/specular_debug.png"],"evidence":"Debug13最终高光；26–29只基础分类分支"},
-  {"id":"10","title":"大腿高光的范围、形状与颜色","refs":[["BridgetToon.shader",507,518],["BridgetToon.shader",580,609]],"parameters":"material_parameters.csv: _ThighLobe*; 专用UV常量","images":["stages/04.png","stages/05.png","project/thigh_before.png","project/thigh_after.png","project/thigh_lobe_debug.png"],"evidence":"历史受控OFF/ON与Debug44；新UV复测待补"},
-  {"id":"11","title":"外轮廓描边与内部线条","refs":[["BridgetToon.shader",625,652],["BridgetToon.shader",729,793]],"parameters":"material_parameters.csv: _Line*/_Outline*/_InnerLine*","images":["stages/05.png","stages/06.png","project/ink_debug.png"],"evidence":"Debug31内部线；无本次网格TANGENT审计"},
-  {"id":"12","title":"眼睛层次与高光","refs":[["BridgetToon.shader",268,272],["BridgetToon.shader",332,362],["BridgetToon.shader",521,529],["BridgetToon.shader",654,668]],"parameters":"material_parameters.csv: _Eye*; 专用UV常量","images":["stages/06.png","stages/07.png","project/face.png","project/eye_regions.png"],"evidence":"历史Debug33/近景；新增隔离Unity最终开关近景、精确裁切及局部性/负对照；其他姿态仍待补"},
-  {"id":"13","title":"边缘光","refs":[["BridgetToon.shader",532,535],["BridgetToon.shader",612,625]],"parameters":"material_parameters.csv: _ReferenceRim*","images":["stages/07.png","stages/08.png","project/rim_debug.png"],"evidence":"Debug12隔离rim；旧_RimWidth仅后备"},
-  {"id":"14","title":"整体检查、站立循环验收与常见问题","refs":[["GGSTGeometryShadowMaps.cs",197,243],["GGSTRegionalShading.cs",20,42],["BridgetToon.shader",660,725]],"parameters":"debug_outputs.csv; 保存值与覆盖账本","images":["project/final.png"],"evidence":"historical_standing_audit; historical_4k_validation_summary；新增standing-render-20261021固定环境Play证据：456受控帧、122正常帧；不代表新项目或跨环境通过"}
+  {
+    "id": "00",
+    "title": "最终效果与准备",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        189,
+        203
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        189,
+        203
+      ]
+    ]
+  },
+  {
+    "id": "01",
+    "title": "固定环境、相机和主光",
+    "refs": [
+      [
+        "BridgetImitateProfile.cs",
+        20,
+        51
+      ],
+      [
+        "BridgetToon.shader",
+        310,
+        331
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetImitateProfile.cs",
+        20,
+        30
+      ],
+      [
+        "BridgetToon.shader",
+        532,
+        535
+      ]
+    ]
+  },
+  {
+    "id": "02",
+    "title": "连接贴图、UV与顶点数据",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        298,
+        331
+      ],
+      [
+        "BridgetToon.shader",
+        365,
+        405
+      ],
+      [
+        "BridgetToon.shader",
+        749,
+        771
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        298,
+        303
+      ],
+      [
+        "BridgetToon.shader",
+        310,
+        319
+      ],
+      [
+        "BridgetToon.shader",
+        327,
+        331
+      ]
+    ]
+  },
+  {
+    "id": "03",
+    "title": "划分材质并连接Renderer参数",
+    "refs": [
+      [
+        "GGSTRegionalShading.cs",
+        23,
+        66
+      ],
+      [
+        "BridgetImitateProfile.cs",
+        20,
+        51
+      ]
+    ],
+    "excerpts": [
+      [
+        "GGSTRegionalShading.cs",
+        56,
+        66
+      ],
+      [
+        "BridgetImitateProfile.cs",
+        31,
+        43
+      ]
+    ]
+  },
+  {
+    "id": "04",
+    "title": "理解Pass与着色执行顺序",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        321,
+        725
+      ],
+      [
+        "BridgetToon.shader",
+        729,
+        810
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        495,
+        501
+      ],
+      [
+        "BridgetToon.shader",
+        605,
+        609
+      ],
+      [
+        "BridgetToon.shader",
+        620,
+        625
+      ]
+    ]
+  },
+  {
+    "id": "05",
+    "title": "建立两段式明暗",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        365,
+        401
+      ],
+      [
+        "BridgetToon.shader",
+        405,
+        437
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        386,
+        401
+      ]
+    ]
+  },
+  {
+    "id": "06",
+    "title": "整理脸部、皮肤和衣料明暗",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        405,
+        458
+      ],
+      [
+        "BridgetToon.shader",
+        479,
+        518
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        405,
+        410
+      ],
+      [
+        "BridgetToon.shader",
+        483,
+        501
+      ],
+      [
+        "BridgetToon.shader",
+        507,
+        518
+      ]
+    ]
+  },
+  {
+    "id": "07",
+    "title": "调整亮面与阴面配色",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        461,
+        501
+      ],
+      [
+        "BridgetToon.shader",
+        516,
+        518
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        469,
+        476
+      ],
+      [
+        "BridgetToon.shader",
+        494,
+        501
+      ]
+    ]
+  },
+  {
+    "id": "08",
+    "title": "接入投脸与墙地投影",
+    "refs": [
+      [
+        "GGSTGeometryShadowMaps.cs",
+        115,
+        147
+      ],
+      [
+        "GGSTGeometryShadowMaps.cs",
+        175,
+        280
+      ],
+      [
+        "GGSTGeometryDepth.shader",
+        27,
+        46
+      ],
+      [
+        "BridgetToon.shader",
+        247,
+        261
+      ],
+      [
+        "BridgetToon.shader",
+        438,
+        501
+      ],
+      [
+        "StageShadowReceiver.shader",
+        44,
+        88
+      ]
+    ],
+    "excerpts": [
+      [
+        "GGSTGeometryDepth.shader",
+        38,
+        46
+      ],
+      [
+        "BridgetToon.shader",
+        247,
+        261
+      ],
+      [
+        "StageShadowReceiver.shader",
+        80,
+        88
+      ]
+    ]
+  },
+  {
+    "id": "09",
+    "title": "区分四类材质高光",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        537,
+        579
+      ],
+      [
+        "BridgetToon.shader",
+        605,
+        609
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        548,
+        567
+      ],
+      [
+        "BridgetToon.shader",
+        572,
+        579
+      ],
+      [
+        "BridgetToon.shader",
+        605,
+        609
+      ]
+    ]
+  },
+  {
+    "id": "10",
+    "title": "塑造大腿局部亮块",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        507,
+        518
+      ],
+      [
+        "BridgetToon.shader",
+        580,
+        609
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        583,
+        603
+      ],
+      [
+        "BridgetToon.shader",
+        605,
+        609
+      ]
+    ]
+  },
+  {
+    "id": "11",
+    "title": "整理内部线与外轮廓",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        625,
+        652
+      ],
+      [
+        "BridgetToon.shader",
+        729,
+        793
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        635,
+        652
+      ],
+      [
+        "BridgetToon.shader",
+        755,
+        771
+      ],
+      [
+        "BridgetToon.shader",
+        774,
+        789
+      ]
+    ]
+  },
+  {
+    "id": "12",
+    "title": "细化眼睛与原有白点",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        268,
+        272
+      ],
+      [
+        "BridgetToon.shader",
+        332,
+        362
+      ],
+      [
+        "BridgetToon.shader",
+        521,
+        529
+      ],
+      [
+        "BridgetToon.shader",
+        654,
+        668
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        337,
+        353
+      ],
+      [
+        "BridgetToon.shader",
+        361,
+        362
+      ],
+      [
+        "BridgetToon.shader",
+        521,
+        529
+      ],
+      [
+        "BridgetToon.shader",
+        654,
+        657
+      ]
+    ]
+  },
+  {
+    "id": "13",
+    "title": "添加受控边缘光",
+    "refs": [
+      [
+        "BridgetToon.shader",
+        532,
+        535
+      ],
+      [
+        "BridgetToon.shader",
+        612,
+        625
+      ]
+    ],
+    "excerpts": [
+      [
+        "BridgetToon.shader",
+        616,
+        623
+      ]
+    ]
+  },
+  {
+    "id": "14",
+    "title": "排查站立循环中的画面问题",
+    "refs": [
+      [
+        "GGSTGeometryShadowMaps.cs",
+        197,
+        243
+      ],
+      [
+        "GGSTRegionalShading.cs",
+        20,
+        42
+      ],
+      [
+        "BridgetToon.shader",
+        660,
+        725
+      ]
+    ],
+    "excerpts": [
+      [
+        "GGSTGeometryShadowMaps.cs",
+        197,
+        208
+      ],
+      [
+        "BridgetToon.shader",
+        687,
+        693
+      ]
+    ]
+  }
 ]
