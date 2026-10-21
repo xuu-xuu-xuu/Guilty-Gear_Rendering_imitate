@@ -57,3 +57,7 @@ python -m mkdocs serve
 Material启动时另印有关于未来MkDocs2.0的上游提示；本项目固定使用1.6.1，严格构建本身未产生文档警告。上表桌面/手机条目是首次PR交付的本地检查记录；上线后的验收另以实际站点和部署工作流为准，不把本地结果冒充线上检查。
 
 以上初版检查没有执行Unity。后续本轮已在完整工程隔离副本完成采集器/Shader编译和23次静态Unity渲染，仍没有重做Play、GPU性能或站立循环；范围见[新实验](experiments-20261021.md)与[待补表](evidence.md)。远端PR检查会重算公开图片/裁切/局部性并核对原包，而不是在CI运行Unity；结论以当前PR Checks为准。
+
+## 后续站立循环证据
+
+[新增站立验收](standing-stability-20261021.md)记录了本地真实Unity Play执行：456条受控帧、122条正常主相机帧。CI增加PNG、裁切、时相/重复帧和源输入证据重算，不在GitHub runner启动Unity。本轮通过新PR提交，只有合并到main后才会部署。

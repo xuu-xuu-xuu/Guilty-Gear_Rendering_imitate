@@ -73,6 +73,7 @@ nav:
       - 图片来源与比较条件: reference/images.md
       - 历史证据与待补项: reference/evidence.md
       - 新实测：投影与眼睛 A/B: reference/experiments-20261021.md
+      - 新验收：站立循环渲染稳定性: reference/standing-stability-20261021.md
       - 构建、审阅与 Pages: reference/deployment.md
       - 来源与许可: reference/credits.md
   - 源码逐行索引:

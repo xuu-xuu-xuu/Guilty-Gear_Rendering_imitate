@@ -36,3 +36,13 @@ python tools/verify_experiments.py
 ```
 
 这会重算已发布图片的像素差、重复帧、眼区局部性、裁切与来源哈希，并核对导出的恢复/输入证据；它不重新执行Unity，也不能证明任意姿态或设备都成立。公开仓库只包含渲染PNG与数值证据，不包含私有工程副本、模型、纹理像素、动画或完整Editor日志。
+
+## 新增：站立渲染稳定性采集器
+
+`StandingRenderStabilityCapture.cs` 是后续新增、已在同一Unity隔离环境编译执行的验收工具，依赖完整工程现有类型，不属于原资料包，不是通用适配器。它只调用现有站立采样/播放API，不直接写动画数组、骨骼Transform、网格、Bind Pose或控制器，不保存场景/资源。
+
+受控阶段临时暂停播放器自动推进，每tick使用原采样接口，至少保持两个真实Play帧；13个cell起点另捕获Debug13/33/34、近景、外描边关闭和墙地接收衰减关闭。所有图从正常主相机onPostRender读回，不调用Camera.Render，避免提前读取原生蒙皮流。随后恢复播放器RestartAction("stand")，只观察正常播放八次回绕。原阶段与新阶段分别导出，不能把受控采样当成实时60Hz验收。
+
+仅在自己有权使用的完整工程隔离副本中运行：沿用本文件前述marker保护，增加本采集器到Editor目录，使用环境变量 `GGST_STANDING_OUTPUT` 指向隔离项目之外的新证据目录；调用 `-batchmode -projectPath <隔离副本> -executeMethod StandingRenderStabilityCapture.Run -logFile <本次日志>`。工具自行切换Play并退出，**不要加-quit**。其他原有Editor自动化工具仍应按隔离说明排除。没有完整依赖就不能运行，也不要下载资源补齐。
+
+实际本轮输出：456条受控帧、122条正常帧，去重91张原生PNG，另有13张固定[451,207,969,506]精确裁切。源工程428文件、副本422原输入前后不变。重算命令 `python tools/verify_standing.py` 只核查公开证据，不启动Unity。详见[完整验收报告](../../docs/reference/standing-stability-20261021.md)。

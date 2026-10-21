@@ -4,7 +4,7 @@
 
 [![原工程历史最终渲染](assets/images/project/final.png)](assets/images/project/final.png)
 
-原工程2026-10-20历史最终验收图，非Debug，含角色投影；来源 `thigh_highlight_20261020/verified_play_2.png`。它是历史展示，不能与独立副本作单变量比较。[本轮新Unity静态实验](reference/experiments-20261021.md)单独收录，不将历史图冒充新图；本轮未重做Play。完整来源见[图片索引](reference/images.md)。
+原工程2026-10-20历史最终验收图，非Debug，含角色投影；来源 `thigh_highlight_20261020/verified_play_2.png`。它是历史展示，不能与独立副本作单变量比较。[本轮新Unity静态实验](reference/experiments-20261021.md)单独收录，不将历史图冒充新图；后续[站立验收](reference/standing-stability-20261021.md)已真实进入Play，结论独立列出。完整来源见[图片索引](reference/images.md)。
 
 ## 从哪里开始
 
@@ -28,7 +28,7 @@
 
 ## 完成状态与边界
 
-00–14章正文完整；[新实测附录](reference/experiments-20261021.md)已补墙/地接收单属性投影A/B、最终眼睛开关近景、重复帧及恢复证据，采集器和原Shader已在完整工程隔离副本编译/渲染。网格TANGENT语义、通用适配、新模型/UV与Play时序仍待补，见[证据表](reference/evidence.md)。不宣称原游戏内部算法还原。
+00–14章正文完整；[新实测附录](reference/experiments-20261021.md)已补墙/地接收单属性投影A/B、最终眼睛开关近景、重复帧及恢复证据，采集器和原Shader已在完整工程隔离副本编译/渲染。[站立循环新增验收](reference/standing-stability-20261021.md)已覆盖三个受控周期和122条正常Play帧；网格TANGENT语义、通用适配、新模型/UV与跨环境时序仍待补，见[证据表](reference/evidence.md)。不宣称原游戏内部算法还原。
 
 站点已于2026-10-21通过GitHub Pages发布，PR #1已合并。本站使用项目子路径，正文与仓库Markdown共用。发布记录、检查范围与后续部署方法见[构建与Pages](reference/deployment.md)。
 

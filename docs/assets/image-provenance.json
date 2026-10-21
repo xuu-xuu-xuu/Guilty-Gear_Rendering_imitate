@@ -593,5 +593,6150 @@
     ],
     "resized": false,
     "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/03cc0ec6cfd0790587e147d99921be2dec21f8f184c6b6a9cc75f4f8bd5ad1fb.png",
+    "sha256": "03cc0ec6cfd0790587e147d99921be2dec21f8f184c6b6a9cc75f4f8bd5ad1fb",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/06cd49a4cfe247fb5a8d5689b1878318246a3219b6ef4348670245ac956a943d.png",
+    "sha256": "06cd49a4cfe247fb5a8d5689b1878318246a3219b6ef4348670245ac956a943d",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/07f4259a5c7728108d5452224be4ca953b1514ab74c853c87d0f157d1a9bc5dd.png",
+    "sha256": "07f4259a5c7728108d5452224be4ca953b1514ab74c853c87d0f157d1a9bc5dd",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/0997ec7b0aa9d8d304e256287aabecda815ee1b6a961c54ce71150e3f271567e.png",
+    "sha256": "0997ec7b0aa9d8d304e256287aabecda815ee1b6a961c54ce71150e3f271567e",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/0d305895b74d9df90c682a055b8455ce8fe9e83b413bc362fc168782f7e0931d.png",
+    "sha256": "0d305895b74d9df90c682a055b8455ce8fe9e83b413bc362fc168782f7e0931d",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/0e05ee1f95b7aef3becaa963e1f68c560e6199c9394d11eebff595a2e49c6f8b.png",
+    "sha256": "0e05ee1f95b7aef3becaa963e1f68c560e6199c9394d11eebff595a2e49c6f8b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/0e4ec28b318b1112afe6f8679c297f39b7d70dc6f8333a4d22b77a9b21ce3087.png",
+    "sha256": "0e4ec28b318b1112afe6f8679c297f39b7d70dc6f8333a4d22b77a9b21ce3087",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/106337d0c096331cf0208952c538996fe3ec37328a57fa11a39caebcb3b07bf6.png",
+    "sha256": "106337d0c096331cf0208952c538996fe3ec37328a57fa11a39caebcb3b07bf6",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/116d37656258e5bf534d2da1ff759a2a31a8e115a24c2921fc860ef84f5b4e68.png",
+    "sha256": "116d37656258e5bf534d2da1ff759a2a31a8e115a24c2921fc860ef84f5b4e68",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/157b1a59a21855a2cf7af745cab2b351e3bf0ae5e2995e6c228df99bd7d5c27e.png",
+    "sha256": "157b1a59a21855a2cf7af745cab2b351e3bf0ae5e2995e6c228df99bd7d5c27e",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/1923cce4b3ba93b84c5282f8d3aaf3c79a8db668d4ff7d9d886f76f23962e94b.png",
+    "sha256": "1923cce4b3ba93b84c5282f8d3aaf3c79a8db668d4ff7d9d886f76f23962e94b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/19a1a171418966dfe9515536f3d544f26e814bb552e956452c92209fef673336.png",
+    "sha256": "19a1a171418966dfe9515536f3d544f26e814bb552e956452c92209fef673336",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/2267ebc369e05653477811582a4a717d5297ff102b9665cb815e95df384a06e3.png",
+    "sha256": "2267ebc369e05653477811582a4a717d5297ff102b9665cb815e95df384a06e3",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/257448dc02acf01cefca3cc8dacd25b484dd587ecad18646842fa6e1cb00bcd3.png",
+    "sha256": "257448dc02acf01cefca3cc8dacd25b484dd587ecad18646842fa6e1cb00bcd3",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/2f656caf3d8ecc370d4e95f0139b6a283ec3fd5f788284529b01bc6b64805e92.png",
+    "sha256": "2f656caf3d8ecc370d4e95f0139b6a283ec3fd5f788284529b01bc6b64805e92",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/31527d96f509a5cf2696739f33d3f492eed4e59b7b017312384e51e83362978e.png",
+    "sha256": "31527d96f509a5cf2696739f33d3f492eed4e59b7b017312384e51e83362978e",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/335da9dee81b771e6875d24979846b29dc85a5961bdccbe21063bab314c3bbd2.png",
+    "sha256": "335da9dee81b771e6875d24979846b29dc85a5961bdccbe21063bab314c3bbd2",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/3478d743ca9819fb96709e99d447c167ad7bac2395a74516501966512f093d8c.png",
+    "sha256": "3478d743ca9819fb96709e99d447c167ad7bac2395a74516501966512f093d8c",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/35ee7d063848a34fa8f1ec5adee4b1ee52e44f50be6fa426084ba3ca55882bc1.png",
+    "sha256": "35ee7d063848a34fa8f1ec5adee4b1ee52e44f50be6fa426084ba3ca55882bc1",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/364f0d360cd5c063afb0018835710151d5be4796955eb77b8b101dfe2aaa077a.png",
+    "sha256": "364f0d360cd5c063afb0018835710151d5be4796955eb77b8b101dfe2aaa077a",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/47aac548de3f7796ee9e2b50d2c9828342bcd041a4900374c392419d7d1a7a35.png",
+    "sha256": "47aac548de3f7796ee9e2b50d2c9828342bcd041a4900374c392419d7d1a7a35",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/4e050a835ba2b016a0939b4932731dcc1faa7f042bbcfb33098df396ef943ca6.png",
+    "sha256": "4e050a835ba2b016a0939b4932731dcc1faa7f042bbcfb33098df396ef943ca6",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/51fcb048cf4dc0471b872a6e55c37f92e4d1f8d998b7dfa12fc679aca433d976.png",
+    "sha256": "51fcb048cf4dc0471b872a6e55c37f92e4d1f8d998b7dfa12fc679aca433d976",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/53b60358c2594719d1ec50510bb5aaa1b9dc56ea94bca27ecc6a23454be23b0f.png",
+    "sha256": "53b60358c2594719d1ec50510bb5aaa1b9dc56ea94bca27ecc6a23454be23b0f",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/554ebe95a48d62f6623eea360fed5dc938131a7abc8303b309c851c9f409d3f1.png",
+    "sha256": "554ebe95a48d62f6623eea360fed5dc938131a7abc8303b309c851c9f409d3f1",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/577c4b1afffb4e8af0829109783ea8c55ab0b20bffb584271ba6249a6812c3a9.png",
+    "sha256": "577c4b1afffb4e8af0829109783ea8c55ab0b20bffb584271ba6249a6812c3a9",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/590a9b000a61e5126199f733212d8fd2410c5c9a9318b36e6ce7cad11682109a.png",
+    "sha256": "590a9b000a61e5126199f733212d8fd2410c5c9a9318b36e6ce7cad11682109a",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 20,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 19,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 23,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 22,
+        "cell": 4,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 21,
+        "cell": 4,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/5ab886179647c6156249011ff03f0479a06623cba2decf42cea51974cf4c2a74.png",
+    "sha256": "5ab886179647c6156249011ff03f0479a06623cba2decf42cea51974cf4c2a74",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/5c7da6ed3bcbb45529e9e4799a259d0595cca0619c699d178362f5bfeeed22ec.png",
+    "sha256": "5c7da6ed3bcbb45529e9e4799a259d0595cca0619c699d178362f5bfeeed22ec",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/5fd47f2375fc5b82e67f55823c169d221537ce2666f1402c6eb675816875d2d3.png",
+    "sha256": "5fd47f2375fc5b82e67f55823c169d221537ce2666f1402c6eb675816875d2d3",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/62c0aef0f175fc9c0e009ce22e59f6d9006249e0a39ce71a38295850ba70da1c.png",
+    "sha256": "62c0aef0f175fc9c0e009ce22e59f6d9006249e0a39ce71a38295850ba70da1c",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 16,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 15,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 14,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 13,
+        "cell": 3,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 17,
+        "cell": 3,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/6461d4969010e3d0a2f4bad6a444e68834c076ca5158b71e2210ec6e3e2447ee.png",
+    "sha256": "6461d4969010e3d0a2f4bad6a444e68834c076ca5158b71e2210ec6e3e2447ee",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/6a5b22500cc90694c666309904988a0068560ff70ac9774cae1b0abe03187d8b.png",
+    "sha256": "6a5b22500cc90694c666309904988a0068560ff70ac9774cae1b0abe03187d8b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7437ed5c65c4df29ee00cb94ecfa941e7dfbf5b450d19fd12f8885c21b04ff37.png",
+    "sha256": "7437ed5c65c4df29ee00cb94ecfa941e7dfbf5b450d19fd12f8885c21b04ff37",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 13,
+        "cell": 3,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7654280869510d7532a9675554bc34a71ec69cb83b438ca32e985ace2ca33a7e.png",
+    "sha256": "7654280869510d7532a9675554bc34a71ec69cb83b438ca32e985ace2ca33a7e",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/78a47ce3a3235b55d9ffaf410d7bc1da04b612699c045486f405df27f3f8f2d9.png",
+    "sha256": "78a47ce3a3235b55d9ffaf410d7bc1da04b612699c045486f405df27f3f8f2d9",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 7,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 6,
+        "cell": 1,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 5,
+        "cell": 1,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7a16e647c4704e66eedb164ae623a588c3eefa90e6a0e6dd7e34ed1fdb27415b.png",
+    "sha256": "7a16e647c4704e66eedb164ae623a588c3eefa90e6a0e6dd7e34ed1fdb27415b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7eb1172fabb5cf34b7afcc92f0b5082b86ab3d097d9ab5d72092eda7e320f548.png",
+    "sha256": "7eb1172fabb5cf34b7afcc92f0b5082b86ab3d097d9ab5d72092eda7e320f548",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7ee263fc641e4992ae3450dade4f13a5e1507cc1ad576227a09d33e1cb9f67c0.png",
+    "sha256": "7ee263fc641e4992ae3450dade4f13a5e1507cc1ad576227a09d33e1cb9f67c0",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 29,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 28,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 27,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 26,
+        "cell": 5,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 25,
+        "cell": 5,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/7f3bc5242a9f700bab9118b3e8a6294256c4188f79de1be53d46a67cf8294146.png",
+    "sha256": "7f3bc5242a9f700bab9118b3e8a6294256c4188f79de1be53d46a67cf8294146",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/801de08d9abdb614595a5b58b7b406c34196762f85641cee42fb0957ff7f81e8.png",
+    "sha256": "801de08d9abdb614595a5b58b7b406c34196762f85641cee42fb0957ff7f81e8",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/8187d70d25fd1d3c1b65122e59013108bf534d73f48a90bb41f98fc6de381bc6.png",
+    "sha256": "8187d70d25fd1d3c1b65122e59013108bf534d73f48a90bb41f98fc6de381bc6",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/854545dfa97c1600eeb6e346d7fa3f5db4a2f599f84502045a111677e3c00473.png",
+    "sha256": "854545dfa97c1600eeb6e346d7fa3f5db4a2f599f84502045a111677e3c00473",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/88b21ecb2cfa0b73dcb5f97d3d53ccd5e7f73c177107e6f0d4977a997ba332b6.png",
+    "sha256": "88b21ecb2cfa0b73dcb5f97d3d53ccd5e7f73c177107e6f0d4977a997ba332b6",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 61,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 60,
+        "cell": 12,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 62,
+        "cell": 12,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/93a8322f5517ba37285be24f3281c2871045c6e11e5df8c1c0063447a9331514.png",
+    "sha256": "93a8322f5517ba37285be24f3281c2871045c6e11e5df8c1c0063447a9331514",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 56,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 57,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 55,
+        "cell": 11,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 58,
+        "cell": 11,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/96130a6b74b79496219495a728210c1c5e5b4a59217b0dbddea2001eb02ee706.png",
+    "sha256": "96130a6b74b79496219495a728210c1c5e5b4a59217b0dbddea2001eb02ee706",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 55,
+        "cell": 11,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/999a740096fea2d7dea9549cbd8ade201b6335c8be7674d3124489637c436ae2.png",
+    "sha256": "999a740096fea2d7dea9549cbd8ade201b6335c8be7674d3124489637c436ae2",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/9f9cafd6398e656a041fbb9f28047f626d81a9afa4f8bca418145fb24e5031aa.png",
+    "sha256": "9f9cafd6398e656a041fbb9f28047f626d81a9afa4f8bca418145fb24e5031aa",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/a0057fb4bdeb09ba983908c2cd85c59e6cd1f35c43d51d05018e59ed9ebd68b6.png",
+    "sha256": "a0057fb4bdeb09ba983908c2cd85c59e6cd1f35c43d51d05018e59ed9ebd68b6",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/a2cd7c1a6a744a13c60078e93a6037ae4ef5eae5c0cf26051b732511add15d27.png",
+    "sha256": "a2cd7c1a6a744a13c60078e93a6037ae4ef5eae5c0cf26051b732511add15d27",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 45,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 49,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 44,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 48,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 47,
+        "cell": 9,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 46,
+        "cell": 9,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/a624847911ae8f0df4eca3c73141b367a52cdee16b61b7c9669249075b857c01.png",
+    "sha256": "a624847911ae8f0df4eca3c73141b367a52cdee16b61b7c9669249075b857c01",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 12,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 11,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 10,
+        "cell": 2,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 9,
+        "cell": 2,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/aa8a1e68b26c96d72b7bbaa8407431a2a3c489ec1a187128d637c318a4093f0c.png",
+    "sha256": "aa8a1e68b26c96d72b7bbaa8407431a2a3c489ec1a187128d637c318a4093f0c",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/aad705a56db431d7a2cbe668653a767eb52047e7ec5c3a218ffbb50d19d76b44.png",
+    "sha256": "aad705a56db431d7a2cbe668653a767eb52047e7ec5c3a218ffbb50d19d76b44",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/aadd04ce15b0bed9b685e3b63eb6f3a13356aa073c3424c4bc436030335a8799.png",
+    "sha256": "aadd04ce15b0bed9b685e3b63eb6f3a13356aa073c3424c4bc436030335a8799",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/abe07bf3664743c1a6522367942752d8c2acf2cda9f461ec1e6cf76c27a9f816.png",
+    "sha256": "abe07bf3664743c1a6522367942752d8c2acf2cda9f461ec1e6cf76c27a9f816",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ad0a75075f197eb183844cd0c1f2990bde7bfb4c49654f1e4d1b330f5f8f7b9b.png",
+    "sha256": "ad0a75075f197eb183844cd0c1f2990bde7bfb4c49654f1e4d1b330f5f8f7b9b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/b383211a2fb76664515ae14621d9d3eb54eb40e9381da085e394691409bf1701.png",
+    "sha256": "b383211a2fb76664515ae14621d9d3eb54eb40e9381da085e394691409bf1701",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/b6da68d0af0dd263f321e561e01fdb2aa33ba84aef9d960b4f5dff0e84c04281.png",
+    "sha256": "b6da68d0af0dd263f321e561e01fdb2aa33ba84aef9d960b4f5dff0e84c04281",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/b875bb073182cee4e63eeb26a78546aea74565bf50ddd5e090e1f41341083c61.png",
+    "sha256": "b875bb073182cee4e63eeb26a78546aea74565bf50ddd5e090e1f41341083c61",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/bd7455829cca8df2cecb5c04ac7d0bc0b8720dbf3c370a88de5fe66682d24222.png",
+    "sha256": "bd7455829cca8df2cecb5c04ac7d0bc0b8720dbf3c370a88de5fe66682d24222",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/bf326635f4ccfd43724c5c40298519b97b8a6498c25e798e69021f0f9e5396cf.png",
+    "sha256": "bf326635f4ccfd43724c5c40298519b97b8a6498c25e798e69021f0f9e5396cf",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 39,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 43,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 41,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 40,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 42,
+        "cell": 8,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/c088cfc84e410342a59def227a55fd73e53ff84bcd3b4d207f701be639bdbcf3.png",
+    "sha256": "c088cfc84e410342a59def227a55fd73e53ff84bcd3b4d207f701be639bdbcf3",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/c44b6915ded9c69c44a2b4b0a33eeeda71f6e3eb289f64d861e806c83094e806.png",
+    "sha256": "c44b6915ded9c69c44a2b4b0a33eeeda71f6e3eb289f64d861e806c83094e806",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 53,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 52,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 51,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 54,
+        "cell": 10,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/c8eb4ab354510ff63d6f7a40e62399c825e7a920a6e4eb7cdd4d85824da28dbe.png",
+    "sha256": "c8eb4ab354510ff63d6f7a40e62399c825e7a920a6e4eb7cdd4d85824da28dbe",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/c98a5985306f2df12631f0261a09fc1d4146b210f587bb9f8b6b9cdb605a2c65.png",
+    "sha256": "c98a5985306f2df12631f0261a09fc1d4146b210f587bb9f8b6b9cdb605a2c65",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/cb069b7568e9cb462a709ec5f3a8b18a55f8bf22eea2a55c42e9a3dbe4a43c26.png",
+    "sha256": "cb069b7568e9cb462a709ec5f3a8b18a55f8bf22eea2a55c42e9a3dbe4a43c26",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ce647568baf40b9429c4a52737de2bd2454ef418cb0252ad71050735fda3ed6c.png",
+    "sha256": "ce647568baf40b9429c4a52737de2bd2454ef418cb0252ad71050735fda3ed6c",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ce7ad73cd0b3b0cc1c2964041a2e0782347f89fd8d0428135fa9de8948bf4da1.png",
+    "sha256": "ce7ad73cd0b3b0cc1c2964041a2e0782347f89fd8d0428135fa9de8948bf4da1",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/cf05441ff809410ab9d47fef6c3b6bc1e2817dfd99e4e5bb01c26d47ecd85937.png",
+    "sha256": "cf05441ff809410ab9d47fef6c3b6bc1e2817dfd99e4e5bb01c26d47ecd85937",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 2,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 1,
+        "cell": 0,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 8,
+        "tick": 3,
+        "cell": 0,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/cf52e1d4725fae4f13480dea258315385dc93e331dbf4054915d512f224b1b40.png",
+    "sha256": "cf52e1d4725fae4f13480dea258315385dc93e331dbf4054915d512f224b1b40",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 38,
+        "cell": 8,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/cf9030e5b61e4ccc2b46171dcccc64394c387e421cc57b1ff8e379a508bd5a27.png",
+    "sha256": "cf9030e5b61e4ccc2b46171dcccc64394c387e421cc57b1ff8e379a508bd5a27",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/d286f6848a4736025df77304d4157aec6542a7a64fa044a1809543ca43a4efa9.png",
+    "sha256": "d286f6848a4736025df77304d4157aec6542a7a64fa044a1809543ca43a4efa9",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 44,
+        "cell": 9,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/d300ee11e4203785298e8609dbe5f3fb89cd085ef0a83ba41872cc4f76df5259.png",
+    "sha256": "d300ee11e4203785298e8609dbe5f3fb89cd085ef0a83ba41872cc4f76df5259",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 31,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 0,
+        "tick": 33,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 32,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/d345258d2a15acb33f8d37f3752dd8def034c09ce76d87a09a318cc51313f92e.png",
+    "sha256": "d345258d2a15acb33f8d37f3752dd8def034c09ce76d87a09a318cc51313f92e",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/d7d5618d1b761146587a81afa2fbe898ae25435cde695779ee893edb1bdb745a.png",
+    "sha256": "d7d5618d1b761146587a81afa2fbe898ae25435cde695779ee893edb1bdb745a",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/da0667553ac49c8e516508d124d4bd012243cbf601d21793a974a21042e1f546.png",
+    "sha256": "da0667553ac49c8e516508d124d4bd012243cbf601d21793a974a21042e1f546",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/da3d0e30b1ba98def2d8a6690f71a576aa8b2242363c7afbe0a869d01ca5d947.png",
+    "sha256": "da3d0e30b1ba98def2d8a6690f71a576aa8b2242363c7afbe0a869d01ca5d947",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ddd5442766c87b686c23cfbe16382fa48ead1d77c33b1b1dc0c8dfa7ce5563ef.png",
+    "sha256": "ddd5442766c87b686c23cfbe16382fa48ead1d77c33b1b1dc0c8dfa7ce5563ef",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 18,
+        "cell": 4,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e0306ab98b5c91ae9cb5a1305f7206d7aa71e3b4ffa072a89d38e732ae935283.png",
+    "sha256": "e0306ab98b5c91ae9cb5a1305f7206d7aa71e3b4ffa072a89d38e732ae935283",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e34788594e9eed0617ff73a3a5d88c3d4178683c36c09ffe22bc830141d3c809.png",
+    "sha256": "e34788594e9eed0617ff73a3a5d88c3d4178683c36c09ffe22bc830141d3c809",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-regions",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 33
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e5fd9c9c6e6969f71ac174f8b45778c0232e1f80ff3df73ee72aee6264bd60ec.png",
+    "sha256": "e5fd9c9c6e6969f71ac174f8b45778c0232e1f80ff3df73ee72aee6264bd60ec",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 24,
+        "cell": 5,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e6a83be62db7a89bfd2d985b73baadf24a035aaff137109bbf516b745abb23ba.png",
+    "sha256": "e6a83be62db7a89bfd2d985b73baadf24a035aaff137109bbf516b745abb23ba",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e751cab84a1eef5dc672065645d7d7ebdc8d79af431561deecacf448aa1be9d3.png",
+    "sha256": "e751cab84a1eef5dc672065645d7d7ebdc8d79af431561deecacf448aa1be9d3",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 30,
+        "cell": 6,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e794f595763524b860bbc225ebe8776045316e207c90e605e3d6c598f4c18997.png",
+    "sha256": "e794f595763524b860bbc225ebe8776045316e207c90e605e3d6c598f4c18997",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ea28984b41b9e3a67c22551688a7f6bcbdb78a173bd570d34028f68d99a6e2b8.png",
+    "sha256": "ea28984b41b9e3a67c22551688a7f6bcbdb78a173bd570d34028f68d99a6e2b8",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 4,
+        "cell": 1,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ed8de2b33a0bdf5ebd4896f2f56266fb83cd181c507f289089f62fdeb4b94440.png",
+    "sha256": "ed8de2b33a0bdf5ebd4896f2f56266fb83cd181c507f289089f62fdeb4b94440",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "specular",
+        "cycle": 0,
+        "tick": 50,
+        "cell": 10,
+        "debug": 13
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/f3975b42864464876a0bb64b8250d77cb65951e3bd8432dba3f023fc4b2ef3d1.png",
+    "sha256": "f3975b42864464876a0bb64b8250d77cb65951e3bd8432dba3f023fc4b2ef3d1",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "stage-receivers-off",
+        "cycle": 0,
+        "tick": 0,
+        "cell": 0,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/f5e1ae225d2f59102cbae545c0329619c789768b114ea3d67f986f7832901066.png",
+    "sha256": "f5e1ae225d2f59102cbae545c0329619c789768b114ea3d67f986f7832901066",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-final",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/f83cf3684c8f54693fa3b21bf2f744085c51df1b077c8b6ae2c52132ce57f850.png",
+    "sha256": "f83cf3684c8f54693fa3b21bf2f744085c51df1b077c8b6ae2c52132ce57f850",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 0,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 0,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 1,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 1,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 35,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-first",
+        "cycle": 2,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "controlled",
+        "kind": "full-settled",
+        "cycle": 2,
+        "tick": 37,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 1,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 2,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 3,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 4,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 5,
+        "tick": 36,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 6,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      },
+      {
+        "phase": "natural",
+        "kind": "natural",
+        "cycle": 7,
+        "tick": 34,
+        "cell": 7,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/fa50739c62e408938ebf68ec6e202c7059ce974a5276b8d741f287c5f88e1b90.png",
+    "sha256": "fa50739c62e408938ebf68ec6e202c7059ce974a5276b8d741f287c5f88e1b90",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "eye-contribution",
+        "cycle": 0,
+        "tick": 59,
+        "cell": 12,
+        "debug": 34
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/fcc11ec4b13a72295e7dd5863a976655cf74780f4644167d7ed211732c0f561b.png",
+    "sha256": "fcc11ec4b13a72295e7dd5863a976655cf74780f4644167d7ed211732c0f561b",
+    "size": [
+      1600,
+      900
+    ],
+    "kind": "new-real-unity-render",
+    "origin": "isolated complete project, Unity 2022.3.62f3c1, D3D11",
+    "uses": [
+      {
+        "phase": "controlled",
+        "kind": "outline-off",
+        "cycle": 0,
+        "tick": 8,
+        "cell": 2,
+        "debug": 0
+      }
+    ],
+    "retouched": false
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/ed811197295cd1b48ae629bdbcfa4b958959e28822b6360351dae72998869cba.png",
+    "sha256": "ed811197295cd1b48ae629bdbcfa4b958959e28822b6360351dae72998869cba",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/ad0a75075f197eb183844cd0c1f2990bde7bfb4c49654f1e4d1b330f5f8f7b9b.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 0,
+        "derivedFrom": "docs/assets/images/standing/20261021/ad0a75075f197eb183844cd0c1f2990bde7bfb4c49654f1e4d1b330f5f8f7b9b.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/088cb6f3d728bb53332f9656cf71d2e175a7879cad9fea3a2a080eb271983ffa.png",
+    "sha256": "088cb6f3d728bb53332f9656cf71d2e175a7879cad9fea3a2a080eb271983ffa",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/106337d0c096331cf0208952c538996fe3ec37328a57fa11a39caebcb3b07bf6.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 1,
+        "derivedFrom": "docs/assets/images/standing/20261021/106337d0c096331cf0208952c538996fe3ec37328a57fa11a39caebcb3b07bf6.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/9210e3a93d5258c5abf4a6e995060ad7093ece39384a5ec92783933c70b30589.png",
+    "sha256": "9210e3a93d5258c5abf4a6e995060ad7093ece39384a5ec92783933c70b30589",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/116d37656258e5bf534d2da1ff759a2a31a8e115a24c2921fc860ef84f5b4e68.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 2,
+        "derivedFrom": "docs/assets/images/standing/20261021/116d37656258e5bf534d2da1ff759a2a31a8e115a24c2921fc860ef84f5b4e68.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/265f0a083f46c0a40e4701c2b7e892fa6c92162b99d23c6e7558d8ba87c82da8.png",
+    "sha256": "265f0a083f46c0a40e4701c2b7e892fa6c92162b99d23c6e7558d8ba87c82da8",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/5ab886179647c6156249011ff03f0479a06623cba2decf42cea51974cf4c2a74.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 3,
+        "derivedFrom": "docs/assets/images/standing/20261021/5ab886179647c6156249011ff03f0479a06623cba2decf42cea51974cf4c2a74.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/e52d0f7586270b85130d31f5f3c2c4071fdf4f77bb44233c41aac2707f3e0381.png",
+    "sha256": "e52d0f7586270b85130d31f5f3c2c4071fdf4f77bb44233c41aac2707f3e0381",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/ddd5442766c87b686c23cfbe16382fa48ead1d77c33b1b1dc0c8dfa7ce5563ef.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 4,
+        "derivedFrom": "docs/assets/images/standing/20261021/ddd5442766c87b686c23cfbe16382fa48ead1d77c33b1b1dc0c8dfa7ce5563ef.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/39f03300d6458274161dc3f496de7315c96711e1d65658e2d6517c27ed442a2a.png",
+    "sha256": "39f03300d6458274161dc3f496de7315c96711e1d65658e2d6517c27ed442a2a",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/e5fd9c9c6e6969f71ac174f8b45778c0232e1f80ff3df73ee72aee6264bd60ec.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 5,
+        "derivedFrom": "docs/assets/images/standing/20261021/e5fd9c9c6e6969f71ac174f8b45778c0232e1f80ff3df73ee72aee6264bd60ec.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/954a7778c339590d44f56c23085930d4d9abb71fa43c637cb8ab8575c2cdd720.png",
+    "sha256": "954a7778c339590d44f56c23085930d4d9abb71fa43c637cb8ab8575c2cdd720",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/e751cab84a1eef5dc672065645d7d7ebdc8d79af431561deecacf448aa1be9d3.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 6,
+        "derivedFrom": "docs/assets/images/standing/20261021/e751cab84a1eef5dc672065645d7d7ebdc8d79af431561deecacf448aa1be9d3.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/20b0f1e648395935e10994f434958fc77bc36a1d5d95bab6b37d01d589986f11.png",
+    "sha256": "20b0f1e648395935e10994f434958fc77bc36a1d5d95bab6b37d01d589986f11",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/e794f595763524b860bbc225ebe8776045316e207c90e605e3d6c598f4c18997.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 7,
+        "derivedFrom": "docs/assets/images/standing/20261021/e794f595763524b860bbc225ebe8776045316e207c90e605e3d6c598f4c18997.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/05fe123f5b91c96391a74a4005526bee9ec682504e02fb6e090ace15f01ba328.png",
+    "sha256": "05fe123f5b91c96391a74a4005526bee9ec682504e02fb6e090ace15f01ba328",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/47aac548de3f7796ee9e2b50d2c9828342bcd041a4900374c392419d7d1a7a35.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 8,
+        "derivedFrom": "docs/assets/images/standing/20261021/47aac548de3f7796ee9e2b50d2c9828342bcd041a4900374c392419d7d1a7a35.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/013ecaa4e85e6cd3a796d6b66e419adfaa58bf16c8bc28f01788e4ecd9b47a44.png",
+    "sha256": "013ecaa4e85e6cd3a796d6b66e419adfaa58bf16c8bc28f01788e4ecd9b47a44",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/03cc0ec6cfd0790587e147d99921be2dec21f8f184c6b6a9cc75f4f8bd5ad1fb.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 9,
+        "derivedFrom": "docs/assets/images/standing/20261021/03cc0ec6cfd0790587e147d99921be2dec21f8f184c6b6a9cc75f4f8bd5ad1fb.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/058403b25af5bfc8b8e3c97315afef165b333ec4ea23bf21689990ed8c7b62dd.png",
+    "sha256": "058403b25af5bfc8b8e3c97315afef165b333ec4ea23bf21689990ed8c7b62dd",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/e6a83be62db7a89bfd2d985b73baadf24a035aaff137109bbf516b745abb23ba.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 10,
+        "derivedFrom": "docs/assets/images/standing/20261021/e6a83be62db7a89bfd2d985b73baadf24a035aaff137109bbf516b745abb23ba.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/d18a6dcb52a54349689ee00fda287c929299abe39f568a8e187d4759c92b3b79.png",
+    "sha256": "d18a6dcb52a54349689ee00fda287c929299abe39f568a8e187d4759c92b3b79",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/7eb1172fabb5cf34b7afcc92f0b5082b86ab3d097d9ab5d72092eda7e320f548.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 11,
+        "derivedFrom": "docs/assets/images/standing/20261021/7eb1172fabb5cf34b7afcc92f0b5082b86ab3d097d9ab5d72092eda7e320f548.png"
+      }
+    ]
+  },
+  {
+    "document_path": "docs/assets/images/standing/20261021/595b9533a97de9cb0116e47c8e82fd81369b940b61d4086a09700baf59008a12.png",
+    "sha256": "595b9533a97de9cb0116e47c8e82fd81369b940b61d4086a09700baf59008a12",
+    "size": [
+      518,
+      299
+    ],
+    "kind": "exact-pixel-crop",
+    "origin": "controlled eye-final original PNG",
+    "debug": 0,
+    "derivedFrom": "docs/assets/images/standing/20261021/f5e1ae225d2f59102cbae545c0329619c789768b114ea3d67f986f7832901066.png",
+    "cropBoxXYXY": [
+      451,
+      207,
+      969,
+      506
+    ],
+    "retouched": false,
+    "resized": false,
+    "uses": [
+      {
+        "cell": 12,
+        "derivedFrom": "docs/assets/images/standing/20261021/f5e1ae225d2f59102cbae545c0329619c789768b114ea3d67f986f7832901066.png"
+      }
+    ]
   }
 ]

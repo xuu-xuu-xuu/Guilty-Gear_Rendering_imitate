@@ -18,7 +18,7 @@
 | 11 外轮廓描边与内部线条 | BridgetToon.shader:625–652; BridgetToon.shader:729–793 | material_parameters.csv: _Line*/_Outline*/_InnerLine* | stages/05.png, stages/06.png, project/ink_debug.png | Debug31内部线；无本次网格TANGENT审计 |
 | 12 眼睛层次与高光 | BridgetToon.shader:268–272; BridgetToon.shader:332–362; BridgetToon.shader:521–529; BridgetToon.shader:654–668 | material_parameters.csv: _Eye*; 专用UV常量 | stages/06.png, stages/07.png, project/face.png, project/eye_regions.png | 历史Debug33/近景；新增隔离Unity最终开关近景、精确裁切及局部性/负对照；其他姿态仍待补 |
 | 13 边缘光 | BridgetToon.shader:532–535; BridgetToon.shader:612–625 | material_parameters.csv: _ReferenceRim* | stages/07.png, stages/08.png, project/rim_debug.png | Debug12隔离rim；旧_RimWidth仅后备 |
-| 14 整体检查、站立循环验收与常见问题 | GGSTGeometryShadowMaps.cs:197–243; GGSTRegionalShading.cs:20–42; BridgetToon.shader:660–725 | debug_outputs.csv; 保存值与覆盖账本 | project/final.png | historical_standing_audit; historical_4k_validation_summary；不代表本次或新项目通过 |
+| 14 整体检查、站立循环验收与常见问题 | GGSTGeometryShadowMaps.cs:197–243; GGSTRegionalShading.cs:20–42; BridgetToon.shader:660–725 | debug_outputs.csv; 保存值与覆盖账本 | project/final.png | historical_standing_audit; historical_4k_validation_summary；新增standing-render-20261021固定环境Play证据：456受控帧、122正常帧；不代表新项目或跨环境通过 |
 
 完整性基线：MANIFEST 覆盖 57 个文件；MANIFEST 自身是第 58 个文件，不能自证哈希，由 Git 基线及原 ZIP 逐字节比较补足。
 

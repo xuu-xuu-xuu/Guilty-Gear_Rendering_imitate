@@ -1,0 +1,50 @@
+{
+  "originalFiles": 428,
+  "originalChangedFiles": [],
+  "copyOriginalInputs": 422,
+  "copyChangedOriginalFiles": [],
+  "captureCodeSha256": "d9ddad8b10fc2915ca36b5cb57941367073499bcd28db78d73b76f76739e1c2a",
+  "sceneSha256": "af3a211ef0a30dac7f81bde06274519e51fc74fe44c652590868b8e20a82b8e0",
+  "renderSources": [
+    {
+      "path": "Assets/GGST_Imitate/Shaders/BridgetToon.shader",
+      "sha256": "9a5e64e1c8515efcb7662908d612fd62cf7dd45dd11c0b09e99738899641cdd5"
+    },
+    {
+      "path": "Assets/GGST_Imitate/Shaders/StageShadowReceiver.shader",
+      "sha256": "27dacbe4f8bd978a8dfe13277ae7e11e74e7b17e5488fa3be1c7548ea4aad001"
+    },
+    {
+      "path": "Assets/GGST_Imitate/GeometryShadows/GGSTGeometryDepth.shader",
+      "sha256": "f95b339c6837532ed9618ba5c8804f6665caedc499b5eda6e275c986a3f3d04e"
+    },
+    {
+      "path": "Assets/GGST_Imitate/GeometryShadows/GGSTGeometryShadowMaps.cs",
+      "sha256": "25231a5685516f155eba40a5275813b529270c587622f5b9181edf7f33ee2254"
+    },
+    {
+      "path": "Assets/GGST_Imitate/RegionalShading/GGSTRegionalShading.cs",
+      "sha256": "879a0cb9dcdd7cf59afc57c0bcefb93368594d720f18730d4fef12d054ff9618"
+    },
+    {
+      "path": "Assets/GGST_Imitate/BridgetImitateProfile.cs",
+      "sha256": "4638fa68ef2ae7d4eba5174b361512e17fd92215bab42adb9f28fbc20de48666"
+    },
+    {
+      "path": "Assets/GGST_RenderFix/GgstDecal.shader",
+      "sha256": "b84bf98b56496fb0ae27495d38f5790589d84b6b3e50581d3ea4fa36f1aa13e8"
+    },
+    {
+      "path": "Assets/GGST_RenderFix/GgstGlow.shader",
+      "sha256": "f4e5be118b18b43668f6f4eb3fb6e3f84226b12a54c1a63acad1c6ac6f4a6aa5"
+    },
+    {
+      "path": "Assets/GGST_RenderFix/GgstShadowParked.shader",
+      "sha256": "3d2c83fbd22c650566fc7f8626c95462536d1beb07b37630e65b84d3cd0978e2"
+    }
+  ],
+  "inputTreeSha256": "4f1030c850891c396da45c0c116ff74b03ec1a8fc945ad244c9d93131a1444b2",
+  "sceneOrAssetsSavedByCollector": false,
+  "newCollectorOnly": true,
+  "sourcePackBaseline": "f8980fad7a742d76cf8b941843234cd292c7ae82"
+}
