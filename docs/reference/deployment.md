@@ -34,6 +34,8 @@ python -m mkdocs serve
 
 更改作者文本后运行 `python tools/write_chapters.py`；更改生成规则后运行 `python tools/prepare_reference.py`。原资料只读；需要新证据时另开目录并记录来源，不能修改快照补洞。CI重新生成并比较，确保已提交Markdown可直接在GitHub阅读。
 
+`.gitattributes`将原始资料目录设为 `-text`，避免Windows新克隆时自动换行转换破坏原始SHA256；新增文档/配置使用LF。这只规定检出方式，不修改任何原始资料字节。
+
 ## 交付检查记录
 
 2026-10-21本地实际执行：

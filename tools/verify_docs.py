@@ -87,7 +87,7 @@ def main():
     for name in filter(None,tracked):
         if name.startswith('rendering-tutorial-source-pack/'):
             continue
-        if name=='.gitignore':
+        if name in {'.gitignore','.gitattributes'}:
             continue
         suffix=Path(name).suffix.lower()
         if suffix=='.png':
