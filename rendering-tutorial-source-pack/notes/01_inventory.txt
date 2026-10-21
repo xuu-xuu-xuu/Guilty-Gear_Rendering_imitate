@@ -1,0 +1,49 @@
+资料清单
+
+A. 9 份当前工程渲染源码：6 个 Shader + 3 个 C# 脚本
+核心：
+  sources/BridgetToon.shader：主体漫反射、材质高光、边缘光、内部线、外轮廓、ShadowCaster。
+  sources/StageShadowReceiver.shader：背景/地面梯度与投影接收。
+  sources/GGSTGeometryDepth.shader：离屏头发/角色深度图。
+  sources/GGSTRegionalShading.cs：Renderer 分区与只读脸部坐标 MPB。
+  sources/GGSTGeometryShadowMaps.cs：原有 Renderer 离屏绘制、投影矩阵、全局阴影参数。
+  sources/BridgetImitateProfile.cs：角色原点/身高 MPB 和质量设置。
+辅助：
+  sources/GgstDecal.shader：X2 Multiply 贴花。
+  sources/GgstGlow.shader：基础色发光输出。
+  sources/GgstShadowParked.shader：禁用旧辅助阴影几何的绘制。
+辅助材质保留在资料中用于解释材质槽，不代表站立最终画面都在使用这些槽。
+原文、源码行数、来源相对路径、SHA256：data/source_index.csv。
+
+B. 实际参数与环境
+  data/materials_saved.json：12 个材质完整保存参数，含历史冗余字段及纹理引用。
+  data/material_parameters.csv：793 行“材质 × Shader 声明属性”记录，区分默认值、保存值、脚本覆盖。
+  data/shader_properties.csv：165 项 Shader 属性声明（跨 6 个 Shader 合计）、类型、默认值与源码行号。
+  data/runtime_overrides.csv：6 类覆盖规则；动态值不能冒充常数。
+  data/runtime_write_sites.csv：3 个渲染脚本中的具体写入行。
+  data/saved_scene_rendering.json：已保存主场景的相机、灯光、渲染组件、Renderer 材质槽及 Prefab 材质覆盖。
+  data/environment.json：Unity 版本、Built-in 相关配置、Linear、质量设置与包依赖；包依赖不等于全部必须安装。
+  data/debug_outputs.csv：44 个 Debug 输出的真实表达式与行号。
+
+C. 贴图接口说明（没有贴图文件）
+  data/texture_bindings.csv：材质槽位、贴图引用名、Tiling、Offset。
+  data/texture_import_settings.json：11 张被引用贴图的尺寸、sRGB、采样、MipMap、平台覆盖等。
+  notes/03_texture_channels.txt：通道语义、UV、Alpha 与色彩空间注意点。
+
+D. 21 张真实渲染图
+  images/stages/00.png～08.png：独立演示副本的 9 张原生 4K 图，同镜头同站立 cell 00，逐层展示效果，刻意省略投影。
+  images/project/：12 张原工程历史验收图，包括最终画面、脸部近景、可控大腿高光对比、分区/高光/边缘光/线条诊断。
+  data/images_manifest.json：每张图的来源、用途、尺寸和哈希。
+  腹部/腿部 shade_before/after 同时改过阴影和高光，不能描述成纯阴影单变量实验。
+
+E. 验证证据
+  evidence/project_snapshot_comparison.json：当前磁盘工程与旧教程快照比较。
+  evidence/historical_scene_rendering.json：旧场景运行资料；补充当前 YAML 中 Prefab/运行时槽位的解释，不能标成今天的实时读取。
+  evidence/historical_standing_audit.json：此前站立播放验证摘要，无动画关键帧或骨骼矩阵内容。
+  evidence/historical_4k_validation_summary.json：此前 4K 演示逐帧验证摘要。
+  evidence/readonly_audit.json：本次整理前后工程哈希核对及打包内容检查。
+  MANIFEST.json：包内全部文件哈希与大小。
+
+F. 未打包
+原始/自制贴图像素、模型、动画、控制器、场景、Prefab、解包文件、参考视频、音乐和带音乐的视频。
+旧 HTML 教程包含原图、嵌入通道预览和参考视频帧，因此未直接复制。

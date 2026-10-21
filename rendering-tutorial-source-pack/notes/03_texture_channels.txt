@@ -1,0 +1,40 @@
+贴图与顶点输入契约（只描述当前 Shader 的使用方式，不代表已证明原游戏通道定义）
+
+_MainTex / BGT_base：RGB 基础色；sRGB=1。主体 Opaque 输出，不把 A 当透明度。
+_ShadowMap / BGT_Sss：RGB 阴面颜色；sRGB=1。当前用途是颜色混合，不是物理次表面散射。
+_LightMap / BGT_ilm：sRGB=0。
+  R：乘 255 后参与旧材质分类；与衣料/皮肤有混杂，最终精修使用单独分类遮罩。
+  G：明暗信号偏移，以 _RampMaskCenter 为中性点，不是直接乘整张图的通用 AO。
+  B：原有局部高光细节与后备高光分支输入；不要当作整片粗糙度/金属度。
+  A：内部墨线覆盖率=1-A，不能当透明度。只有 A 做特定屏幕足迹过滤。
+_DetailMap / BGT_detail：RGB 乘法细节，TEXCOORD1；sRGB=0；1024×1024。
+  albedo=base*lerp(1,detail,_DetailIntensity)。CoatExterior 的强度=0。
+_OutlineMap / BGT_olm：RGB 墨色，sRGB=1；不是 Alpha 宽度贴图。
+_RegionalMask / BGT_RegionalMask：R=皮肤，G=白袖；sRGB=0。
+  脸和身体不只靠贴图区分，还需 Renderer MPB 的 _RegionalHead。
+_FourMaterialSpecMask / BGT_SpecularClassMask：RGBA=头发/布料/皮肤/金属；sRGB=0。
+  同时供高光、CleanShade 衣料、线条、边缘光读取；R 还被头发深度 Shader 用作 caster mask。
+  A 是金属分类，不是透明通道；alphaIsTransparency=0。
+_MainTex / BGT_decal（辅助贴花 Shader）：RGB 线性数据；sRGB=0。
+  Blend DstColor SrcColor 形成 X2 Multiply，中性输入为 0.5；不能当普通透明贴图混合。
+
+尺寸和导入设置以 texture_import_settings.json 为准。
+主图集为 2048×2048；Detail/Decal 为 1024×1024。BGTW 武器组也为 1024×1024。
+filterMode=1 表示 Bilinear；wrap=0 为 Repeat，1 为 Clamp；当前主体贴图 alphaIsTransparency 均为 0。
+平台配置需先看 overridden。不能把未启用的平台保存值当作实际覆盖。
+注意：武器 BGTW_ilm 的现存 sRGB=1，与主体 BGT_ilm 不一致。它属于当前未显示的武器预览资料，不能写成推荐的数据贴图设置；本次没有修正。
+
+顶点输入：
+  POSITION：现有蒙皮输出的位置；本包不提供模型或改网格操作。
+  NORMAL：主要光照法线，转换至世界空间。
+  COLOR.R：AO/明暗控制，lerp(1,vertex.r,_AOStrength)。
+  TEXCOORD0：主图集 UV。
+  TEXCOORD1：细节 UV（C# mesh.uv2）。
+  TEXCOORD2：可选镜像 UV（C# mesh.uv3）；四主体材质当前 _UseMirroredUV=0。
+  TANGENT.xyz：_UseSmoothOutline=1 时作为描边法线使用，不是“任意模型的标准切线都可代替法线”。
+  当前四主体材质 _UseSmoothOutline=1。本次未审计网格顶点通道数值，不能证明换模型直接可用。
+
+不提供任何原始或自制贴图像素。
+换图集时应自己制作 R/G 分区和 RGBA 材质分类，关闭 sRGB，保持 Alpha 数据。
+眼睛、胸前衣料和大腿高光含 2048 图集像素坐标，必须替换成新模型适用的域/遮罩。
+不能仅缩放贴图尺寸便宣称完成移植。

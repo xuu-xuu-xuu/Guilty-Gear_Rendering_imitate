@@ -1,0 +1,728 @@
+{
+  "Assets/Bridget_Textures/BGT_detail.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "dd39f741223c2f1545b69d80da2e75b31bc27de4eebcdb5848fc5a4987e5668e",
+    "included": false,
+    "sRGB": 0,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 0,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/GGST_Imitate/SpecularRefinement/BGT_SpecularClassMask.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA",
+    "sha256": "c2d055455f57a2de3ba1a1de16ecd93821ba7099a47b9e1e42912395b953b583",
+    "included": false,
+    "sRGB": 0,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 0,
+      "sRGBTexture": 0,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 1,
+      "wrapV": 1,
+      "wrapW": 1
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 0,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGT_ilm.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA",
+    "sha256": "fd818feef44a54b02f9e750b89ee8294cbc0ae26044e344d03c85bcce9ec15b7",
+    "included": false,
+    "sRGB": 0,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 0,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGT_base.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA",
+    "sha256": "8c5e10750c16efe5280492ada7aa1245f63b515ebf005205f6c403674dfe6a08",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 1,
+      "wrapV": 1,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGT_olm.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGB",
+    "sha256": "136cf2d45a29cc866bb044f555a795d6b2cfd63a6f1b67826ed25fd0fd905c61",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/GGST_Imitate/RegionalShading/BGT_RegionalMask.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA",
+    "sha256": "369b43a7d701dc55517fc1200721f8e0b0824e96586f49ffe92e533c096380df",
+    "included": false,
+    "sRGB": 0,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 0,
+      "sRGBTexture": 0,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 1,
+      "wrapV": 1,
+      "wrapW": 1
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 0,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGT_Sss.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA",
+    "sha256": "6e6ce9a0c6b151c536fd2ffd91eae44ded971afbab0b523665a06ad39c05461a",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGT_decal.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "095529a84c4b3f52edd4762e02a216f70df3e6f9a4ff2c70cc1cf9dbf82b1b98",
+    "included": false,
+    "sRGB": 0,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 0,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGTW_ilm.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "4aae6cf82b55e46ac0b5a16bc1eaccc21c739dea6d211cee1afcab2900e119ba",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGTW_base.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "56eab578b738caa55c27e6c593c1f10d502c9e10f6c4e6a98bfd4de4f5af1bd7",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  },
+  "Assets/Bridget_Textures/BGTW_Sss.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "aab971d8a61c2a86fd6df77371b6f413597eb090e1a18976aa20ff2cf848dc34",
+    "included": false,
+    "sRGB": 1,
+    "mipmaps": {
+      "mipMapMode": 0,
+      "enableMipMap": 1,
+      "sRGBTexture": 1,
+      "linearTexture": 0,
+      "fadeOut": 0,
+      "borderMipMap": 0,
+      "mipMapsPreserveCoverage": 0,
+      "alphaTestReferenceValue": 0.5,
+      "mipMapFadeDistanceStart": 1,
+      "mipMapFadeDistanceEnd": 3
+    },
+    "textureSettings": {
+      "serializedVersion": 2,
+      "filterMode": 1,
+      "aniso": 1,
+      "mipBias": 0,
+      "wrapU": 0,
+      "wrapV": 0,
+      "wrapW": 0
+    },
+    "platformSettings": [
+      {
+        "serializedVersion": 3,
+        "buildTarget": "DefaultTexturePlatform",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      },
+      {
+        "serializedVersion": 3,
+        "buildTarget": "Standalone",
+        "maxTextureSize": 2048,
+        "resizeAlgorithm": 0,
+        "textureFormat": -1,
+        "textureCompression": 1,
+        "compressionQuality": 50,
+        "crunchedCompression": 0,
+        "allowsAlphaSplitting": 0,
+        "overridden": 0,
+        "ignorePlatformSupport": 0,
+        "androidETC2FallbackOverride": 0,
+        "forceMaximumCompressionQuality_BC6H_BC7": 0
+      }
+    ],
+    "maxTextureSize": 2048,
+    "alphaSource": null,
+    "alphaIsTransparency": 0
+  }
+}

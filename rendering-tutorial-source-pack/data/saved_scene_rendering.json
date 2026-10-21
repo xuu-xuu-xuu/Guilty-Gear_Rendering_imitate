@@ -1,0 +1,510 @@
+{
+  "source": "Assets/Scenes/Bridget_ReferenceMatch.unity",
+  "sha256": "af3a211ef0a30dac7f81bde06274519e51fc74fe44c652590868b8e20a82b8e0",
+  "evidence": "disk-saved YAML, not a live Editor read",
+  "cameras": [
+    {
+      "fileID": 1209145547,
+      "gameObject": "Main Camera",
+      "transform": {
+        "m_LocalPosition": {
+          "x": -0.113,
+          "y": 0.903,
+          "z": 1.822
+        },
+        "m_LocalRotation": {
+          "x": 0.0007041147,
+          "y": 0.9988944,
+          "z": -0.015900236,
+          "w": 0.044234328
+        },
+        "m_LocalScale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "m_Father": {
+          "fileID": 0
+        }
+      },
+      "settings": {
+        "m_Enabled": 1,
+        "m_CullingMask": {
+          "serializedVersion": 2,
+          "m_Bits": 4294967295
+        },
+        "m_ClearFlags": 2,
+        "m_BackGroundColor": {
+          "r": 0.5,
+          "g": 0.5,
+          "b": 0.5,
+          "a": 1
+        },
+        "near clip plane": 0.3,
+        "far clip plane": 1000,
+        "field of view": 54,
+        "orthographic": 0,
+        "orthographic size": 5,
+        "m_HDR": 1,
+        "m_AllowMSAA": 1,
+        "m_RenderingPath": -1
+      }
+    }
+  ],
+  "lights": [
+    {
+      "fileID": 1834458751,
+      "gameObject": "Directional Light",
+      "transform": {
+        "m_LocalPosition": {
+          "x": -1.7,
+          "y": 2.18,
+          "z": 1
+        },
+        "m_LocalRotation": {
+          "x": 0.07075682,
+          "y": 0.8591888,
+          "z": -0.12371239,
+          "w": 0.49140963
+        },
+        "m_LocalScale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "m_Father": {
+          "fileID": 0
+        }
+      },
+      "settings": {
+        "m_Enabled": 1,
+        "m_Type": 1,
+        "m_Color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "m_Intensity": 1.1,
+        "m_Shadows": {
+          "m_Type": 2,
+          "m_Resolution": 2,
+          "m_CustomResolution": -1,
+          "m_Strength": 1,
+          "m_Bias": 0.02,
+          "m_NormalBias": 0.035,
+          "m_NearPlane": 0.2,
+          "m_CullingMatrixOverride": {
+            "e00": 1,
+            "e01": 0,
+            "e02": 0,
+            "e03": 0,
+            "e10": 0,
+            "e11": 1,
+            "e12": 0,
+            "e13": 0,
+            "e20": 0,
+            "e21": 0,
+            "e22": 1,
+            "e23": 0,
+            "e30": 0,
+            "e31": 0,
+            "e32": 0,
+            "e33": 1
+          },
+          "m_UseCullingMatrixOverride": 0
+        },
+        "m_CullingMask": {
+          "serializedVersion": 2,
+          "m_Bits": 4294967295
+        }
+      }
+    }
+  ],
+  "renderSettings": {
+    "m_ObjectHideFlags": 0,
+    "serializedVersion": 9,
+    "m_Fog": 0,
+    "m_FogColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1
+    },
+    "m_FogMode": 3,
+    "m_FogDensity": 0.01,
+    "m_LinearFogStart": 0,
+    "m_LinearFogEnd": 300,
+    "m_AmbientSkyColor": {
+      "r": 0.212,
+      "g": 0.227,
+      "b": 0.259,
+      "a": 1
+    },
+    "m_AmbientEquatorColor": {
+      "r": 0.114,
+      "g": 0.125,
+      "b": 0.133,
+      "a": 1
+    },
+    "m_AmbientGroundColor": {
+      "r": 0.047,
+      "g": 0.043,
+      "b": 0.035,
+      "a": 1
+    },
+    "m_AmbientIntensity": 1,
+    "m_AmbientMode": 0,
+    "m_SubtractiveShadowColor": {
+      "r": 0.41960785,
+      "g": 0.5504136,
+      "b": 0.627451,
+      "a": 1
+    },
+    "m_SkyboxMaterial": {
+      "fileID": 2100000,
+      "guid": "cfb33f153bbf8664393a50a32d44d0d8",
+      "type": 2
+    },
+    "m_HaloStrength": 0.5,
+    "m_FlareStrength": 1,
+    "m_FlareFadeSpeed": 3,
+    "m_HaloTexture": {
+      "fileID": 0
+    },
+    "m_SpotCookie": {
+      "fileID": 10001,
+      "guid": "0000000000000000e000000000000000",
+      "type": 0
+    },
+    "m_DefaultReflectionMode": 0,
+    "m_DefaultReflectionResolution": 128,
+    "m_ReflectionBounces": 1,
+    "m_ReflectionIntensity": 1,
+    "m_CustomReflection": {
+      "fileID": 0
+    },
+    "m_Sun": {
+      "fileID": 0
+    },
+    "m_UseRadianceAmbientProbe": 0
+  },
+  "renderingComponents": [
+    {
+      "fileID": 1277835812,
+      "script": "Assets/GGST_Imitate/BridgetImitateProfile.cs",
+      "enabled": 1,
+      "host": "GGST Imitate Render Profile",
+      "fields": {
+        "msaaSamples": 4,
+        "shadowDistance": 20,
+        "character": {
+          "type": "SkinnedMeshRenderer",
+          "gameObject": {
+            "fileID": null,
+            "resolution": "not direct scene object (possibly prefab)"
+          },
+          "fileID": 1679999015
+        },
+        "additional": [
+          {
+            "fileID": 2122633827
+          },
+          {
+            "fileID": 1842480773
+          },
+          {
+            "fileID": 1115002066
+          }
+        ]
+      }
+    },
+    {
+      "fileID": 2122586238,
+      "script": "Assets/GGST_Imitate/RegionalShading/GGSTRegionalShading.cs",
+      "enabled": 1,
+      "host": null,
+      "fields": {
+        "body": {
+          "type": "SkinnedMeshRenderer",
+          "gameObject": {
+            "fileID": null,
+            "resolution": "not direct scene object (possibly prefab)"
+          },
+          "fileID": 1679999015
+        },
+        "standingHead": {
+          "type": "SkinnedMeshRenderer",
+          "gameObject": "Original_Stand_HeadLow_UserRender",
+          "fileID": 1115002066
+        },
+        "cinematicFace": {
+          "type": "SkinnedMeshRenderer",
+          "gameObject": "bgt_head_high.001",
+          "fileID": 1842480773
+        },
+        "cinematicHair": {
+          "type": "SkinnedMeshRenderer",
+          "gameObject": "bgt_head_high.001",
+          "fileID": 2122633827
+        },
+        "strength": 1
+      }
+    },
+    {
+      "fileID": 2122586239,
+      "script": "Assets/GGST_Imitate/GeometryShadows/GGSTGeometryShadowMaps.cs",
+      "enabled": 1,
+      "host": null,
+      "fields": {
+        "p": {
+          "type": "MonoBehaviour",
+          "gameObject": null,
+          "fileID": 2122586235
+        },
+        "lightSource": {
+          "type": "Light",
+          "gameObject": "Directional Light",
+          "fileID": 1834458751
+        },
+        "hairMask": "Assets/GGST_Imitate/SpecularRefinement/BGT_SpecularClassMask.png",
+        "depthShader": "Assets/GGST_Imitate/GeometryShadows/GGSTGeometryDepth.shader",
+        "mainCamera": {
+          "type": "Camera",
+          "gameObject": "Main Camera",
+          "fileID": 1209145547
+        },
+        "suspendMaps": 0,
+        "drawHairCasters": 1,
+        "drawStageCasters": 1,
+        "hairRadius": 0.28,
+        "hairRange": 1.2,
+        "hairWorldUpOffset": 0.08,
+        "stageRadius": 2,
+        "stageRange": 8
+      }
+    }
+  ],
+  "rendererMaterialSlots": [
+    {
+      "fileID": 184145779,
+      "type": "MeshRenderer",
+      "host": "GGST_Wall_ShadowReceiver",
+      "enabled": 1,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/StageWallReceiver.mat"
+      ]
+    },
+    {
+      "fileID": 989238838,
+      "type": "MeshRenderer",
+      "host": "GGST_Floor_ShadowReceiver",
+      "enabled": 1,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/StageFloorReceiver.mat"
+      ]
+    },
+    {
+      "fileID": 1110137962,
+      "type": "MeshRenderer",
+      "host": "Original_Stand_HeadLow_HairFace_Render",
+      "enabled": 0,
+      "materials": [
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Head_Base_Current.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_OutlineProxy.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_Shadow.mat"
+      ]
+    },
+    {
+      "fileID": 1115002066,
+      "type": "SkinnedMeshRenderer",
+      "host": "Original_Stand_HeadLow_UserRender",
+      "enabled": 1,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/Base_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BaseSecondary_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat"
+      ]
+    },
+    {
+      "fileID": 1574725473,
+      "type": "MeshRenderer",
+      "host": "GGST_Stage_ShadowReceiver",
+      "enabled": 1,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/StageShadowReceiver.mat"
+      ]
+    },
+    {
+      "fileID": 1658166849,
+      "type": "SkinnedMeshRenderer",
+      "host": "GGST_Hair_Bound",
+      "enabled": 1,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/Base_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BaseSecondary_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BodyBaseFlip_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BodyDecal_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadDecal_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadGlow_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/CoatExterior_Imitate.mat"
+      ]
+    },
+    {
+      "fileID": 1830603567,
+      "type": "MeshRenderer",
+      "host": "UE900_FullBody_Render",
+      "enabled": 0,
+      "materials": [
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Body_Base_Current.mat",
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Body_BaseSecondary_Current.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Body_OutlineProxy.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Body_ShadowA.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Body_ShadowB.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Body_Decal.mat",
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Body_FlipUniqueB_Current.mat"
+      ]
+    },
+    {
+      "fileID": 1842480773,
+      "type": "SkinnedMeshRenderer",
+      "host": "bgt_head_high.001",
+      "enabled": 0,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/Base_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BaseSecondary_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BodyBaseFlip_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BodyDecal_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadDecal_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadGlow_Imitate.mat"
+      ]
+    },
+    {
+      "fileID": 1867757706,
+      "type": "MeshRenderer",
+      "host": "UE900_FullHead_Render",
+      "enabled": 0,
+      "materials": [
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Head_Base_Current.mat",
+        "Assets/GGST_Imitate/UE900csCurrent/Materials/Head_BaseSecondary_Current.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_OutlineProxy.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_Shadow.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_Decal.mat",
+        "Assets/UE900cs_RestorationTest/Materials/Head_Glow.mat"
+      ]
+    },
+    {
+      "fileID": 2122633827,
+      "type": "SkinnedMeshRenderer",
+      "host": "bgt_head_high.001",
+      "enabled": 0,
+      "materials": [
+        "Assets/GGST_Imitate/Materials/Base_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/BaseSecondary_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadDecal_Imitate.mat",
+        "Assets/GGST_Imitate/Materials/HeadGlow_Imitate.mat"
+      ]
+    }
+  ],
+  "prefabMaterialOverrides": [
+    {
+      "instanceFileID": 1052254683,
+      "overrides": [
+        {
+          "property": "m_Materials.Array.data[0]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[1]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[2]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[3]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[4]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[5]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        }
+      ]
+    },
+    {
+      "instanceFileID": 1415260079,
+      "overrides": [
+        {
+          "property": "m_Materials.Array.data[0]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[1]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[2]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[3]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[4]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[5]",
+          "material": "Assets/GGST_Imitate/Materials/Weapon_Imitate.mat"
+        }
+      ]
+    },
+    {
+      "instanceFileID": 1679999014,
+      "overrides": [
+        {
+          "property": "m_Materials.Array.data[0]",
+          "material": "Assets/GGST_Imitate/Materials/Base_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[1]",
+          "material": "Assets/GGST_Imitate/Materials/BaseSecondary_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[2]",
+          "material": "Assets/GGST_Imitate/Materials/BodyBaseFlip_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[3]",
+          "material": "Assets/GGST_Imitate/Materials/BodyDecal_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[4]",
+          "material": "Assets/GGST_Imitate/Materials/HeadDecal_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[5]",
+          "material": "Assets/GGST_Imitate/Materials/HeadGlow_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[6]",
+          "material": "Assets/GGST_Imitate/Materials/ShadowGeometryParked_Imitate.mat"
+        },
+        {
+          "property": "m_Materials.Array.data[7]",
+          "material": "Assets/GGST_Imitate/Materials/CoatExterior_Imitate.mat"
+        }
+      ]
+    }
+  ]
+}

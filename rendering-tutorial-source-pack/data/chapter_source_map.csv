@@ -1,0 +1,12 @@
+﻿chapter,path,line,anchor
+05,sources/BridgetToon.shader,392,float signal=
+06,sources/BridgetToon.shader,483,float cleanFaceBand=
+07,sources/BridgetToon.shader,470,float3 paletteSkinMultiplier=
+08,sources/GGSTGeometryShadowMaps.cs,200,void RenderMaps(
+08,sources/StageShadowReceiver.shader,44,float GeometryStageVisibility(
+09,sources/BridgetToon.shader,548,float4 specClass=
+10,sources/BridgetToon.shader,583,float thighT=
+11,sources/BridgetToon.shader,635,float rawInk=
+11,sources/BridgetToon.shader,751,f vertOutline(
+12,sources/BridgetToon.shader,348,float eyeIrisMask=
+13,sources/BridgetToon.shader,617,float referenceRimEdge=

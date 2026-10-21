@@ -1,0 +1,32 @@
+﻿source,line,code
+sources/GGSTGeometryShadowMaps.cs,228,"commands.SetGlobalTexture(CasterMaskID,hairMask);"
+sources/GGSTGeometryShadowMaps.cs,251,"commands.SetGlobalVector(CasterOriginID,originRange);"
+sources/GGSTGeometryShadowMaps.cs,252,"commands.SetGlobalVector(CasterForwardID,new Vector4(LightForward.x,LightForward.y,LightForward.z,0));"
+sources/GGSTGeometryShadowMaps.cs,253,"commands.SetGlobalFloat(CasterHairID,hairOnly?1f:0f);"
+sources/GGSTGeometryShadowMaps.cs,266,"commands.SetGlobalFloat(CasterMirrorID,mirror);"
+sources/GGSTGeometryShadowMaps.cs,267,"commands.SetGlobalVector(CasterSTID,new Vector4(scale.x,scale.y,offset.x,offset.y));"
+sources/GGSTGeometryShadowMaps.cs,275,"buffer.SetGlobalTexture(prefix+""Depth"",texture);"
+sources/GGSTGeometryShadowMaps.cs,276,"buffer.SetGlobalMatrix(prefix+""VP"",vp);"
+sources/GGSTGeometryShadowMaps.cs,277,"buffer.SetGlobalVector(prefix+""OriginRange"",originRange);"
+sources/GGSTGeometryShadowMaps.cs,278,"buffer.SetGlobalVector(prefix+""Forward"",new Vector4(LightForward.x,LightForward.y,LightForward.z,0));"
+sources/GGSTGeometryShadowMaps.cs,279,"buffer.SetGlobalVector(prefix+""Texel"",new Vector4(1f/texture.width,1f/texture.height,texture.width,texture.height));"
+sources/GGSTGeometryShadowMaps.cs,280,"buffer.SetGlobalFloat(prefix+""Enabled"",enabled?1f:0f);"
+sources/GGSTGeometryShadowMaps.cs,290,"Shader.SetGlobalFloat(HairEnabledID,0f);Shader.SetGlobalFloat(StageEnabledID,0f);"
+sources/GGSTGeometryShadowMaps.cs,301,"Shader.SetGlobalTexture(""_HairShadowDepth"",Texture2D.whiteTexture);"
+sources/GGSTGeometryShadowMaps.cs,302,"Shader.SetGlobalTexture(""_StageShadowDepth"",Texture2D.whiteTexture);"
+sources/GGSTRegionalShading.cs,62,"block.SetFloat(EnabledID,Mathf.Clamp01(strength));"
+sources/GGSTRegionalShading.cs,63,"block.SetFloat(HeadID,head);"
+sources/GGSTRegionalShading.cs,64,"block.SetFloat(""_FaceFrameValid"",frameValid);"
+sources/GGSTRegionalShading.cs,65,"block.SetVector(""_FaceOriginWS"",faceOrigin);block.SetVector(""_FaceRightWS"",faceRight);"
+sources/GGSTRegionalShading.cs,66,renderer.SetPropertyBlock(block);
+sources/GGSTRegionalShading.cs,75,"block.SetFloat(EnabledID,item.Value.flags.x);block.SetFloat(HeadID,item.Value.flags.y);"
+sources/GGSTRegionalShading.cs,76,"block.SetFloat(""_FaceFrameValid"",item.Value.frame);block.SetVector(""_FaceOriginWS"",item.Value.origin);block.SetVector(""_FaceRightWS"",item.Value.right);"
+sources/GGSTRegionalShading.cs,77,item.Key.SetPropertyBlock(block);
+sources/BridgetImitateProfile.cs,23,previousAA=QualitySettings.antiAliasing;previousDistance=QualitySettings.shadowDistance;
+sources/BridgetImitateProfile.cs,24,previousShadows=QualitySettings.shadows;previousResolution=QualitySettings.shadowResolution;
+sources/BridgetImitateProfile.cs,30,void Apply(){QualitySettings.antiAliasing=msaaSamples;QualitySettings.shadowDistance=shadowDistance;QualitySettings.shadows=ShadowQuality.All;QualitySettings.shadowResolution=ShadowResolution.High;}
+sources/BridgetImitateProfile.cs,36,"character.GetPropertyBlock(currentBlock);currentBlock.SetVector(""_CharacterOriginWS"",originValue);currentBlock.SetFloat(""_CharacterHeight"",height);character.SetPropertyBlock(currentBlock);"
+sources/BridgetImitateProfile.cs,42,"r.GetPropertyBlock(currentBlock);currentBlock.SetVector(""_CharacterOriginWS"",originValue);currentBlock.SetFloat(""_CharacterHeight"",height);r.SetPropertyBlock(currentBlock);"
+sources/BridgetImitateProfile.cs,49,if(character&&previousBlock!=null)character.SetPropertyBlock(previousBlock);
+sources/BridgetImitateProfile.cs,50,QualitySettings.antiAliasing=previousAA;QualitySettings.shadowDistance=previousDistance;
+sources/BridgetImitateProfile.cs,51,QualitySettings.shadows=previousShadows;QualitySettings.shadowResolution=previousResolution;applied=false;

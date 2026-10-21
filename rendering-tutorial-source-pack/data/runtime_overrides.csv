@@ -1,0 +1,7 @@
+﻿property,saved,runtime,scope,evidence,status
+_RegionalEnabled,0,"Clamp01(strength), saved scene strength=1",Renderer MPB,GGSTRegionalShading.Set; saved_scene_rendering.json,"code-derived, not live sampled"
+_RegionalHead,0,body=0; standingHead=1,Renderer MPB,GGSTRegionalShading.Apply/Set,code-derived
+_FaceFrameValid / _FaceOriginWS / _FaceRightWS,Shader/material fallback,ResolveFrames head matrix; valid=1 only if resolved,Renderer MPB,GGSTRegionalShading.Apply/ResolveFrames,"dynamic, numerical pose values not captured this run"
+_CharacterOriginWS / _CharacterHeight,Shader/material fallback,root position + initial bounds offset / initial bounds height,Renderer MPB,BridgetImitateProfile.OnEnable/LateUpdate,"dynamic, numerical pose values not captured this run"
+_HairShadow* / _StageShadow*,"global uniforms, not material settings","depth textures, matrices, origin/range, light forward, texel size, enable flags",CommandBuffer globals,GGSTGeometryShadowMaps.Publish/DisableGlobals,"depends on Ready, caster visibility and draw flags"
+MSAA / shadowDistance / shadow quality,QualitySettings.asset,profile msaaSamples / shadowDistance / All / High,QualitySettings,BridgetImitateProfile.Apply and scene values,only while profile is active

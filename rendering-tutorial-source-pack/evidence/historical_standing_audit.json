@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "standingOnly": true,
+  "actionsObserved": [
+    "stand"
+  ],
+  "observations": 627,
+  "complete13CellLoops": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sourceProxyMatrixMaxAbsolute": 4.456869511226813e-07,
+  "independentSourceFaceFrameError": 2.1930412118231768e-07,
+  "sourceBodyBones": 445,
+  "sourceHeadBones": 130,
+  "issues": [],
+  "limitation": "Only actual main-camera standing samples checked; no 900cs load/play/validation. Exact authored 13-cell coverage is required per accepted loop; not every display tick is claimed."
+}

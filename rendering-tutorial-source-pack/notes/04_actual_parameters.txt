@@ -1,0 +1,41 @@
+实际参数与生效关系
+
+采样层级：Shader Properties 默认值 → .mat 保存值 → Renderer MPB / Shader 全局变量 → Shader 内部条件与覆盖顺序。
+材质表中的 savedValue 不自动等于当前屏幕最终效果；不同层级分别查 CSV 和源码。
+数值均为磁盘保存值或源码规则。本次不采集 Play 内存实例、不推算任意帧脸部坐标。
+
+当前基础环境：Unity 2022.3.62f3c1；Built-in（Graphics 和各质量档 SRP 引用为空）；Linear。
+主场景：Assets/Scenes/Bridget_ReferenceMatch.unity。
+主相机：Perspective/FOV 54，位置(-0.113,0.903,1.822)，HDR/MSAA 开；精确四元数见 saved_scene_rendering.json。
+方向光：Intensity 1.1，白色；旋转四元数(0.07075682,0.8591888,-0.12371239,0.49140963)。方向光照明由旋转决定。
+Profile：MSAA=4、shadowDistance=20，并设 All/High。
+
+四主体材质：Base_Imitate、BaseSecondary_Imitate、BodyBaseFlip_Imitate、CoatExterior_Imitate。
+四者 CleanShade、FocusedShade、FocusedSpec、Palette、FourMaterialSpec、ThighLobe、ReferenceRim 均保存为 1。
+四者 _ThighLobeStrength=0.16；_ReferenceRimWidth=0.24；_ReferenceRimStrength=0.5。
+_OutlineWidth：Base/BaseSecondary/CoatExterior=0.8，BodyBaseFlip=0。
+_DetailIntensity：Base/BaseSecondary/BodyBaseFlip=0.278，CoatExterior=0。
+_EyeRefineEnabled / _FaceDiffuseRefine：Base/BaseSecondary=1，另外两者=0。
+_HairFaceShadowStrength：Base/BaseSecondary=0，BodyBaseFlip/CoatExterior=0.75。
+不能把最后一项写成“全体材质为零”或“只要为0.75就一定产生脸部阴影”；还需脸部区域门控和后续 CleanShade 覆盖。
+
+运行时要点：
+_RegionalEnabled：.mat=0；活动 GGSTRegionalShading 根据 strength 写入 MPB，已保存 strength=1。
+_RegionalHead：body=0、standingHead=1；脸坐标来自现有头部 Transform 的只读矩阵。
+_CharacterOriginWS / _CharacterHeight：Profile 根据 root 与启用时 bounds 写入，属于动态/初始化结果。
+阴影脚本发布 _HairShadow* / _StageShadow* 深度纹理、矩阵和开关；Depends on Ready、Renderer 可见性及 draw flags。
+保存的 drawHairCasters=1、drawStageCasters=1、suspendMaps=0；RFloat hair=1024、stage=2048（源码常量）。
+hairRadius=0.28、hairRange=1.2、offset=0.08；stageRadius=2、stageRange=8。
+
+Shader 的最终生效顺序：
+颜色/Detail采样 → 后备明暗/分区 → 旧脸部修正与投脸 → Palette → CleanShade重建漫反射 → Focused局部漫反射 → 眼睛漫反射 → 基础/分材质高光 → Focused和ThighLobe替换 → ReferenceRim → 漫反射+环境+高光+rim → 内部线 → 原眼睛高光恢复 → 独立外轮廓Pass。
+CleanShade 当前脸部亮暗依据世界空间 n.y；这是固定参考风格的美术近似，不是通用脸部SDF。
+旧侧脸参数仍存在，不等于最终脸上必然有暗带。
+_RimWidth 是旧后备路径，当前分类区域主要由 _ReferenceRimWidth 控制。
+属性面板 _DebugMode 声明范围仍是0～24，但代码实际实现1～44；要查看更高编号需在练习副本通过脚本 SetFloat，不要修改原项目来迁就教程。
+
+演示图与主工程的差别：
+images/stages 是独立副本累计开关，不是主工程新增的配置。
+它省略场景投影；相机投影 m00/m11 乘0.94；4K时描边像素宽度乘2以保持原1080p视觉比例。
+主体材质保存表仍记录主工程0.8/0值，不能混写成4K副本临时1.6/0值。
+images/project 是原工程历史图，保留其原构图/投影。

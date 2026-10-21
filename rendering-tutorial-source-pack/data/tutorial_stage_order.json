@@ -1,0 +1,47 @@
+[
+  {
+    "stage": 0,
+    "tutorialChapter": "02",
+    "effect": "基础色"
+  },
+  {
+    "stage": 1,
+    "tutorialChapter": "05",
+    "effect": "基础两段式明暗"
+  },
+  {
+    "stage": 2,
+    "tutorialChapter": "06",
+    "effect": "分区明暗"
+  },
+  {
+    "stage": 3,
+    "tutorialChapter": "07",
+    "effect": "亮面与暖色阴面"
+  },
+  {
+    "stage": 4,
+    "tutorialChapter": "09",
+    "effect": "材质高光"
+  },
+  {
+    "stage": 5,
+    "tutorialChapter": "10",
+    "effect": "大腿高光"
+  },
+  {
+    "stage": 6,
+    "tutorialChapter": "11",
+    "effect": "描边与内部线条"
+  },
+  {
+    "stage": 7,
+    "tutorialChapter": "12",
+    "effect": "眼睛层次与高光"
+  },
+  {
+    "stage": 8,
+    "tutorialChapter": "13",
+    "effect": "边缘光"
+  }
+]

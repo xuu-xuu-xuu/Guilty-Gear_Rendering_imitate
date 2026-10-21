@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "originalProjectUnchanged": true,
+    "renderComplete": true,
+    "standingOnly": true,
+    "sameCameraAndPoseAcrossStages": true,
+    "nativeMatricesValid": true,
+    "allStagesHave13Cells": true,
+    "backdropHasNoMovingProjection": true,
+    "everyStageChangesAppearance": true,
+    "4K60": true,
+    "exactly30Seconds": true,
+    "continuousStandingEveryDecodedFrame": true,
+    "motionInEveryStage": true,
+    "onlyEffectNames": true,
+    "fullDecode": true,
+    "finalAppearancePreserved": true,
+    "native4KSource": true,
+    "originalFontRestored": true,
+    "previousVideoPreserved": true
+  },
+  "duration": 30.0,
+  "frameCount": 1800,
+  "originalFilesChecked": 428,
+  "changedFiles": [],
+  "addedFiles": [],
+  "poseMismatches": []
+}

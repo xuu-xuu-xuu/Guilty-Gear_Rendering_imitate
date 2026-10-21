@@ -1,0 +1,22 @@
+{
+  "collectedDate": "2026-10-21 Asia/Shanghai",
+  "passed": true,
+  "checks": {
+    "projectUnchanged": true,
+    "sourcesExact": true,
+    "imagesExact": true,
+    "noUnexpectedFileTypesOrImages": true,
+    "noRawTextureCopies": true,
+    "localLinksResolve": true,
+    "debugModes1to44": true
+  },
+  "projectFilesChecked": 428,
+  "changedFiles": [],
+  "addedFiles": [],
+  "unexpected": [],
+  "rawTextureCopies": [],
+  "brokenLinks": [],
+  "liveUnityInspected": false,
+  "newPlayValidation": false,
+  "scope": "disk saved Assets/Packages/ProjectSettings; historical renders explicitly labeled"
+}

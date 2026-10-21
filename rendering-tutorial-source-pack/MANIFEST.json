@@ -1,0 +1,287 @@
+[
+  {
+    "path": "data/chapter_source_map.csv",
+    "bytes": 645,
+    "sha256": "930283fe65d3739ae5627b727d702571d1e4a70d10137b131874019a71b33f5f"
+  },
+  {
+    "path": "data/debug_outputs.csv",
+    "bytes": 3487,
+    "sha256": "e6c9402e201d9557c53f4158c730630a169e0fb38c73515f15de07febe0830bb"
+  },
+  {
+    "path": "data/environment.json",
+    "bytes": 18475,
+    "sha256": "390b89f58c2c737818e59aa117afb1ab48ae6e1550aecddf1f0b08782c904816"
+  },
+  {
+    "path": "data/images_manifest.json",
+    "bytes": 8455,
+    "sha256": "8132bea0cdcd0024da99105ea3f67e64dc7d2b3ec0149065d4b75b35d3ec2555"
+  },
+  {
+    "path": "data/material_parameters.csv",
+    "bytes": 177599,
+    "sha256": "718662b1b139213c757763422ebc013c56c62b5d9426df8f448d7ea38c5c3792"
+  },
+  {
+    "path": "data/materials_saved.json",
+    "bytes": 53589,
+    "sha256": "cf0593631297c5cb365c9b0e052c73d3713a469b3c643b2320a3ab57294ebf86"
+  },
+  {
+    "path": "data/runtime_overrides.csv",
+    "bytes": 1252,
+    "sha256": "b6e357798cd6ccaf18e0f056cbe322292e5a90e16135adca3f675e6bcc3e73c0"
+  },
+  {
+    "path": "data/runtime_write_sites.csv",
+    "bytes": 3835,
+    "sha256": "3859ae317c38d976b0677e256783f890bbd7a81622fd2ca4961030c57161433a"
+  },
+  {
+    "path": "data/saved_scene_rendering.json",
+    "bytes": 15137,
+    "sha256": "cfa7cdaee852e533a546b48efcae2561e3920858e7a95823de5817d554ee570a"
+  },
+  {
+    "path": "data/shader_properties.csv",
+    "bytes": 18634,
+    "sha256": "e98a5c1e14e6cdabbf92e693bd6fafae2e3e30ab5bfd1439ddc773b842689299"
+  },
+  {
+    "path": "data/source_index.csv",
+    "bytes": 2205,
+    "sha256": "613ab810b60d83bf6bd5e8ccc4a508193e339d3070c410c92b3aa826170a0c20"
+  },
+  {
+    "path": "data/texture_bindings.csv",
+    "bytes": 4584,
+    "sha256": "84c0cb193291d4d4cbada196ded47c2b5678a2062e1224fdb326bf3503452c3d"
+  },
+  {
+    "path": "data/texture_import_settings.json",
+    "bytes": 20387,
+    "sha256": "e1bb120ed33eff3218a3f2de379702140fdb6d274582b59868f56ee97af25ac7"
+  },
+  {
+    "path": "data/tutorial_stage_order.json",
+    "bytes": 825,
+    "sha256": "7c0a71d1d57a6d268e590d7aea5518aeeec9e12029efe24ca941423d2b86c66b"
+  },
+  {
+    "path": "evidence/historical_4k_validation_summary.json",
+    "bytes": 809,
+    "sha256": "6cf328416a620f7abd4e1a63fbc4c2b590609ed1fd9044aa22e12ba6b743ea5a"
+  },
+  {
+    "path": "evidence/historical_scene_rendering.json",
+    "bytes": 8985,
+    "sha256": "6ed20f10ff3bbb0b6481dff212a133780ee04e00b85b3b9e81c860575f02c09d"
+  },
+  {
+    "path": "evidence/historical_standing_audit.json",
+    "bytes": 577,
+    "sha256": "40233dc69e8cb86128f1a35ea41f5b951f0274de0d3706bcd09349d208163d6e"
+  },
+  {
+    "path": "evidence/project_snapshot_comparison.json",
+    "bytes": 137,
+    "sha256": "260c684806efbe57ba6cee870683c6b9bb3e76f648442ba62ce6bfe774a8106a"
+  },
+  {
+    "path": "evidence/readonly_audit.json",
+    "bytes": 618,
+    "sha256": "5c3cdc87adb483a0c6a97416827c43a432c7c8f379ecaf3faa42cda86522c347"
+  },
+  {
+    "path": "images/project/eye_regions.png",
+    "bytes": 38598,
+    "sha256": "91fc0f3887d2742444a101d6998daafb0c5c2cea1f0690324d859c3894277184"
+  },
+  {
+    "path": "images/project/face.png",
+    "bytes": 282563,
+    "sha256": "57b21d452b00304ad4fa55db6e00ad3e6d320b309894cc761baf6f5c14e9e0ae"
+  },
+  {
+    "path": "images/project/final.png",
+    "bytes": 315953,
+    "sha256": "364b636a5d438e930bd620fd6a5d73b19f3ee483dda4d17536de1da41ac31c60"
+  },
+  {
+    "path": "images/project/ink_debug.png",
+    "bytes": 109181,
+    "sha256": "d0e354da438754fd192e715160c3f403c1d44507ebd444f46b28173622c23dcf"
+  },
+  {
+    "path": "images/project/region_debug.png",
+    "bytes": 71611,
+    "sha256": "f0c845c634dae30045f36e64f2e19c62797127ea9b3ef42f82d247104283640b"
+  },
+  {
+    "path": "images/project/rim_debug.png",
+    "bytes": 116975,
+    "sha256": "e4ef1de9781d6b504861b6e9ff0def27adc4fc9010454f7389d9eef9efde31e7"
+  },
+  {
+    "path": "images/project/shade_after.png",
+    "bytes": 261888,
+    "sha256": "000fb2ac324a62ce3fcbc87a2d5cfad9205549982842cd5ce245b4041107bd6b"
+  },
+  {
+    "path": "images/project/shade_before.png",
+    "bytes": 249963,
+    "sha256": "a69a1e0adaaa3f9c8388c04869744ca73e76fcfa9828e34468fd32850df2ea86"
+  },
+  {
+    "path": "images/project/specular_debug.png",
+    "bytes": 143820,
+    "sha256": "4f8b3961f1448047ceff25f5f225db309e0a702460f6000877f75ab6e6d22589"
+  },
+  {
+    "path": "images/project/thigh_after.png",
+    "bytes": 260854,
+    "sha256": "e757979c95ff3c8fa4d3b01dcaea015112a28e41cd99a8b118a84bfed381fc6a"
+  },
+  {
+    "path": "images/project/thigh_before.png",
+    "bytes": 261888,
+    "sha256": "000fb2ac324a62ce3fcbc87a2d5cfad9205549982842cd5ce245b4041107bd6b"
+  },
+  {
+    "path": "images/project/thigh_lobe_debug.png",
+    "bytes": 78226,
+    "sha256": "7ee039e2625ebd933bf0bf561e58a92f9c1956a397bc181bb07aabcbcb97919e"
+  },
+  {
+    "path": "images/stages/00.png",
+    "bytes": 234557,
+    "sha256": "57168c28cb57300f635f4f5a56708370baa156cb374a9cd9996f326c168cb809"
+  },
+  {
+    "path": "images/stages/01.png",
+    "bytes": 404319,
+    "sha256": "68c188f91dc059c8f4766dc9b17387077a66cc87c0422f1dbe4aae201c56ca0b"
+  },
+  {
+    "path": "images/stages/02.png",
+    "bytes": 339184,
+    "sha256": "5d28ff6f3bf185073629980f9d7d218e4cd9d2869850e983bba90ab7a8a6203e"
+  },
+  {
+    "path": "images/stages/03.png",
+    "bytes": 341024,
+    "sha256": "07a0447d86c552a7c66fc757ebc126be4066dd758583f7c7058080bc2e2bb3e1"
+  },
+  {
+    "path": "images/stages/04.png",
+    "bytes": 392938,
+    "sha256": "90bc68348e29e2bf5c5f899e4f8487b3432d0e8657dbde70e4602f40a424043e"
+  },
+  {
+    "path": "images/stages/05.png",
+    "bytes": 392073,
+    "sha256": "3a3dc108d15074a65b5664c069dcd21dc086fd8b38fc6c751fa8625d7b617770"
+  },
+  {
+    "path": "images/stages/06.png",
+    "bytes": 559738,
+    "sha256": "561bb8acccdacbc548cbca4bf44be2a896fa31513fda279aa52d047631f34755"
+  },
+  {
+    "path": "images/stages/07.png",
+    "bytes": 559761,
+    "sha256": "74f4fe5e1d5e90a5cf9b239b29fbb315e9cc41afd1b8b7332f2a48064336abea"
+  },
+  {
+    "path": "images/stages/08.png",
+    "bytes": 623183,
+    "sha256": "53188076162ec25dbb144778103aa79ea804c5cfafb622d71b1ea218b50c1b48"
+  },
+  {
+    "path": "index.html",
+    "bytes": 27627,
+    "sha256": "61ace483519f9c4b79db06f31ba688cd70764f433f09c88ab428acd43df7bfc4"
+  },
+  {
+    "path": "notes/01_inventory.txt",
+    "bytes": 3661,
+    "sha256": "64556e58a54eda2d41671805903b89b1a04ed5b5633637e1d3339b83ea9e536b"
+  },
+  {
+    "path": "notes/02_chapter_outline.txt",
+    "bytes": 4838,
+    "sha256": "069f269d0c122a24f29c503f74e36eab5f17a0abe2f85477d4a64e93d68ecce8"
+  },
+  {
+    "path": "notes/03_texture_channels.txt",
+    "bytes": 3140,
+    "sha256": "6a84d10c7663ebcd7fa20b592c1182d564db6906e0c1021cb619612bf9b308dc"
+  },
+  {
+    "path": "notes/04_actual_parameters.txt",
+    "bytes": 3607,
+    "sha256": "73bef8669307bfc1a8c043a41d9b860045463ae2c743c1e925950106ac414fd0"
+  },
+  {
+    "path": "notes/05_portability_and_gaps.txt",
+    "bytes": 2546,
+    "sha256": "052381939262cccea0f9229fb933efe1fe92c08afff42ca1a2dd54d65798eec8"
+  },
+  {
+    "path": "notes/06_gpt_handoff.txt",
+    "bytes": 1779,
+    "sha256": "e6e0fbc2ec10acf913226fc28cffbd792cde1e7ec023914317898e0bbca00e26"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 1922,
+    "sha256": "43c11cdba22911fe64f93220b169c9bbbb871c0d7940b0aba5658d91007925c8"
+  },
+  {
+    "path": "sources/BridgetImitateProfile.cs",
+    "bytes": 2955,
+    "sha256": "4638fa68ef2ae7d4eba5174b361512e17fd92215bab42adb9f28fbc20de48666"
+  },
+  {
+    "path": "sources/BridgetToon.shader",
+    "bytes": 58103,
+    "sha256": "9a5e64e1c8515efcb7662908d612fd62cf7dd45dd11c0b09e99738899641cdd5"
+  },
+  {
+    "path": "sources/GgstDecal.shader",
+    "bytes": 993,
+    "sha256": "b84bf98b56496fb0ae27495d38f5790589d84b6b3e50581d3ea4fa36f1aa13e8"
+  },
+  {
+    "path": "sources/GGSTGeometryDepth.shader",
+    "bytes": 2118,
+    "sha256": "f95b339c6837532ed9618ba5c8804f6665caedc499b5eda6e275c986a3f3d04e"
+  },
+  {
+    "path": "sources/GGSTGeometryShadowMaps.cs",
+    "bytes": 16422,
+    "sha256": "25231a5685516f155eba40a5275813b529270c587622f5b9181edf7f33ee2254"
+  },
+  {
+    "path": "sources/GgstGlow.shader",
+    "bytes": 829,
+    "sha256": "f4e5be118b18b43668f6f4eb3fb6e3f84226b12a54c1a63acad1c6ac6f4a6aa5"
+  },
+  {
+    "path": "sources/GGSTRegionalShading.cs",
+    "bytes": 3815,
+    "sha256": "879a0cb9dcdd7cf59afc57c0bcefb93368594d720f18730d4fef12d054ff9618"
+  },
+  {
+    "path": "sources/GgstShadowParked.shader",
+    "bytes": 468,
+    "sha256": "3d2c83fbd22c650566fc7f8626c95462536d1beb07b37630e65b84d3cd0978e2"
+  },
+  {
+    "path": "sources/StageShadowReceiver.shader",
+    "bytes": 4568,
+    "sha256": "27dacbe4f8bd978a8dfe13277ae7e11e74e7b17e5488fa3be1c7548ea4aad001"
+  }
+]

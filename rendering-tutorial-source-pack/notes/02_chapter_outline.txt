@@ -1,0 +1,65 @@
+建议章节大纲（这是写作计划，不是已经补齐全部对照实验的教程）
+
+00 最终效果与范围
+   说明是当前 Unity 项目的风格化复刻，不宣称原游戏完整实现。
+   图：images/project/final.png；images/stages/08.png。区分含投影工程画面与无投影演示副本。
+01 环境、相机与主光
+   Unity 2022.3.62f3c1、Built-in、Linear、方向光、环境项、4× MSAA、构图。
+   数据：environment.json、saved_scene_rendering.json、BridgetImitateProfile.cs。
+   验收：固定曝光/光照/姿态/分辨率后再比较效果。
+02 贴图通道与导入
+   Base/Sss/ILM/Detail/OLM、分区图、材质分类图、UV0/1/2、顶点色。
+   数据：texture_bindings.csv、texture_import_settings.json、03_texture_channels.txt。
+   验收：Debug 1～9；原图不随包提供，读者准备自己的资源。
+03 材质划分与覆盖关系
+   四个主体材质差异、辅助槽、保存值与 PropertyBlock、角色只读坐标。
+   源码：GGSTRegionalShading.cs、BridgetImitateProfile.cs；数据：runtime_overrides.csv。
+   验收：Debug 22，头部和身体共享材质时仍正确分区；不要批量替换全部槽。
+04 Shader 总体流程
+   区分章节顺序与真实执行顺序；说明 CleanShade、Focused、ThighLobe 等覆盖先前计算。
+   源码：BridgetToon.shader；数据：shader_properties.csv、debug_outputs.csv。
+   验收：列出最终 diffuse/spec/rim/ink 的来源，不把旧分支参数误当最终结果。
+05 基础两段式明暗
+   半兰伯特、ILM.G 偏移、顶点 R、阈值、窄过渡、阴面色。
+   图：stages/00→01；对照时注意基础色阶段还移除了其他光照项，因此是阶段演示。
+   验收：Debug 10 是旧 band，最终漫反射还要看 Debug 16。
+06 脸部、皮肤、衣料分区
+   分区遮罩、白袖/腹部碎影整理、腿部阈值、简化下颌暗面。
+   图：stages/01→02、project/face.png、region_debug.png。
+   验收：脸无多余暗带、腹部明暗简洁；Debug 38/41/42。
+07 亮面与暖色阴面
+   Palette 只影响漫反射，皮肤、白袖、胸前衣料分别控制。
+   图：stages/02→03；数据：_Palette* 保存值。
+   验收：不要把 Vector 乘数当最终 sRGB 颜色；高光和线条保持各自职责。
+08 头发投脸、自阴影与场景投影
+   自定义深度图、投影坐标、Bias/过滤、BeforeForwardOpaque 调度、CleanShade 的覆盖关系。
+   源码：GGSTGeometryShadowMaps.cs、GGSTGeometryDepth.shader、StageShadowReceiver.shader。
+   当前脸部主要材质 HairFaceShadowStrength=0；场景投影仍由独立路径提供。
+   图：project/final.png；无当前同条件单变量投影 A/B，标为待补，不用视频阶段图伪造。
+09 按材质区分高光
+   RGBA 分类；发丝亮带、布料柔光、皮肤微光、金属亮芯；FocusedSpec 使用整理后受光。
+   图：stages/03→04、project/specular_debug.png。
+   验收：Debug 13 看最终高光；26～29 是基础分材质诊断，不完整代表最后 Focused/Thigh 修正。
+10 大腿局部高光
+   原 UV 域、中心曲线、收尖宽度、朝向约束、浅金色亮块与替换范围。
+   图：stages/04→05、project/thigh_before.png / thigh_after.png、thigh_lobe_debug.png。
+   验收：Debug 43/44，不能让局部高光覆盖膝盖/小腿；换 UV 时重新设计。
+11 外轮廓与内部线
+   屏幕像素外扩、材质宽度/墨色、ILM.A 连续覆盖率过滤、描边法线契约。
+   图：stages/05→06、project/ink_debug.png。
+   验收：不同分辨率比较需统一视觉线宽；零宽度材质保持零；确认 TANGENT 的实际含义。
+12 眼睛层次与高光
+   虹膜上暗下亮、边缘层次、眼白、保留原白高光；不创建新的运动亮点。
+   图：stages/06→07、project/eye_regions.png、face.png。
+   验收：保护瞳孔与线条；效果幅度小，后续可补同姿势局部 A/B。
+13 边缘光
+   N·V、材质缩放、浅色混合、暗面保留、脸部降低强度。
+   图：stages/07→08、project/rim_debug.png。
+   验收：区别高光与 rim；不把旧 _RimWidth 当主要调节量。
+14 验收与排错
+   静态分层检查和站立循环稳定性、源码/参数/图版本对应、导入错误和覆盖失效。
+   数据：历史验证摘要；只规划站立验证，不做 900cs。
+   验收：新教程未来的可复刻性测试需在独立环境进行，历史通过不等于新环境通过。
+
+每章写作结构：问题 → 原理 → 源码位置 → 输入/实际参数 → 操作步骤 → 同条件效果图 → 验收 → 常见错误。
+附录：完整参数表、贴图接口表、Debug 编号、Renderer 覆盖规则、移植限制、来源/许可。
